@@ -1,0 +1,46 @@
+task_id: more_itertools_triplewise_889
+repository_url: https://github.com/more-itertools/more-itertools.git
+repository_cache: .cache/repositories
+baseline_commit: b87f67bbbfa488cf56bd86e7b64eb3e8118c34bc
+human_fix_commit: 7ddf9d26014fa576b8601c6d631d3670668eab06
+target_file: more_itertools/recipes.py
+target_symbol: more_itertools.recipes.triplewise
+editable_files:
+  - more_itertools/recipes.py
+context_files:
+  - tests/test_recipes.py
+
+targeted_test_command:
+  - "{python}"
+  - -m
+  - unittest
+  - tests.test_recipes.TriplewiseTests
+  - -v
+full_test_command:
+  - "{python}"
+  - -m
+  - unittest
+invariant_test_command:
+  - "{python}"
+  - "{project_root}/subjects/more_itertools/check_triplewise.py"
+benchmark_command:
+  - "{python}"
+  - "{project_root}/subjects/more_itertools/bench_triplewise.py"
+  - -o
+  - "{output}"
+resource_command:
+  - "{python}"
+  - "{project_root}/subjects/more_itertools/measure_triplewise.py"
+  - --output
+  - "{output}"
+
+primary_benchmark: triplewise_large
+experiment_runs: 3
+max_iterations: 3
+no_improvement_limit: 3
+min_speedup_percent: 3.0
+require_significance: true
+timeout_seconds: 1800
+temperature: 0
+model: deepseek-v4-pro
+artifacts_root: artifacts/more_itertools_triplewise_local

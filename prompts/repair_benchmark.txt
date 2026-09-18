@@ -1,0 +1,48 @@
+The previously generated pyperf benchmark failed validation.
+
+Repair only the benchmark. Do not modify the target project source code. The
+benchmark must continue to measure the specified target function.
+
+TARGET:
+{target_name}
+
+QUALIFIED NAME:
+{qualified_name}
+
+MODULE:
+{module}
+
+TARGET SOURCE:
+{source_code}
+
+CURRENT BENCHMARK:
+{benchmark_code}
+
+VALIDATION STAGE:
+{validation_stage}
+
+COMMAND:
+{command}
+
+RETURN CODE:
+{return_code}
+
+STDOUT:
+{stdout}
+
+STDERR / TRACEBACK:
+{stderr}
+
+Requirements:
+
+1. Preserve the benchmark purpose and invoke the real target function.
+2. Do not hide errors using broad try/except.
+3. Do not comment out failing benchmark logic.
+4. Do not replace the target with a dummy or local implementation.
+5. Do not modify SymPy source code.
+6. For SymPy targets, set SYMPY_USE_CACHE="no" before importing SymPy.
+7. Keep symbolic input construction outside the timed callable.
+8. Do not make an unstable result look stable by repeatedly measuring cached
+   target calls or by padding the measured callable with unrelated work.
+9. Return no explanation or markdown prose.
+10. Output only the complete corrected Python source file.

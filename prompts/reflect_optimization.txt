@@ -1,0 +1,13 @@
+Summarize this optimization iteration using only the supplied evidence.
+
+Target: {target_symbol}
+
+Diagnosis:
+{diagnosis}
+
+Evaluation evidence:
+{evaluation}
+
+In at most five short bullet points, state what was attempted, why it was accepted or rejected,
+what must not be repeated, and the most useful next step. Do not invent measurements.
+

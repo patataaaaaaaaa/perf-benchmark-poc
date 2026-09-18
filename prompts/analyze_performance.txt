@@ -1,0 +1,24 @@
+Analyze the following Python performance optimization task.
+
+Target symbol: {target_symbol}
+Allowed source file: {target_file}
+
+Current performance baseline:
+{baseline}
+
+Short-term memory from previous iterations:
+{memory}
+
+Relevant imports and target function:
+```python
+{source_context}
+```
+
+Relevant test excerpts:
+```python
+{tests_context}
+```
+
+Identify one concrete bottleneck and propose one conservative optimization strategy.
+The function's externally visible behavior must remain unchanged. Do not propose changing
+tests, benchmark code, benchmark inputs, or acceptance thresholds. Keep the diagnosis concise.

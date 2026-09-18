@@ -1,0 +1,68 @@
+{
+  "experiment_id": "2026-09-17_more-itertools-triplewise-e2e",
+  "status": "COMPLETE",
+  "repository": "https://github.com/more-itertools/more-itertools.git",
+  "target_symbol": "more_itertools.recipes.triplewise",
+  "model": "deepseek-v4-pro",
+  "framework_run": {
+    "independent_runs": 1,
+    "iterations": 3,
+    "candidate_count": 3,
+    "functionally_valid_candidates": 2,
+    "accepted_candidates": 2,
+    "stop_reason": "MAX_ITERATIONS",
+    "model_calls": 10,
+    "token_usage": {
+      "input_tokens": 16152,
+      "output_tokens": 119237,
+      "reasoning_tokens": 116973,
+      "total_tokens": 135389
+    }
+  },
+  "benchmark": {
+    "source": "LLM generated and frozen after validation",
+    "sha256": "610098b129b6bafc223453c7f8c2fd54a372d898ad314a2b01184adb9f2d92dd",
+    "primary": "large_range_200000"
+  },
+  "standard_retest": {
+    "mode": "pyperf standard mode, no LLM",
+    "llm_calls": 0,
+    "elapsed_seconds": 172.4628255860007,
+    "versions": {
+      "baseline": {
+        "median_seconds": 0.03608553212325205,
+        "mean_seconds": 0.03686690905463668,
+        "robust_rsd_percent": 2.863442408629969,
+        "value_count": 60,
+        "speedup_vs_baseline_percent": 0.0,
+        "peak_rss_bytes": 17924096,
+        "tracemalloc_peak_bytes": 872
+      },
+      "human_fix": {
+        "median_seconds": 0.018539669437814155,
+        "mean_seconds": 0.01880034175228502,
+        "robust_rsd_percent": 5.531676016580351,
+        "value_count": 60,
+        "speedup_vs_baseline_percent": 48.62298448449941,
+        "significant_vs_baseline": true,
+        "peak_rss_bytes": 17887232,
+        "tracemalloc_peak_bytes": 3608
+      },
+      "deepseek_fix": {
+        "median_seconds": 0.01820129625048139,
+        "mean_seconds": 0.01848107116493338,
+        "robust_rsd_percent": 3.876793661865898,
+        "value_count": 60,
+        "speedup_vs_baseline_percent": 49.56068213622596,
+        "significant_vs_baseline": true,
+        "peak_rss_bytes": 17895424,
+        "tracemalloc_peak_bytes": 3608
+      }
+    },
+    "deepseek_vs_human": {
+      "deepseek_numeric_advantage_percent": 1.825137495455538,
+      "significant": false,
+      "interpretation": "两者性能基本相当，不能声称 DeepSeek 显著优于人工修复。"
+    }
+  }
+}

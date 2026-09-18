@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sympy_expand_001",
+    "module": "sympy",
+    "target": "expand",
+    "qualified_name": "sympy.expand",
+    "description": "Expand a symbolic polynomial expression"
+  },
+  {
+    "id": "sympy_factor_001",
+    "module": "sympy",
+    "target": "factor",
+    "qualified_name": "sympy.factor",
+    "description": "Factor a symbolic polynomial expression"
+  },
+  {
+    "id": "sympy_simplify_001",
+    "module": "sympy",
+    "target": "simplify",
+    "qualified_name": "sympy.simplify",
+    "description": "Simplify a deterministic symbolic expression"
+  },
+  {
+    "id": "sympy_diff_001",
+    "module": "sympy",
+    "target": "diff",
+    "qualified_name": "sympy.diff",
+    "description": "Differentiate a deterministic symbolic expression"
+  },
+  {
+    "id": "sympy_cancel_001",
+    "module": "sympy",
+    "target": "cancel",
+    "qualified_name": "sympy.cancel",
+    "description": "Cancel common factors in a rational symbolic expression"
+  },
+  {
+    "id": "mpmath_polyval_001",
+    "module": "mpmath",
+    "target": "polyval",
+    "qualified_name": "mpmath.polyval",
+    "description": "Evaluate a deterministic polynomial at a high-precision numeric point"
+  },
+  {
+    "id": "mpmath_quad_001",
+    "module": "mpmath",
+    "target": "quad",
+    "qualified_name": "mpmath.quad",
+    "description": "Numerically integrate a deterministic smooth function on a finite interval"
+  },
+  {
+    "id": "mpmath_findroot_001",
+    "module": "mpmath",
+    "target": "findroot",
+    "qualified_name": "mpmath.findroot",
+    "description": "Find a root of a deterministic nonlinear scalar function"
+  },
+  {
+    "id": "mpmath_fsum_001",
+    "module": "mpmath",
+    "target": "fsum",
+    "qualified_name": "mpmath.fsum",
+    "description": "Accurately sum a deterministic sequence of high-precision values"
+  },
+  {
+    "id": "mpmath_lu_solve_001",
+    "module": "mpmath",
+    "target": "lu_solve",
+    "qualified_name": "mpmath.lu_solve",
+    "description": "Solve a deterministic dense linear system using LU factorization"
+  }
+]

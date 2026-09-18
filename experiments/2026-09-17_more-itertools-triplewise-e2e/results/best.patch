@@ -1,0 +1,18 @@
+diff --git a/more_itertools/recipes.py b/more_itertools/recipes.py
+index 3629499..d333cad 100644
+--- a/more_itertools/recipes.py
++++ b/more_itertools/recipes.py
+@@ -795,8 +795,11 @@ def triplewise(iterable):
+     [('A', 'B', 'C'), ('B', 'C', 'D'), ('C', 'D', 'E')]
+ 
+     """
+-    for (a, _), (b, c) in pairwise(pairwise(iterable)):
+-        yield a, b, c
++    a, b, c = tee(iterable, 3)
++    next(b, None)
++    next(c, None)
++    next(c, None)
++    return zip(a, b, c)
+ 
+ 
+ def _sliding_window_islice(iterable, n):

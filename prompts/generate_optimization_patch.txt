@@ -1,0 +1,28 @@
+Implement one conservative performance optimization for this Python target.
+
+Target symbol: {target_symbol}
+The only file you may change: {target_file}
+
+Performance diagnosis:
+{diagnosis}
+
+Recent iteration memory:
+{memory}
+
+Relevant imports and target function:
+```python
+{source_context}
+```
+
+Relevant test excerpts:
+```python
+{tests_context}
+```
+
+Requirements:
+- Preserve all externally visible behavior.
+- Do not weaken validation, remove work, change benchmark inputs, or add hidden cross-call state.
+- Modify only the supplied source file.
+- Return exactly one ```diff fenced block containing a unified diff.
+- The diff must use repository-relative a/... and b/... paths and modify only {target_file}.
+- Make the smallest change needed. Do not include any text outside the diff block.

@@ -1,0 +1,46 @@
+{
+  "candidate_count": 30,
+  "fast_robust_rsd_counts": {
+    "intermediate": 13,
+    "stable": 1,
+    "unavailable": 1,
+    "unstable": 15
+  },
+  "final_runtime_pass_count": 29,
+  "initial_import_pass_count": 30,
+  "initial_runtime_pass_count": 21,
+  "initial_syntax_pass_count": 30,
+  "manifest": "subjects/experiment_run_manifest.json",
+  "manual_semantic_counts": {
+    "invalid": 1,
+    "not_executable": 1,
+    "valid": 28
+  },
+  "manual_semantic_repair_success_count": 7,
+  "repair_needed_count": 9,
+  "repair_success_count": 8,
+  "repair_success_rate": 0.8889,
+  "replicates_per_target": 3,
+  "static_target_hit_counts": {
+    "true": 25,
+    "unknown": 5
+  },
+  "status_counts": {
+    "EXECUTABLE_UNSTABLE": 28,
+    "MAX_RETRIES_EXCEEDED": 1,
+    "SUCCESS": 1
+  },
+  "target_count": 10,
+  "token_usage": {
+    "cached_tokens": 77312,
+    "input_tokens": 102636,
+    "output_tokens": 249665,
+    "reasoning_tokens": 243354,
+    "total_tokens": 352301
+  },
+  "transport_failure_replacements": 6,
+  "valid_candidate_fast_robust_rsd_counts": {
+    "intermediate": 13,
+    "unstable": 15
+  }
+}

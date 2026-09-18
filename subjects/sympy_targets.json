@@ -1,0 +1,24 @@
+[
+  {
+    "id": "sympy_expand_001",
+    "module": "sympy",
+    "target": "expand",
+    "qualified_name": "sympy.expand",
+    "description": "Expand a symbolic polynomial expression"
+  },
+  {
+    "id": "sympy_factor_001",
+    "module": "sympy",
+    "target": "factor",
+    "qualified_name": "sympy.factor",
+    "description": "Factor a symbolic polynomial expression"
+  },
+  {
+    "id": "sympy_simplify_001",
+    "module": "sympy",
+    "target": "simplify",
+    "qualified_name": "sympy.simplify",
+    "description": "Simplify a deterministic symbolic expression"
+  }
+]
+

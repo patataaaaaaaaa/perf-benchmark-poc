@@ -1,0 +1,15 @@
+experiment:
+  max_retries: 3
+
+runtime:
+  timeout_seconds: 120
+
+pyperf:
+  fast_mode: true
+
+llm:
+  temperature: 0
+
+artifacts:
+  root: artifacts
+

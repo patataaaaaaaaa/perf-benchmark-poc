@@ -1,0 +1,27 @@
+task_id: center_values_demo
+repository: subjects/framework_demo
+target_file: src/demo_subject/workload.py
+target_symbol: center_values
+
+test_command:
+  - "{project_root}/.venv/bin/python"
+  - -m
+  - unittest
+  - discover
+  - -s
+  - tests
+  - -v
+
+benchmark_command:
+  - "{project_root}/.venv/bin/python"
+  - benchmarks/bench_workload.py
+  - --fast
+  - -o
+  - "{output}"
+
+max_iterations: 3
+no_improvement_limit: 1
+min_speedup_percent: 3.0
+timeout_seconds: 180
+temperature: 0
+artifacts_root: artifacts/framework_runs

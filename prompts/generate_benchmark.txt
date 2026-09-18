@@ -1,0 +1,49 @@
+You are generating a Python performance microbenchmark.
+
+Given a target function and its source code, determine whether the function is
+suitable for microbenchmarking using pyperf.
+
+If the target is not suitable for a meaningful microbenchmark, return exactly:
+
+SKIP: <short reason>
+
+Otherwise generate ONE executable Python benchmark file.
+
+Requirements:
+
+1. Use pyperf and create exactly one pyperf.Runner instance.
+2. Benchmark the specified target function.
+3. The measured operation must actually invoke the target.
+4. Keep benchmark setup and input construction outside the measured operation
+   whenever reasonably possible.
+5. Do not measure imports or one-time setup work.
+6. Use deterministic inputs and a meaningful workload.
+7. Avoid network access, file I/O, randomness, and printing in measured code.
+8. The file must run standalone inside the target repository environment.
+9. Do not modify or mock the target project.
+10. Do not copy or replace the target implementation locally.
+11. Do not hide failures with broad exception handling.
+12. Account for target-library caching when repeated calls would otherwise
+    benchmark a cached result rather than the intended operation.
+13. For SymPy targets, set the SYMPY_USE_CACHE environment variable to "no"
+    before importing SymPy so repeated calls do not become cache-hit benchmarks.
+14. Construct symbolic expressions outside the timed callable. The measured
+    callable must time the target transformation, not expression construction.
+15. Return no prose outside the Python source code.
+
+TARGET:
+{target_name}
+
+QUALIFIED NAME:
+{qualified_name}
+
+MODULE:
+{module}
+
+DESCRIPTION:
+{description}
+
+SOURCE CODE:
+{source_code}
+
+Output only SKIP or a complete Python source file.

@@ -1,0 +1,12 @@
+{
+  "experiment_timestamp_utc": "2026-09-17T12:35:10.060423+00:00",
+  "system": "Darwin",
+  "platform": "macOS 14.7.7 x86_64",
+  "logical_cpu_count": 8,
+  "memory_total_bytes": 17179869184,
+  "python_version": "3.11.1",
+  "pyperf_version": "2.10.0",
+  "psutil_version": "7.2.2",
+  "cpu_affinity": null,
+  "note": "个人电脑本地实验；未固定 CPU 亲和性，不作为最终服务器性能结论。"
+}

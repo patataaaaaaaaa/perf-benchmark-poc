@@ -1,0 +1,32 @@
+Generate one executable pyperf benchmark for a real Python repository.
+
+Target symbol: {target_symbol}
+
+Relevant imports and target function:
+```python
+{source_context}
+```
+
+Relevant repository tests:
+```python
+{tests_context}
+```
+
+Choose one to three deterministic, meaningful workloads yourself. Include at least one large
+workload that exercises the target long enough to measure. Do not use the network, files,
+randomness, sleeps, mocks, caches shared across calls, or a copied implementation of the target.
+
+Required module contract:
+- Insert Path.cwd() at the front of sys.path before importing the target.
+- Define TARGET_SYMBOL exactly as {target_symbol!r}.
+- Define WORKLOAD_DESCRIPTION as a non-empty string explaining the chosen inputs.
+- Define PRIMARY_BENCHMARK as the name of the main case.
+- Define get_cases(), returning a dict with one to three entries.
+- Each value is a two-item tuple: (zero_argument_callable, expected_integer_result).
+- Every callable must construct fresh one-shot iterators inside the call, invoke the real target,
+  completely consume lazy results, and return a deterministic positive integer checksum or count.
+- Calling a callable twice must return the same expected integer.
+- Define main() with exactly one pyperf.Runner and register every case using runner.bench_func.
+- Call main() only under if __name__ == "__main__".
+
+Return only a complete Python source file in one python code block.

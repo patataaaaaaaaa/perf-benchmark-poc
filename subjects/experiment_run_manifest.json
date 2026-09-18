@@ -1,0 +1,37 @@
+{
+  "manual_review": {
+    "1:sympy_factor_001": {
+      "status": "not_executable",
+      "note": "All repair attempts failed runtime validation."
+    },
+    "2:sympy_factor_001": {
+      "status": "invalid",
+      "note": "bench_time_func returns the loop count instead of elapsed time, producing a false stable result."
+    }
+  },
+  "base_runs": [
+    {
+      "replicate": 1,
+      "run_dir": "artifacts/20260914_201853_181571",
+      "replacements": {}
+    },
+    {
+      "replicate": 2,
+      "run_dir": "artifacts/20260914_205523_627494",
+      "replacements": {
+        "mpmath_fsum_001": "artifacts/20260915_151910_651870",
+        "mpmath_lu_solve_001": "artifacts/20260915_152500_056513"
+      }
+    },
+    {
+      "replicate": 3,
+      "run_dir": "artifacts/20260914_225647_261165",
+      "replacements": {
+        "sympy_expand_001": "artifacts/20260915_151400_236496",
+        "mpmath_quad_001": "artifacts/20260915_151743_634010",
+        "mpmath_fsum_001": "artifacts/20260915_152135_819126",
+        "mpmath_lu_solve_001": "artifacts/20260915_153151_012306"
+      }
+    }
+  ]
+}

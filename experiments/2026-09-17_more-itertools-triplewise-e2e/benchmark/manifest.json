@@ -1,0 +1,23 @@
+{
+  "sha256": "610098b129b6bafc223453c7f8c2fd54a372d898ad314a2b01184adb9f2d92dd",
+  "target_symbol": "more_itertools.recipes.triplewise",
+  "primary_benchmark": "large_range_200000",
+  "workload_description": "每次创建新的单次迭代器，完整消费 triplewise 的输出并统计三元组数量。",
+  "cases": [
+    {
+      "name": "small_list_10",
+      "input": "iter(list(range(10)))",
+      "expected_result": 8
+    },
+    {
+      "name": "medium_range_2000",
+      "input": "iter(range(2000))",
+      "expected_result": 1998
+    },
+    {
+      "name": "large_range_200000",
+      "input": "iter(range(200000))",
+      "expected_result": 199998
+    }
+  ]
+}

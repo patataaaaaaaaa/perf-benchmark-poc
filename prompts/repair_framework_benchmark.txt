@@ -1,0 +1,26 @@
+Repair this generated pyperf benchmark using the concrete validation failure below.
+
+Target symbol: {target_symbol}
+
+Relevant imports and target function:
+```python
+{source_context}
+```
+
+Relevant repository tests:
+```python
+{tests_context}
+```
+
+Current benchmark:
+```python
+{benchmark_code}
+```
+
+Validation failure:
+{failure}
+
+Keep the same required contract: TARGET_SYMBOL, WORKLOAD_DESCRIPTION, PRIMARY_BENCHMARK,
+get_cases() mapping names to (zero-argument callable, expected positive integer), repeatable
+fresh inputs, complete lazy-result consumption, and one pyperf.Runner in main().
+Return only the complete repaired Python source file in one python code block.
