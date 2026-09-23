@@ -15,6 +15,7 @@ from src.framework.agents import FrameworkAgents  # noqa: E402
 from src.framework.config import FrameworkConfig  # noqa: E402
 from src.framework.evaluator import Evaluator  # noqa: E402
 from src.framework.pipeline import OptimizationFramework  # noqa: E402
+from src.framework.sandbox import SandboxLimits  # noqa: E402
 from src.llm.deepseek_client import DeepSeekClient  # noqa: E402
 
 
@@ -54,6 +55,7 @@ def main() -> int:
                 f"Configured model is {config.model!r}, but DEEPSEEK_MODEL is "
                 f"{client.model!r}. Use the configured model for reproducibility."
             )
+        execution = config.execution_sandbox
         framework = OptimizationFramework(
             project_root=PROJECT_ROOT,
             config=config,
@@ -61,6 +63,19 @@ def main() -> int:
             evaluator=Evaluator(
                 config.timeout_seconds,
                 primary_benchmark=config.primary_benchmark,
+                docker_image=execution.image if execution else None,
+                project_root=PROJECT_ROOT if execution else None,
+                sandbox_limits=(
+                    SandboxLimits(
+                        cpus=execution.cpus,
+                        memory=execution.memory,
+                        pids=execution.pids,
+                        timeout_seconds=execution.timeout_seconds,
+                        max_output_bytes=execution.max_output_bytes,
+                    )
+                    if execution
+                    else None
+                ),
             ),
             model_name=client.model,
         )

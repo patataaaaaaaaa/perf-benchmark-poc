@@ -7,12 +7,16 @@ import statistics
 import subprocess
 import tempfile
 import time
+import uuid
 from dataclasses import asdict, dataclass
 from pathlib import Path
+from typing import Any
 
 import psutil
 import pyperf
 from pyperf._compare import is_significant_benchs
+
+from src.framework.sandbox import SandboxLimits, run_in_docker
 
 
 @dataclass(frozen=True)
@@ -124,6 +128,17 @@ class PerformanceComparison:
     candidate_median_seconds: float
     significant: bool
     t_score: float | None
+
+    def to_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class MemoryComparison:
+    metric: str
+    reduction_percent: float
+    baseline_bytes: int
+    candidate_bytes: int
 
     def to_dict(self) -> dict[str, object]:
         return asdict(self)
@@ -287,14 +302,116 @@ def _robust_rsd_percent(values: list[float]) -> float | None:
 
 
 class Evaluator:
-    def __init__(self, timeout_seconds: int, primary_benchmark: str | None = None) -> None:
+    def __init__(
+        self,
+        timeout_seconds: int,
+        primary_benchmark: str | None = None,
+        docker_image: str | None = None,
+        project_root: Path | None = None,
+        sandbox_limits: SandboxLimits | None = None,
+    ) -> None:
         self.timeout_seconds = timeout_seconds
         self.primary_benchmark = primary_benchmark
+        self.docker_image = docker_image
+        self.project_root = project_root
+        self.sandbox_limits = sandbox_limits
+
+    def run(
+        self,
+        command: tuple[str, ...] | list[str],
+        repository: Path,
+        output_dir: Path,
+    ) -> CommandResult:
+        if self.docker_image is None:
+            return run_command(command, repository, self.timeout_seconds)
+        if self.project_root is None or self.sandbox_limits is None:
+            raise RuntimeError("Docker evaluator is missing project_root or limits")
+
+        output_dir.mkdir(parents=True, exist_ok=True)
+        mappings: list[tuple[Path, str]] = [
+            (repository.resolve(), "/workspace"),
+            ((self.project_root / "subjects").resolve(), "/subjects"),
+            (output_dir.resolve(), "/artifacts"),
+        ]
+        mounts: list[tuple[Path, str]] = [
+            ((self.project_root / "subjects").resolve(), "/subjects")
+        ]
+        translated: list[str] = []
+        for index, raw in enumerate(command):
+            value = str(raw)
+            if index == 0:
+                translated.append("python")
+                continue
+            path = Path(value)
+            replacement: str | None = None
+            if path.is_absolute():
+                resolved = path.resolve()
+                for host_root, container_root in mappings:
+                    try:
+                        relative = resolved.relative_to(host_root)
+                    except ValueError:
+                        continue
+                    replacement = str(Path(container_root) / relative)
+                    break
+                if replacement is None and resolved.exists():
+                    mount_root = resolved.parent
+                    container_root = f"/input_{len(mounts)}"
+                    mounts.append((mount_root, container_root))
+                    mappings.append((mount_root, container_root))
+                    replacement = str(Path(container_root) / resolved.name)
+            translated.append(replacement if replacement is not None else value)
+
+        metrics_name = f"command_metrics_{uuid.uuid4().hex}.json"
+        inner_command = [
+            "python",
+            "/opt/framework/run_sandbox_command.py",
+            "--metrics",
+            f"/artifacts/{metrics_name}",
+            "--",
+            *translated,
+        ]
+        started = time.perf_counter()
+        result = run_in_docker(
+            image=self.docker_image,
+            workspace=repository,
+            harness=self.project_root / "scripts",
+            output=output_dir,
+            inner_command=inner_command,
+            limits=self.sandbox_limits,
+            readonly_mounts=tuple(mounts),
+        )
+        metrics_path = output_dir / metrics_name
+        payload: dict[str, Any] = {}
+        if metrics_path.is_file():
+            payload = json.loads(metrics_path.read_text(encoding="utf-8"))
+        metrics = ResourceMetrics(
+            wall_seconds=float(payload.get("wall_seconds", time.perf_counter() - started)),
+            user_cpu_seconds=float(payload.get("user_cpu_seconds", 0.0)),
+            system_cpu_seconds=float(payload.get("system_cpu_seconds", 0.0)),
+            cpu_to_wall_ratio=(
+                float(payload["cpu_to_wall_ratio"])
+                if payload.get("cpu_to_wall_ratio") is not None
+                else None
+            ),
+            peak_rss_bytes=int(payload.get("peak_rss_bytes", 0)),
+            read_bytes=(int(payload["read_bytes"]) if payload.get("read_bytes") is not None else None),
+            write_bytes=(int(payload["write_bytes"]) if payload.get("write_bytes") is not None else None),
+            read_count=(int(payload["read_count"]) if payload.get("read_count") is not None else None),
+            write_count=(int(payload["write_count"]) if payload.get("write_count") is not None else None),
+        )
+        return CommandResult(
+            command=list(result.command),
+            return_code=None if result.timed_out else result.return_code,
+            stdout=result.stdout,
+            stderr=result.stderr,
+            metrics=metrics,
+            timed_out=result.timed_out,
+        )
 
     def functional_test(
-        self, repository: Path, command: tuple[str, ...]
+        self, repository: Path, command: tuple[str, ...], output_dir: Path
     ) -> CommandResult:
-        return run_command(command, repository, self.timeout_seconds)
+        return self.run(command, repository, output_dir)
 
     def performance_test(
         self,
@@ -309,7 +426,7 @@ class Evaluator:
             value.replace("{output}", str(result_path))
             for value in command_template
         )
-        result = run_command(command, repository, self.timeout_seconds)
+        result = self.run(command, repository, result_path.parent)
         if not result.passed or not result_path.is_file():
             return PerformanceResult(result, str(result_path), self.primary_benchmark, {})
 
@@ -342,7 +459,7 @@ class Evaluator:
             value.replace("{output}", str(result_path))
             for value in command_template
         )
-        result = run_command(command, repository, self.timeout_seconds)
+        result = self.run(command, repository, result_path.parent)
         payload: dict[str, object] = {}
         if result.passed and result_path.is_file():
             payload = json.loads(result_path.read_text(encoding="utf-8"))
@@ -382,6 +499,24 @@ def compare_performance(
         candidate_median_seconds=candidate_primary.median_seconds,
         significant=bool(significant),
         t_score=float(t_score) if t_score is not None else None,
+    )
+
+
+def compare_memory(
+    baseline: ResourceResult, candidate: ResourceResult
+) -> MemoryComparison:
+    baseline_bytes = baseline.tracemalloc_peak_bytes
+    candidate_bytes = candidate.tracemalloc_peak_bytes
+    if baseline_bytes is None or candidate_bytes is None:
+        raise ValueError("Both resource results must contain tracemalloc peak bytes")
+    if baseline_bytes <= 0:
+        raise ValueError("Baseline tracemalloc peak must be positive")
+    reduction = 100.0 * (baseline_bytes - candidate_bytes) / baseline_bytes
+    return MemoryComparison(
+        metric="tracemalloc_peak_bytes",
+        reduction_percent=reduction,
+        baseline_bytes=baseline_bytes,
+        candidate_bytes=candidate_bytes,
     )
 
 

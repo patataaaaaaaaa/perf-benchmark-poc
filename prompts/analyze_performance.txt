@@ -6,6 +6,10 @@ Allowed source file: {target_file}
 Current performance baseline:
 {baseline}
 
+Treat `optimization_objective` in the baseline as authoritative. For a memory task,
+prioritize reducing the recorded tracemalloc peak; runtime is a regression guard, not
+the primary score. For a runtime task, prioritize reproducible execution-time evidence.
+
 Short-term memory from previous iterations:
 {memory}
 

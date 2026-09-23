@@ -1,0 +1,58 @@
+# 真正的仓库级入口：没有 target_file、target_symbol 或指定 testcase。
+task_id: more_itertools_triplewise_889
+repository_url: https://github.com/more-itertools/more-itertools.git
+repository_cache: .cache/repositories
+baseline_commit: b87f67bbbfa488cf56bd86e7b64eb3e8118c34bc
+
+workload_discovery:
+  file_limit: 50
+  scenario_limit: 200
+  max_repairs: 3
+
+# 下列两项只是让通用配置在 workload 生成前可以加载；自主入口会在运行时
+# 用生成并验收后的 workload 路径替换它们，绝不会执行占位命令。
+target_mode: auto
+hotspot_discovery:
+  harness: scripts
+  command: [python, -c, "raise SystemExit('unresolved workload')"]
+  image: perf-benchmark-sandbox:py311-v1
+  limit: 5
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 900
+  max_output_bytes: 2000000
+
+execution_sandbox:
+  enabled: true
+  image: perf-benchmark-sandbox:py311-v1
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 900
+  max_output_bytes: 2000000
+
+context_files: []
+targeted_test_command:
+  - "{python}"
+  - -m
+  - unittest
+full_test_command:
+  - "{python}"
+  - -m
+  - unittest
+
+benchmark_mode: fixed
+benchmark_command: ["{python}", -c, "raise SystemExit('unresolved workload')", "{output}"]
+
+experiment_runs: 1
+max_iterations: 3
+no_improvement_limit: 2
+optimization_objective: runtime
+min_speedup_percent: 3.0
+require_significance: true
+timeout_seconds: 900
+temperature: 0
+model: deepseek-v4-pro
+artifacts_root: artifacts/more_itertools_repository_autonomous_e2e
+keep_workspaces: false

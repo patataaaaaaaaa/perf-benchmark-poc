@@ -1,0 +1,75 @@
+# 与此前同一历史任务共用只读 Git cache，避免为不同实验入口重复下载仓库。
+# 独立实验身份由 config 文件名和 artifacts_root 区分。
+task_id: more_itertools_triplewise_889
+repository_url: https://github.com/more-itertools/more-itertools.git
+repository_cache: .cache/repositories
+# 服务器离线实验缓存中的等价源码快照：e59bad1 是官方 baseline
+# b87f67b 的内容，1a00611 是官方 human fix 7ddf9d2 的内容。
+baseline_commit: e59bad1
+human_fix_commit: 1a00611
+
+# 控制实验入口：workload 由 DeepSeek 从仓库 testcase 派生。这里不向优化
+# agent 指定目标文件或函数；profiler 根据 workload 的实际运行数据选择 Top 1。
+# validation_expected_symbol 只在选择完成后检查实验是否命中预期答案，不参与排序。
+target_mode: auto
+hotspot_discovery:
+  harness: subjects/more_itertools/generated_workload_e2e
+  command:
+    - python
+    - /harness/profile_workload.py
+  image: perf-benchmark-sandbox:py311-v1
+  limit: 5
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 300
+  max_output_bytes: 2000000
+  validation_expected_symbol: more_itertools.recipes.triplewise
+
+execution_sandbox:
+  enabled: true
+  image: perf-benchmark-sandbox:py311-v1
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 900
+  max_output_bytes: 2000000
+
+context_files:
+  - tests/test_recipes.py
+
+targeted_test_command:
+  - "{python}"
+  - -m
+  - unittest
+  - tests.test_recipes.TriplewiseTests
+  - -v
+full_test_command:
+  - "{python}"
+  - -m
+  - unittest
+invariant_test_command:
+  - "{python}"
+  - "{project_root}/subjects/more_itertools/check_triplewise.py"
+
+# 这次冻结并复用 workload-builder 已生成和自动验收的 DeepSeek 脚本，
+# 因而运行优化闭环时不会再次生成另一份 benchmark。
+benchmark_mode: fixed
+benchmark_command:
+  - "{python}"
+  - "{project_root}/subjects/more_itertools/generated_workload_e2e/generated_workload.py"
+  - -o
+  - "{output}"
+primary_benchmark: large_range_100000
+
+experiment_runs: 1
+max_iterations: 3
+no_improvement_limit: 2
+optimization_objective: runtime
+min_speedup_percent: 3.0
+require_significance: true
+timeout_seconds: 900
+temperature: 0
+model: deepseek-v4-pro
+artifacts_root: artifacts/more_itertools_generated_workload_e2e
+keep_workspaces: false

@@ -1,0 +1,20 @@
+Select one workload scenario from a real Python repository. No target function has
+been selected, and you must not assume one.
+
+Repository overview:
+{repository_overview}
+
+Repository-owned scenario catalog:
+{scenario_catalog}
+
+Selection rules:
+- Choose exactly one scenario_id from the catalog.
+- Prefer an existing benchmark; otherwise prefer a deterministic user-facing test.
+- The operation must be scalable enough for performance measurement.
+- Avoid network access, filesystem mutation, sleeps, randomness, and tests whose
+  main purpose is raising errors.
+- Prefer a scenario with a deterministic result that can be checked automatically.
+- Do not choose based on knowledge of a historical optimization patch.
+
+Return exactly one JSON object and no markdown:
+{{"scenario_id":"...","reason":"..."}}

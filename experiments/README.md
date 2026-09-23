@@ -40,3 +40,5 @@ YYYY-MM-DD_项目或阶段_目标或实验目的
 |---|---|---|
 | 2026-09-15 | [benchmark 生成可行性](2026-09-15_benchmark-generation-feasibility/) | LLM 能否生成并自动修复 pyperf 测试？ |
 | 2026-09-17 | [More-itertools 端到端闭环](2026-09-17_more-itertools-triplewise-e2e/) | 生成测试、修改代码、功能验证和性能反馈能否串成闭环？ |
+| 2026-09-23 | [CPython urllib 自动内存闭环](2026-09-23_cpython-urllib-auto-memory-e2e/) | 不人工指定函数时，分类、profiler、DeepSeek 优化和验收能否完整串联？ |
+| 2026-09-23 | [More-itertools 自主 Workload Bad Case](2026-09-23_more-itertools-autonomous-workload-badcase/) | 只给仓库时，自动选择 workload 和 Top 1 是否足以找到有效优化？ |

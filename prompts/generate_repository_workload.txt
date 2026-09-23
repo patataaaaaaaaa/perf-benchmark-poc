@@ -1,0 +1,43 @@
+Generate an executable pyperf workload from repository-owned evidence. No target
+function has been selected: the profiler will discover hotspots only after this
+workload runs.
+
+Repository overview:
+{repository_overview}
+
+Selected evidence:
+- path: {source_path}
+- symbol: {source_symbol}
+- selection reason: {selection_reason}
+
+Relevant imports from the evidence file:
+```python
+{imports_context}
+```
+
+Selected repository scenario:
+```python
+{scenario_source}
+```
+
+Requirements:
+1. Preserve the selected scenario's operation and input structure; scaling the
+   amount of work is allowed, changing to a different API or data shape is not.
+2. Import and execute the real repository code. Do not copy its implementation.
+3. Use deterministic inputs, no network, file I/O, sleeps, randomness, mocks, or
+   hidden state shared between calls.
+4. Define SOURCE_EVIDENCE exactly as a non-empty tuple containing
+   {source_path!r}.
+5. Define WORKLOAD_DESCRIPTION as a non-empty string.
+6. Define SELECTION_RATIONALE as a non-empty string.
+7. Define PRIMARY_BENCHMARK as the main case name.
+8. Define get_cases() returning one to three
+   name: (zero_argument_callable, expected_positive_integer) entries.
+9. Each callback must construct fresh mutable or one-shot inputs, execute the real
+   repository operation, fully consume lazy results, and return a deterministic
+   positive integer checksum or count. Calling it twice must return the same value.
+10. Define main() with exactly one pyperf.Runner and register each case using
+    runner.bench_func. Only call main() under the standard __main__ guard.
+11. Insert Path.cwd() at the front of sys.path before importing the repository.
+
+Return only the complete Python source in one python code block.

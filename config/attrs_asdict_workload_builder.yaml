@@ -1,0 +1,52 @@
+task_id: attrs_asdict_1463
+repository_url: https://github.com/python-attrs/attrs.git
+repository_cache: .cache/repositories
+baseline_commit: 57f0d5441c9deaac44aebbbf45e38e477651e4f2
+human_fix_commit: 7369ad9f4b273e400478c8e65399d826ab3f3b32
+
+target_mode: manual
+target_file: src/attr/_funcs.py
+target_symbol: attr._funcs.asdict
+editable_files:
+  - src/attr/_funcs.py
+context_files:
+  - tests/test_funcs.py
+  - bench/test_benchmarks.py
+
+# These commands are required by the common task schema. The current
+# Workload Builder experiment does not yet run the optimization loop.
+targeted_test_command:
+  - "{python}"
+  - -m
+  - pytest
+  - tests/test_funcs.py
+  - -q
+full_test_command:
+  - "{python}"
+  - -m
+  - pytest
+  - -q
+
+benchmark_mode: generated
+benchmark_generation_max_repairs: 3
+benchmark_fast_mode: true
+
+execution_sandbox:
+  enabled: true
+  image: perf-benchmark-sandbox:py311-v1
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 900
+  max_output_bytes: 2000000
+
+experiment_runs: 1
+max_iterations: 1
+no_improvement_limit: 1
+min_speedup_percent: 3.0
+require_significance: false
+timeout_seconds: 900
+temperature: 0
+model: deepseek-v4-pro
+artifacts_root: artifacts/attrs_asdict
+keep_workspaces: false

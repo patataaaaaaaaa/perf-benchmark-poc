@@ -1,0 +1,4 @@
+run,iteration,decision,functional_passed,speedup_percent,memory_reduction_percent,significant,workload_speedup_percent,workload_significant,workload_median_seconds,median_seconds,robust_rsd_percent,peak_rss_bytes,tracemalloc_peak_bytes,read_bytes,write_bytes,lines_added,lines_deleted,patch_error
+1,1,ACCEPT,True,1.2943763452806645,95.47209431291031,True,,,,0.10050759837031364,2.0095095151825237,22384640,4800033,0,0,20,10,
+1,2,REJECT_MEMORY,True,0.4978344356332031,0.0,False,,,,0.10000723693519831,2.3756451815511306,22388736,4800033,0,0,1,0,
+1,3,REJECT_MEMORY,True,-11.091008058880194,0.0,True,,,,0.11165490420535207,1.752425719871033,22392832,4800033,0,0,3,2,

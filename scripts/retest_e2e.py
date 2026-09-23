@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import platform
+import shutil
 import sys
 import time
 from datetime import datetime
@@ -24,6 +25,8 @@ from src.framework.evaluator import (  # noqa: E402
     compare_performance,
 )
 from src.framework.generated_benchmark import sha256_file  # noqa: E402
+from src.framework.config import FrameworkConfig  # noqa: E402
+from src.framework.replay import reconstruct_frozen_workspaces  # noqa: E402
 
 
 VERSION_LABELS = {
@@ -75,10 +78,6 @@ def resolve_inputs(artifact_dir: Path, run_number: int) -> dict[str, Any]:
         "human_fix": artifact_dir / "human_fix" / "workspace",
         "deepseek_fix": artifact_dir / f"run_{run_number:02d}" / "workspace",
     }
-    missing = [str(path) for path in workspaces.values() if not path.is_dir()]
-    if missing:
-        raise FileNotFoundError("找不到待复测 workspace:\n" + "\n".join(missing))
-
     python = PROJECT_ROOT / ".venv" / "bin" / "python"
     if not python.is_file():
         raise FileNotFoundError(f"找不到项目虚拟环境 Python: {python}")
@@ -276,6 +275,12 @@ def main() -> int:
         description="使用冻结 benchmark 复测 Baseline、Human Fix 和 DeepSeek Fix；不调用 LLM。"
     )
     parser.add_argument("--artifacts", type=Path, required=True, help="一次完整 E2E 实验目录")
+    parser.add_argument(
+        "--config",
+        type=Path,
+        default=PROJECT_ROOT / "config" / "more_itertools_triplewise_auto_e2e.yaml",
+        help="用于在 workspace 已清理时重建三个冻结版本",
+    )
     parser.add_argument("--run-number", type=int, default=1, help="要复测的 DeepSeek run，默认 1")
     parser.add_argument(
         "--timeout-seconds", type=int, default=1800, help="每个测量命令的超时秒数"
@@ -301,6 +306,16 @@ def main() -> int:
 
     started = time.perf_counter()
     output_dir = create_output_dir(inputs["artifact_dir"])
+    reconstructed = False
+    if not all(path.is_dir() for path in inputs["workspaces"].values()):
+        config = FrameworkConfig.load(args.config, PROJECT_ROOT)
+        inputs["workspaces"] = reconstruct_frozen_workspaces(
+            artifact_dir=inputs["artifact_dir"],
+            config=config,
+            destination=output_dir / "reconstructed_workspaces",
+            run_number=args.run_number,
+        )
+        reconstructed = True
     evaluator = Evaluator(args.timeout_seconds, inputs["primary_benchmark"])
     measured: dict[str, tuple[PerformanceResult, ResourceResult]] = {}
     for name, workspace in inputs["workspaces"].items():
@@ -332,6 +347,7 @@ def main() -> int:
         "primary_benchmark": inputs["primary_benchmark"],
         "frozen_workload": inputs["freeze"].get("workload"),
         "run_number": args.run_number,
+        "workspaces_reconstructed": reconstructed,
         "elapsed_seconds": time.perf_counter() - started,
         "environment": {
             "platform": platform.platform(),
@@ -350,6 +366,8 @@ def main() -> int:
     }
     write_json(output_dir / "summary.json", summary)
     (output_dir / "REPORT_ZH.md").write_text(render_report(summary), encoding="utf-8")
+    if reconstructed:
+        shutil.rmtree(output_dir / "reconstructed_workspaces")
 
     print(f"[Complete] retest artifacts: {output_dir}", flush=True)
     print(f"Summary: {output_dir / 'summary.json'}", flush=True)

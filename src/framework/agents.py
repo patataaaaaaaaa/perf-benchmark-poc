@@ -46,6 +46,15 @@ class FrameworkAgents:
         self.benchmark_repair_template = (
             prompts_root / "repair_framework_benchmark.txt"
         ).read_text(encoding="utf-8")
+        self.repository_workload_selection_template = (
+            prompts_root / "select_repository_workload.txt"
+        ).read_text(encoding="utf-8")
+        self.repository_workload_template = (
+            prompts_root / "generate_repository_workload.txt"
+        ).read_text(encoding="utf-8")
+        self.repository_workload_repair_template = (
+            prompts_root / "repair_repository_workload.txt"
+        ).read_text(encoding="utf-8")
 
     def _complete(self, prompt: str, system_prompt: str) -> AgentOutput:
         completion = self.client.complete(prompt, system_prompt=system_prompt)
@@ -94,6 +103,71 @@ class FrameworkAgents:
         output = self._complete(
             prompt,
             "You repair a Python pyperf benchmark from concrete validation evidence. Preserve the workload intent and required module contract.",
+        )
+        return output, extract_python_code(output.content)
+
+    def select_repository_workload(
+        self,
+        *,
+        repository_overview: str,
+        scenario_catalog: str,
+    ) -> AgentOutput:
+        prompt = self.repository_workload_selection_template.format(
+            repository_overview=repository_overview,
+            scenario_catalog=scenario_catalog,
+        )
+        return self._complete(
+            prompt,
+            "You select one evidence-backed, representative Python workload scenario without being told an optimization target.",
+        )
+
+    def generate_repository_workload(
+        self,
+        *,
+        repository_overview: str,
+        source_path: str,
+        source_symbol: str,
+        imports_context: str,
+        scenario_source: str,
+        selection_reason: str,
+    ) -> tuple[AgentOutput, str]:
+        prompt = self.repository_workload_template.format(
+            repository_overview=repository_overview,
+            source_path=source_path,
+            source_symbol=source_symbol,
+            imports_context=imports_context,
+            scenario_source=scenario_source,
+            selection_reason=selection_reason,
+        )
+        output = self._complete(
+            prompt,
+            "You generate a reproducible repository-level workload from repository-owned evidence. No target function has been preselected.",
+        )
+        return output, extract_python_code(output.content)
+
+    def repair_repository_workload(
+        self,
+        *,
+        repository_overview: str,
+        source_path: str,
+        source_symbol: str,
+        imports_context: str,
+        scenario_source: str,
+        benchmark_code: str,
+        failure: dict[str, Any],
+    ) -> tuple[AgentOutput, str]:
+        prompt = self.repository_workload_repair_template.format(
+            repository_overview=repository_overview,
+            source_path=source_path,
+            source_symbol=source_symbol,
+            imports_context=imports_context,
+            scenario_source=scenario_source,
+            benchmark_code=benchmark_code,
+            failure=failure,
+        )
+        output = self._complete(
+            prompt,
+            "You repair a repository-derived workload using concrete validation evidence. Do not assume or invent an optimization target.",
         )
         return output, extract_python_code(output.content)
 

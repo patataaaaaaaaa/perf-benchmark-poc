@@ -1,0 +1,83 @@
+task_id: more_itertools_triplewise_889
+repository_url: https://github.com/more-itertools/more-itertools.git
+repository_cache: .cache/repositories
+baseline_commit: b87f67bbbfa488cf56bd86e7b64eb3e8118c34bc
+human_fix_commit: 7ddf9d26014fa576b8601c6d631d3670668eab06
+
+# 不提供 target_file 或 target_symbol。框架先执行 workload，再根据 profiler
+# 第一热点确定本次允许修改的唯一源码文件和目标函数。
+target_mode: auto
+hotspot_discovery:
+  harness: subjects/more_itertools
+  command:
+    - python
+    - -m
+    - cProfile
+    - -o
+    - /artifacts/profile.prof
+    - /harness/profile_triplewise_workload.py
+    - --size
+    - "1000000"
+  image: python:3.11-slim
+  limit: 5
+  cpus: 1.0
+  memory: 512m
+  pids: 64
+  timeout_seconds: 120
+  max_output_bytes: 1000000
+  # 只在排名完成后验收，既不参与排名，也不会替代自动选择结果。
+  validation_expected_symbol: more_itertools.recipes.triplewise
+
+execution_sandbox:
+  enabled: true
+  image: perf-benchmark-sandbox:py311-v1
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 900
+  max_output_bytes: 2000000
+
+context_files:
+  - tests/test_recipes.py
+
+targeted_test_command:
+  - "{python}"
+  - -m
+  - unittest
+  - tests.test_recipes.TriplewiseTests
+  - -v
+full_test_command:
+  - "{python}"
+  - -m
+  - unittest
+invariant_test_command:
+  - "{python}"
+  - "{project_root}/subjects/more_itertools/check_triplewise.py"
+
+benchmark_mode: generated
+benchmark_generation_max_repairs: 3
+benchmark_fast_mode: true
+
+# 与热点发现阶段相同的完整执行场景。目标函数 microbenchmark 和这项原始
+# workload 都达到最低提升后，候选补丁才会被接受。
+original_workload_command:
+  - "{python}"
+  - "{project_root}/subjects/more_itertools/bench_original_workload.py"
+  - --size
+  - "1000000"
+  - --fast
+  - -o
+  - "{output}"
+
+# 这里只做一次低成本的端到端接线验证。
+experiment_runs: 1
+max_iterations: 1
+no_improvement_limit: 1
+min_speedup_percent: 3.0
+min_workload_speedup_percent: 3.0
+require_significance: false
+timeout_seconds: 900
+temperature: 0
+model: deepseek-v4-pro
+artifacts_root: artifacts/more_itertools_triplewise_auto_e2e
+keep_workspaces: false

@@ -235,25 +235,43 @@ def assert_hashes_unchanged(
 
 def extract_symbol_context(source: str, qualified_symbol: str) -> str:
     tree = ast.parse(source)
-    symbol = qualified_symbol.rsplit(".", 1)[-1]
+    symbol_parts = qualified_symbol.split(".")
+    symbol = symbol_parts[-1]
     imports = [
         ast.get_source_segment(source, node)
         for node in tree.body
         if isinstance(node, (ast.Import, ast.ImportFrom))
     ]
-    target = next(
-        (
-            node
-            for node in ast.walk(tree)
-            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
-            and node.name == symbol
-        ),
-        None,
-    )
+    candidates: list[
+        tuple[tuple[str, ...], ast.FunctionDef | ast.AsyncFunctionDef]
+    ] = []
+
+    def visit(nodes: list[ast.stmt], classes: tuple[str, ...]) -> None:
+        for node in nodes:
+            if isinstance(node, ast.ClassDef):
+                visit(node.body, (*classes, node.name))
+            elif isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                if node.name == symbol:
+                    candidates.append(((*classes, node.name), node))
+
+    visit(tree.body, ())
+    suffixes = [
+        (parts, node)
+        for parts, node in candidates
+        if len(parts) <= len(symbol_parts)
+        and tuple(symbol_parts[-len(parts) :]) == parts
+    ]
+    target_entry = max(suffixes, key=lambda item: len(item[0]), default=None)
+    target = target_entry[1] if target_entry else None
     if target is None:
         raise ValueError(f"Unable to find target function {qualified_symbol}")
     function_source = ast.get_source_segment(source, target)
-    return "\n".join(value for value in [*imports, function_source] if value)
+    enclosing = ".".join(target_entry[0]) if target_entry else symbol
+    return "\n".join(
+        value
+        for value in [*imports, f"# Enclosing symbol: {enclosing}", function_source]
+        if value
+    )
 
 
 def extract_matching_context(source: str, needle: str, radius: int = 12) -> str:

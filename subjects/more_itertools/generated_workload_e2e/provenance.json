@@ -1,0 +1,14 @@
+{
+  "source_artifact": "artifacts/workload_builder/20260919_205005_233057",
+  "source_kind": "existing_test+llm_adapted",
+  "source_path": "tests/test_recipes.py",
+  "source_symbol": "TriplewiseTests",
+  "model": "deepseek-v4-pro",
+  "automatic_validation_passed": true,
+  "dynamic_target_hit_passed": true,
+  "profiler_top1_repetitions": 3,
+  "profiler_top1_matches": 3,
+  "human_confirmed": false,
+  "experiment_locked": true,
+  "script_sha256": "a629eb20923de075712d0b72d562e8c21927a49d6352ff159b99ab45ee7653d9"
+}

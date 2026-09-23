@@ -1,0 +1,93 @@
+task_id: cpython_urllib_auto_memory_e2e
+repository: .cache/task_repositories/cpython_urllib
+baseline_commit: 1bb68ba6d9de6bb7f00aee11d135123163f15887
+human_fix_commit: 2e279e85fece187b6058718ac7e82d1692461e26
+
+# No target file or symbol is provided. Classification and routed profiler
+# evidence must resolve the target before DeepSeek is called.
+target_mode: auto
+hotspot_discovery:
+  harness: subjects/cpython_urllib
+  classification_command:
+    - python
+    - /subjects/cpython_urllib/measure_unquote.py
+    - --repeat-count
+    - "{size}"
+    - --output
+    - "{output}"
+  classification_sizes:
+    - 20000
+    - 200000
+  image: perf-benchmark-sandbox:py311-v1
+  limit: 5
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 180
+  max_output_bytes: 1000000
+  validation_expected_symbol: urllib.parse.unquote_to_bytes
+
+execution_sandbox:
+  enabled: true
+  image: perf-benchmark-sandbox:py311-v1
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 900
+  max_output_bytes: 2000000
+
+profiler_callback:
+  module: subjects/cpython_urllib/profile_unquote_memory.py
+  limit: 8
+  frames: 10
+
+context_files:
+  - task_tests/test_parse.py
+targeted_test_command:
+  - "{python}"
+  - -m
+  - unittest
+  - task_tests.test_parse.UnquoteToBytesTests
+  - -v
+full_test_command:
+  - "{python}"
+  - -m
+  - unittest
+  - discover
+  - -s
+  - task_tests
+  - -v
+invariant_test_command:
+  - "{python}"
+  - "{project_root}/subjects/cpython_urllib/check_unquote_behavior.py"
+
+benchmark_mode: fixed
+benchmark_command:
+  - "{python}"
+  - "{project_root}/subjects/cpython_urllib/bench_unquote.py"
+  - --repeat-count
+  - "200000"
+  - -o
+  - "{output}"
+resource_command:
+  - "{python}"
+  - "{project_root}/subjects/cpython_urllib/measure_unquote.py"
+  - --repeat-count
+  - "200000"
+  - --output
+  - "{output}"
+primary_benchmark: unquote_to_bytes_large
+
+optimization_objective: memory
+experiment_runs: 1
+max_iterations: 3
+no_improvement_limit: 3
+min_speedup_percent: 0.0
+min_memory_reduction_percent: 30.0
+max_runtime_regression_percent: 25.0
+require_significance: false
+timeout_seconds: 900
+temperature: 0
+model: deepseek-v4-pro
+artifacts_root: artifacts/cpython_urllib_auto_memory_e2e
+keep_workspaces: false

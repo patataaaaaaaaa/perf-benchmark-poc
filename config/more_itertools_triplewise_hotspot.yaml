@@ -1,0 +1,40 @@
+task_id: more_itertools_triplewise_889
+repository_url: https://github.com/more-itertools/more-itertools.git
+repository_cache: .cache/repositories
+baseline_commit: b87f67bbbfa488cf56bd86e7b64eb3e8118c34bc
+
+profile_command:
+  - "{python}"
+  - -m
+  - cProfile
+  - -o
+  - "{output}"
+  - "{project_root}/subjects/more_itertools/profile_triplewise_workload.py"
+  - --size
+  - "1000000"
+
+sandbox:
+  enabled: true
+  image: python:3.11-slim
+  harness: subjects/more_itertools
+  command:
+    - python
+    - -m
+    - cProfile
+    - -o
+    - /artifacts/profile.prof
+    - /harness/profile_triplewise_workload.py
+    - --size
+    - "1000000"
+  cpus: 1.0
+  memory: 512m
+  pids: 64
+  timeout_seconds: 120
+  max_output_bytes: 1000000
+
+hotspot_limit: 5
+timeout_seconds: 120
+artifacts_root: artifacts/hotspot_discovery
+
+# 该字段只在 profiler 排名完成后用于验收，不参与运行、筛选或排名。
+validation_expected_symbol: more_itertools.recipes.triplewise

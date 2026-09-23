@@ -1,0 +1,50 @@
+diff --git a/Lib/urllib/parse.py b/Lib/urllib/parse.py
+index 4f6867a..135975d 100644
+--- a/Lib/urllib/parse.py
++++ b/Lib/urllib/parse.py
+@@ -608,25 +608,35 @@ def unquote_to_bytes(string):
+         return b''
+     if isinstance(string, str):
+         string = string.encode('utf-8')
+-    bits = string.split(b'%')
+-    if len(bits) == 1:
++    if string.find(b'%') == -1:
+         return string
+-    res = [bits[0]]
+-    append = res.append
+     # Delay the initialization of the table to not waste memory
+     # if the function is never called
+     global _hextobyte
+     if _hextobyte is None:
+         _hextobyte = {(a + b).encode(): bytes.fromhex(a + b)
+                       for a in _hexdig for b in _hexdig}
+-    for item in bits[1:]:
++    out = bytearray()
++    start = 0
++
++    while True:
++        pct = string.find(b'%', start)
++        if pct < 0:
++            out.extend(string[start:])
++            break
++
++        out.extend(string[start:pct])
++
+         try:
+-            append(_hextobyte[item[:2]])
+-            append(item[2:])
++            decoded = _hextobyte[string[pct + 1:pct + 3]]
+         except KeyError:
+-            append(b'%')
+-            append(item)
+-    return b''.join(res)
++            out.extend(b'%')
++            start = pct + 1
++        else:
++            out.extend(decoded)
++            start = pct + 3
++
++    return bytes(out)
+ 
+ _asciire = re.compile('([\x00-\x7f]+)')
+ 

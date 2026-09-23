@@ -72,11 +72,23 @@ class RepositoryManager:
     def checkout(self, destination: Path, ref: str | None) -> str:
         source = self.prepare()
         if destination.exists():
-            shutil.rmtree(destination)
+            raise FileExistsError(
+                f"Refusing to replace an existing experiment workspace: {destination}"
+            )
         destination.parent.mkdir(parents=True, exist_ok=True)
 
         if (source / ".git").is_dir():
-            _git(["clone", "--shared", "--no-checkout", str(source), str(destination)])
+            # Do not use --shared here. Shared clones retain an alternates link to
+            # the cache and can become unreadable after cache cleanup or git gc.
+            _git(
+                [
+                    "clone",
+                    "--no-hardlinks",
+                    "--no-checkout",
+                    str(source),
+                    str(destination),
+                ]
+            )
             resolved = self.resolve(source, ref)
             internal_ref = self._ref_map(source).get(ref or "", resolved)
             _git(["checkout", "--detach", internal_ref], destination)

@@ -1,0 +1,32 @@
+Repair a repository-derived pyperf workload using the concrete failure below.
+No optimization target has been selected. Preserve the selected repository
+scenario rather than switching to an easier API.
+
+Repository overview:
+{repository_overview}
+
+Selected evidence: {source_path}::{source_symbol}
+
+Relevant imports:
+```python
+{imports_context}
+```
+
+Repository scenario:
+```python
+{scenario_source}
+```
+
+Current workload:
+```python
+{benchmark_code}
+```
+
+Validation failure:
+{failure}
+
+Keep the SOURCE_EVIDENCE, WORKLOAD_DESCRIPTION, SELECTION_RATIONALE,
+PRIMARY_BENCHMARK, get_cases(), deterministic expected-positive-integer result,
+fresh inputs, real repository execution, and one-pyperf.Runner contracts.
+Do not copy project implementation or invent a target function.
+Return only the complete corrected Python source in one python code block.

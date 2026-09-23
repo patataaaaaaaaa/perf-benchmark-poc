@@ -4,7 +4,7 @@ import hashlib
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 from src.framework.evaluator import CommandResult, run_command
 
@@ -51,23 +51,35 @@ def validate_generated_benchmark(
     project_root: Path,
     timeout_seconds: int,
     fast_mode: bool,
+    command_runner: Callable[
+        [tuple[str, ...] | list[str], Path, Path], CommandResult
+    ] | None = None,
 ) -> GeneratedBenchmarkValidation:
+    def execute(command: tuple[str, ...] | list[str]) -> CommandResult:
+        if command_runner:
+            return command_runner(command, workspace, result_path.parent)
+        return run_command(command, workspace, timeout_seconds)
+
     commands: dict[str, CommandResult] = {}
-    commands["syntax"] = run_command(
-        (python, "-m", "py_compile", str(benchmark_path)), workspace, timeout_seconds
+    commands["syntax"] = execute(
+        (
+            python,
+            "-c",
+            "import pathlib,sys; p=pathlib.Path(sys.argv[1]); "
+            "compile(p.read_text(encoding='utf-8'), str(p), 'exec')",
+            str(benchmark_path),
+        )
     )
     if not commands["syntax"].passed:
         return GeneratedBenchmarkValidation(False, "syntax", None, None, commands)
 
-    commands["contract"] = run_command(
+    commands["contract"] = execute(
         (
             python,
             str(project_root / "scripts" / "validate_generated_benchmark.py"),
             str(benchmark_path),
             target_symbol,
         ),
-        workspace,
-        timeout_seconds,
     )
     if not commands["contract"].passed:
         return GeneratedBenchmarkValidation(False, "contract", None, None, commands)
@@ -88,7 +100,7 @@ def validate_generated_benchmark(
     if fast_mode:
         runtime_command.append("--fast")
     runtime_command.extend(["-o", str(result_path)])
-    commands["runtime"] = run_command(runtime_command, workspace, timeout_seconds)
+    commands["runtime"] = execute(runtime_command)
     if not commands["runtime"].passed or not result_path.is_file():
         return GeneratedBenchmarkValidation(False, "runtime", primary, workload, commands)
     return GeneratedBenchmarkValidation(True, "complete", primary, workload, commands)

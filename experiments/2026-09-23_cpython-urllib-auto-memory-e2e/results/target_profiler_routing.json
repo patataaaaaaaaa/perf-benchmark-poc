@@ -1,0 +1,20 @@
+{
+  "executed_profilers": [
+    "tracemalloc"
+  ],
+  "execution_applied": true,
+  "mode": "target_selection",
+  "optimization_decision_impact": true,
+  "reason": "分类为 memory，选择 tracemalloc 收集对应热点证据",
+  "selected_profilers": [
+    {
+      "evidence_type": "python_allocation_top_n",
+      "implementation_status": "ready_parser",
+      "name": "tracemalloc"
+    }
+  ],
+  "selection_applied": true,
+  "status": "COMPLETE",
+  "target_selection_profiler": "tracemalloc",
+  "task_type": "memory"
+}
