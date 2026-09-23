@@ -31,7 +31,7 @@
 
 CPython `urllib` 内存任务已经完整验证该入口。框架自动选择
 `urllib.parse.unquote_to_bytes`，3 个候选全部功能正确，其中 1 个被接受；冻结结果的
-无 LLM 复测显示 tracemalloc 峰值下降 95.47%，pyperf 中位运行时间改善 4.98%。
+无 LLM 复测显示 tracemalloc 峰值下降 95.47%，pyperf 中位运行时间改善 3.02%。
 精简证据见
 [`experiments/2026-09-23_cpython-urllib-auto-memory-e2e/`](experiments/2026-09-23_cpython-urllib-auto-memory-e2e/)。
 
