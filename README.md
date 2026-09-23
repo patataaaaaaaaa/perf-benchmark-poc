@@ -257,7 +257,8 @@ YYYY-MM-DD_项目或阶段_目标或实验目的
 - 汇总数据及必要的环境信息；
 - 结论边界和下一步计划。
 
-详见 [`experiments/README.md`](experiments/README.md)。
+正式实验汇总见 [`experiments/REPORT_ZH.md`](experiments/REPORT_ZH.md)，归档规则见
+[`experiments/README.md`](experiments/README.md)。
 
 ## 当前边界
 
@@ -368,8 +369,9 @@ set +a
 当前已完成两个真实任务：从 More-itertools testcase 派生 `triplewise()` workload，
 以及从 attrs 已有 benchmark 派生 `attrs.asdict()` workload。两项修正后都连续三次
 定位到与参考场景相同的 Top 1。派生脚本只是自动验收通过的候选，尚未经过人工代表性
-确认，不能直接称为真实业务 workload。过程记录见
-[`EXPERIMENT_EVOLUTION_ZH.md`](EXPERIMENT_EVOLUTION_ZH.md)。
+确认，不能直接称为真实业务 workload。中间验证和框架演进过程见
+[`EXPERIMENT_EVOLUTION_ZH.md`](EXPERIMENT_EVOLUTION_ZH.md)；正式实验结果以
+[`experiments/REPORT_ZH.md`](experiments/REPORT_ZH.md)为准。
 
 人工审阅脚本内容和 `workload_spec.json` 后，可以用以下显式命令冻结；必须填写
 完全匹配的脚本 SHA-256，命令不会修改原候选：

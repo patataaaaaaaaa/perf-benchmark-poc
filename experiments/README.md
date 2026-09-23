@@ -2,6 +2,10 @@
 
 这个目录保存适合 Git 提交、代码审查和阶段汇报的精简实验材料。完整的模型响应、临时 workspace 和所有运行日志仍保存在本机 `artifacts/` 中，不直接提交到仓库。
 
+正式实验文稿见 [`REPORT_ZH.md`](REPORT_ZH.md)。其中每个二级标题与本目录下的一个
+实验文件夹严格一一对应。框架开发过程中的中间验证统一记录在仓库根目录的
+[`EXPERIMENT_EVOLUTION_ZH.md`](../EXPERIMENT_EVOLUTION_ZH.md)，不再混作正式实验目录。
+
 ## 命名规则
 
 ```text
