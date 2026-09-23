@@ -1,0 +1,29 @@
+task_id: more_itertools_repository_autonomous
+repository_url: https://github.com/more-itertools/more-itertools.git
+baseline_commit: b87f67bbbfa488cf56bd86e7b64eb3e8118c34bc
+
+workload_discovery:
+  file_limit: 50
+  scenario_limit: 200
+  max_repairs: 3
+
+target_mode: auto
+execution_sandbox:
+  enabled: true
+  image: perf-benchmark-sandbox:py311-v1
+  cpus: 1.0
+  memory: 1g
+  pids: 128
+  timeout_seconds: 900
+
+targeted_test_command: ["{python}", -m, unittest]
+full_test_command: ["{python}", -m, unittest]
+experiment_runs: 1
+max_iterations: 3
+no_improvement_limit: 2
+optimization_objective: runtime
+min_speedup_percent: 3.0
+require_significance: true
+temperature: 0
+model: deepseek-v4-pro
+keep_workspaces: false

@@ -1,0 +1,19 @@
+--- a/more_itertools/more.py
++++ b/more_itertools/more.py
+@@ -329,6 +329,8 @@ class peekable:
+     def __init__(self, iterable):
+         self._it = iter(iterable)
+         self._cache = deque()
++        self._cache_popleft = self._cache.popleft
++        self._next = self._it.__next__
+ 
+     def __iter__(self):
+         return self
+@@ -390,5 +392,5 @@ class peekable:
+     def __next__(self):
+         if self._cache:
+-            return self._cache.popleft()
++            return self._cache_popleft()
+ 
+-        return next(self._it)
++        return self._next()

@@ -1,0 +1,11 @@
+--- a/more_itertools/more.py
++++ b/more_itertools/more.py
+@@ -390,5 +390,6 @@
+     def __next__(self):
+-        if self._cache:
+-            return self._cache.popleft()
++        cache = self._cache
++        if cache:
++            return cache.popleft()
+ 
+         return next(self._it)

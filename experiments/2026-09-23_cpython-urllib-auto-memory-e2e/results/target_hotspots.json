@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "1bb68ba6d9de6bb7f00aee11d135123163f15887",
+  "profile_format": "tracemalloc_snapshot",
+  "ranking_metric": "size_bytes",
+  "task_type": "memory",
+  "selection": {
+    "expected_symbol_used_for_selection": false,
+    "strategy": "routed_profiler_top_1",
+    "profiler": "tracemalloc",
+    "target_file": "Lib/urllib/parse.py",
+    "target_symbol": "urllib.parse.unquote_to_bytes"
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "file": "Lib/urllib/parse.py",
+      "line": 629,
+      "qualified_name": "urllib.parse.unquote_to_bytes",
+      "source_line": "return b''.join(res)",
+      "allocation_count": 1,
+      "size_bytes": 1200033,
+      "size_percent": 97.13555136265289
+    },
+    {
+      "rank": 2,
+      "file": "Lib/urllib/parse.py",
+      "line": 620,
+      "qualified_name": "urllib.parse.unquote_to_bytes",
+      "source_line": "_hextobyte = {(a + b).encode(): bytes.fromhex(a + b)",
+      "allocation_count": 485,
+      "size_bytes": 35388,
+      "size_percent": 2.8644486373471065
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "b87f67bbbfa488cf56bd86e7b64eb3e8118c34bc",
+  "profile_format": "cProfile",
+  "ranking_metric": "self_time_seconds",
+  "selection": {
+    "expected_symbol_used_for_selection": false,
+    "strategy": "top_self_time",
+    "target_file": "more_itertools/more.py",
+    "target_symbol": "more_itertools.more.peekable.__next__"
+  },
+  "hotspots": [
+    {
+      "rank": 1,
+      "qualified_name": "more_itertools.more.peekable.__next__",
+      "file": "more_itertools/more.py",
+      "line": 390,
+      "primitive_calls": 20001,
+      "total_calls": 20001,
+      "self_time_seconds": 0.002787771,
+      "cumulative_time_seconds": 0.003367746,
+      "self_time_percent": 48.151523944742095
+    },
+    {
+      "rank": 2,
+      "qualified_name": "more_itertools.more.peekable.__getitem__",
+      "file": "more_itertools/more.py",
+      "line": 422,
+      "primitive_calls": 7,
+      "total_calls": 7,
+      "self_time_seconds": 0.00000671,
+      "cumulative_time_seconds": 0.000154194,
+      "self_time_percent": 0.11589787169362888
+    }
+  ]
+}

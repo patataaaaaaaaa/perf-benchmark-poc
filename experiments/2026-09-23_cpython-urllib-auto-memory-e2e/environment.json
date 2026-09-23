@@ -1,0 +1,19 @@
+{
+  "cpu_affinity": "0-31",
+  "cpu_frequency_mhz": {
+    "current_at_capture": 3012.4840625,
+    "max": 4937.5,
+    "min": 800.0
+  },
+  "linux_no_turbo": "0",
+  "linux_scaling_governor": "powersave",
+  "logical_cpu_count": 32,
+  "machine": "x86_64",
+  "memory_total_bytes": 134739013632,
+  "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+  "psutil_version": "7.2.2",
+  "pyperf_version": "2.10.0",
+  "controller_python": "3.10.12",
+  "sandbox_python": "3.11",
+  "timestamp_utc": "2026-09-23T00:46:48.530701+00:00"
+}

@@ -24,6 +24,7 @@
 - `scripts/validate_sandbox.py`
 - `subjects/sandbox_checks/`
 - `tests/test_sandbox.py`
+- `results/summary.json`：脱敏后的机器可读负向验证结果。
 
 ## 结论与边界
 

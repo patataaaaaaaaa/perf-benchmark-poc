@@ -28,7 +28,28 @@
 - `results/best.patch`：冻结补丁。
 - `results/target_classification.json`：DeepSeek 调用前的多规模分类证据。
 - `results/target_profiler_routing.json`：实际参与目标选择的 profiler 路由。
+- `results/target_hotspots.json`：tracemalloc 自动定位出的项目内存分配 Top N。
+- `results/release_manifest.json`：冻结补丁哈希、目标和接受证据。
+- `environment.json`：脱敏后的正式测量环境。
+- `inputs/manifest.json`：配置、workload、benchmark 与行为检查的 SHA-256。
 - `results/RETEST_REPORT_ZH.md`：无 LLM 独立标准复测。
+
+## 复原方式
+
+输入脚本保存在仓库 `subjects/cpython_urllib/`，`inputs/manifest.json` 可用于确认文件没有
+变化。准备固定历史任务仓库后，可执行：
+
+```bash
+.venv/bin/python scripts/prepare_urllib_task_repository.py
+set -a
+source .env
+set +a
+.venv/bin/python scripts/run_framework.py \
+  --config experiments/2026-09-23_cpython-urllib-auto-memory-e2e/config.yaml
+```
+
+该命令会调用 DeepSeek 并产生新的候选；若只复核冻结结果，应使用仓库中的复测脚本，
+避免把重新生成与结果复现混在一起。
 
 完整原始证据保存在本机 `artifacts/cpython_urllib_auto_memory_e2e/20260923_084643_204419/`，
 默认不提交 Git。

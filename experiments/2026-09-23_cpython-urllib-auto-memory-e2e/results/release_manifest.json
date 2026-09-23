@@ -1,0 +1,17 @@
+{
+  "status": "READY_FOR_REVIEW",
+  "run": 1,
+  "accepted_iterations": [1],
+  "baseline_commit": "1bb68ba6d9de6bb7f00aee11d135123163f15887",
+  "target_file": "Lib/urllib/parse.py",
+  "target_symbol": "urllib.parse.unquote_to_bytes",
+  "optimization_objective": "memory",
+  "patch": "best.patch",
+  "patch_sha256": "dc706e3c761f790692c4e49dd44afb01f4d815749e2f040df2c372d4185e4a2b",
+  "framework_measurement": {
+    "baseline_tracemalloc_peak_bytes": 106010004,
+    "candidate_tracemalloc_peak_bytes": 4800033,
+    "memory_reduction_percent": 95.47209431291031
+  },
+  "publication_policy": "Review and explicitly promote this patch to a clean target branch; the framework never merges or pushes automatically."
+}

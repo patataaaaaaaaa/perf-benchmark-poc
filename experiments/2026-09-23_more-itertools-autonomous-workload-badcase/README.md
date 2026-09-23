@@ -50,6 +50,18 @@
 
 ## 证据位置
 
+仓库内已提交的复核材料：
+
+- `config.yaml`：仓库级自主入口配置快照。
+- `workload/generated_workload.py`：DeepSeek 最终生成并通过验收的真实脚本。
+- `workload/selection.json`：模型选择 `PeekableTests` 的理由。
+- `workload/validation_summary.json`：正确结果、动态仓库命中和 workload Top N。
+- `results/hotspots.json`：修复类方法名称后，实际用于优化目标选择的 Top N。
+- `results/candidates.csv`：两轮候选的功能和性能决定。
+- `results/iteration_01.patch`、`iteration_02.patch`：两个功能正确但变慢的补丁。
+- `results/summary.json`：脱敏后的全入口摘要。
+- `environment.json`：正式测量环境。
+
 服务器项目内的原始记录：
 
 - `artifacts/more_itertools_repository_autonomous_e2e/20260923_102459_372669/`

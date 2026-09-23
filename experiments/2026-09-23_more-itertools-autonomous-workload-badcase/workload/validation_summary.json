@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "attempt": 2,
+  "workload_sha256": "97b0dcc62e2fdafcbd86ef339a59aeb1bf96c6cf894ee8ac233ea58ac345e417",
+  "primary_benchmark": "peekable_indexing",
+  "cases": [
+    {"name": "peekable_indexing", "expected_result": 20000},
+    {"name": "peekable_slicing", "expected_result": 70109},
+    {"name": "prepend_many", "expected_result": 20005}
+  ],
+  "repository_hit_count": 6,
+  "production_hits": [
+    "more_itertools.more.peekable.__getitem__",
+    "more_itertools.more.peekable.__init__",
+    "more_itertools.more.peekable.__iter__",
+    "more_itertools.more.peekable.__next__",
+    "more_itertools.more.peekable._get_slice",
+    "more_itertools.more.peekable.prepend"
+  ],
+  "automatic_validation": [
+    "syntax",
+    "workload contract",
+    "expected results",
+    "dynamic repository-code hit",
+    "pyperf execution",
+    "cProfile execution"
+  ]
+}

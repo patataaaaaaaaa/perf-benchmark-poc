@@ -1,0 +1,10 @@
+{
+  "scanned_scenario_count": 150,
+  "scenario_id": "existing_test:tests/test_more.py::PeekableTests",
+  "source": "existing_test",
+  "assertion_count": 62,
+  "reason": "It is a deterministic, user-facing test class for core peekable/prepend behavior with many assertions, no randomness, sleeps, filesystem, or network access, and it exercises iterator operations that can be scaled by increasing input sizes.",
+  "model": "deepseek-v4-pro",
+  "oracle_symbol_supplied": false,
+  "human_confirmed": false
+}

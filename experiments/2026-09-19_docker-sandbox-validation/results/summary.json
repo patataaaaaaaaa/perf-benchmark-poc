@@ -1,0 +1,30 @@
+{
+  "image": "python:3.11-slim",
+  "passed": true,
+  "checks": {
+    "restrictions": {
+      "passed": true,
+      "deepseek_key_visible": false,
+      "has_default_route": false,
+      "network_blocked": true,
+      "non_root": true,
+      "uid": 65534,
+      "workspace_read_only": true
+    },
+    "timeout": {
+      "passed": true,
+      "return_code": 124,
+      "timed_out": true
+    },
+    "memory": {
+      "passed": true,
+      "return_code": 137,
+      "timed_out": false
+    }
+  },
+  "implementation": {
+    "dockerfile": "docker/sandbox.Dockerfile",
+    "runner": "src/framework/sandbox.py",
+    "validation_command": ".venv/bin/python scripts/validate_sandbox.py"
+  }
+}

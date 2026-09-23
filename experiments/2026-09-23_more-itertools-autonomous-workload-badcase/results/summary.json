@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETE",
+  "optimization_success": false,
+  "baseline_commit": "b87f67bbbfa488cf56bd86e7b64eb3e8118c34bc",
+  "model": "deepseek-v4-pro",
+  "repository_only_entry": true,
+  "scanned_scenario_count": 150,
+  "selected_scenario": "existing_test:tests/test_more.py::PeekableTests",
+  "workload_generation_attempts": 3,
+  "selected_target": "more_itertools.more.peekable.__next__",
+  "selected_file": "more_itertools/more.py",
+  "baseline_primary_median_seconds": 0.0014176084114296827,
+  "candidate_count": 2,
+  "functional_candidate_count": 2,
+  "accepted_candidate_count": 0,
+  "optimization_model_calls": 6,
+  "optimization_tokens": 48215,
+  "iterations": [
+    {
+      "iteration": 1,
+      "decision": "REJECT_PERFORMANCE",
+      "functional_passed": true,
+      "candidate_median_seconds": 0.0014657918945886195,
+      "speedup_percent": -3.398927571990268
+    },
+    {
+      "iteration": 2,
+      "decision": "REJECT_PERFORMANCE",
+      "functional_passed": true,
+      "candidate_median_seconds": 0.0016293204025714658,
+      "speedup_percent": -14.934448006573822
+    }
+  ],
+  "final_version": "baseline",
+  "best_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

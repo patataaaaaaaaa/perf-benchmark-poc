@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "1bb68ba6d9de6bb7f00aee11d135123163f15887",
+  "human_fix_commit": "2e279e85fece187b6058718ac7e82d1692461e26",
+  "files": {
+    "config/cpython_urllib_auto_memory_e2e.yaml": "00e17725614a0747c16e4e570f11d1b72bd6214a3ea605b4baf0eb29314d1d22",
+    "subjects/cpython_urllib/measure_unquote.py": "71b07b67036a52c7c27d9e87924016d9da8fdb9145ca8a98d1a42073dc745286",
+    "subjects/cpython_urllib/profile_unquote_memory.py": "28804f0411ca63cafee308c7a80f2eba20aa1928bc9c6a96d9b354795460c197",
+    "subjects/cpython_urllib/bench_unquote.py": "b28e1387a5526ae225d791b1f1d5252eae05bc10d5dbd18aeabee336e948768f",
+    "subjects/cpython_urllib/check_unquote_behavior.py": "a63d9b3c334b61ca165cfdad2c8d582c67660aec7b3e23db2bc2935a663497e6"
+  },
+  "workload": {
+    "input_pattern": "Ł%01š%20",
+    "classification_scales": [20000, 200000],
+    "measurement_repeat_count": 200000,
+    "expected_output_bytes": 1200000
+  }
+}
