@@ -18,6 +18,12 @@
 
 ## 当前支持的两个入口
 
+Java Agent 评测的独立入口正在 `scripts/run_benchllm_codex.py` 中接入：它读取
+BenchLLMRealSE PerfOpt 任务，通过 Codex CLI 调用 DeepSeek，让 Agent 在隔离工作区中
+直接修改 Java 源码，再由外部测试与 JMH 命令评分。使用说明见
+[`docs/BENCHLLM_CODEX_ZH.md`](docs/BENCHLLM_CODEX_ZH.md)。该入口不复用下文的 Python
+microbenchmark 生成流程。
+
 ### 入口一：给定可信 workload，不指定目标函数
 
 ```text
