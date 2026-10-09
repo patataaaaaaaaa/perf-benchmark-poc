@@ -35,6 +35,23 @@ def _split_paths(value: Any, *, field: str) -> tuple[str, ...]:
     return paths
 
 
+def _repository_relative_paths(
+    paths: Sequence[str], repository_name: str
+) -> tuple[str, ...]:
+    """Normalize dataset paths for a workspace rooted at the target repository."""
+    normalized: list[str] = []
+    for path in paths:
+        parts = PurePosixPath(path).parts
+        if parts and parts[0] == repository_name:
+            parts = parts[1:]
+        if not parts:
+            raise BenchLLMConfigurationError(
+                f"Task path must identify a file inside {repository_name}: {path!r}"
+            )
+        normalized.append(str(PurePosixPath(*parts)))
+    return tuple(normalized)
+
+
 @dataclass(frozen=True)
 class BenchLLMPerfOptTask:
     benchmark_root: Path
@@ -89,6 +106,8 @@ class BenchLLMPerfOptTask:
             raise BenchLLMConfigurationError(
                 f"PerfOpt commit_hash {fix_commit!r} does not match task id {commit_id!r}"
             )
+        source_paths = _split_paths(metadata.get("source_code"), field="source_code")
+        unit_test_paths = _split_paths(metadata.get("unittest"), field="unittest")
         return cls(
             benchmark_root=benchmark_root,
             repository_name=repository_name,
@@ -97,8 +116,8 @@ class BenchLLMPerfOptTask:
             prompt_number=prompt_number,
             prompt_path=prompt_path,
             metadata_path=metadata_path,
-            source_paths=_split_paths(metadata.get("source_code"), field="source_code"),
-            unit_test_paths=_split_paths(metadata.get("unittest"), field="unittest"),
+            source_paths=_repository_relative_paths(source_paths, repository_name),
+            unit_test_paths=_repository_relative_paths(unit_test_paths, repository_name),
             prompt=prompt_path.read_text(encoding="utf-8"),
         )
 
