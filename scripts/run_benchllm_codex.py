@@ -54,6 +54,10 @@ def parse_args() -> argparse.Namespace:
         help="Optional Codex config profile that selects the DeepSeek provider.",
     )
     parser.add_argument("--reasoning-effort")
+    parser.add_argument("--add-dir", action="append", default=[])
+    parser.add_argument("--expected-baseline", help="Parent commit for a parent-only checkout.")
+    parser.add_argument("--agent-test-command", help="Prepared offline test tool exposed to the agent.")
+    parser.add_argument("--agent-benchmark-command", help="Optional public performance tool.")
     parser.add_argument("--codex", default="codex", help="Codex CLI executable")
     parser.add_argument("--timeout-seconds", type=int, default=1200)
     parser.add_argument("--command-timeout-seconds", type=int, default=1200)
@@ -102,6 +106,7 @@ def main() -> int:
         reasoning_effort=args.reasoning_effort,
         timeout_seconds=args.timeout_seconds,
         command_timeout_seconds=args.command_timeout_seconds,
+        writable_roots=tuple(args.add_dir),
     )
     runner = CodexCLIRunner(config)
 
@@ -111,7 +116,7 @@ def main() -> int:
                 workspace=args.workspace,
                 allowed_paths=task.source_paths,
                 artifacts_dir=artifacts_dir,
-                expected_baseline_ref=f"{task.fix_commit}^",
+                expected_baseline_ref=args.expected_baseline or f"{task.fix_commit}^",
             )
         except Exception as exc:
             print(f"BenchLLMRealSE preflight failed: {type(exc).__name__}: {exc}", file=sys.stderr)
@@ -143,7 +148,15 @@ def main() -> int:
             artifacts_dir=artifacts_dir,
             verification_command=_command(args.verification_command),
             benchmark_command=_command(args.benchmark_command),
-            expected_baseline_ref=f"{task.fix_commit}^",
+            expected_baseline_ref=args.expected_baseline or f"{task.fix_commit}^",
+            tool_instructions="\n".join(
+                line for line in (
+                    "Prepared tools (dependencies are already available; do not download Gradle):",
+                    f"Correctness: {args.agent_test_command}" if args.agent_test_command else "",
+                    f"Public performance: {args.agent_benchmark_command}" if args.agent_benchmark_command else "",
+                    "These tools compile the CURRENT source before executing tests. You may use them autonomously.",
+                ) if line
+            ) if args.agent_test_command or args.agent_benchmark_command else "",
         )
     except Exception as exc:
         print(f"BenchLLMRealSE agent run failed: {type(exc).__name__}: {exc}", file=sys.stderr)

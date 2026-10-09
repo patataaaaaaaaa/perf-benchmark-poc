@@ -111,6 +111,7 @@ class CodexCLIConfig:
     reasoning_effort: str | None = None
     timeout_seconds: int = 1200
     command_timeout_seconds: int = 1200
+    writable_roots: tuple[str, ...] = ()
 
     def __post_init__(self) -> None:
         if not self.model.strip():
@@ -156,7 +157,9 @@ class CodexRunResult:
         return self.outcome in {"agent_completed", "verified", "succeeded"}
 
 
-def build_agent_prompt(task_prompt: str, allowed_paths: Sequence[str]) -> str:
+def build_agent_prompt(
+    task_prompt: str, allowed_paths: Sequence[str], tool_instructions: str = ""
+) -> str:
     allowed = "\n".join(f"- {path}" for path in allowed_paths)
     return f"""You are the coding agent under evaluation in a Java performance benchmark.
 
@@ -169,9 +172,12 @@ Experiment rules:
 - Do not modify tests, benchmark harnesses, build configuration, or evaluation scripts.
 - Do not commit changes.
 - You may run existing build and test commands to validate your work.
+- Do not inspect reference commits, other experiment workspaces, or saved solutions.
 - The task text was originally written for a single-turn patch generator. Ignore any request in it
   to return JSON, search/replace blocks, or a textual diff. Edit the files in the workspace instead.
 - Finish with a concise summary; the external harness, not you, decides whether the patch passes.
+
+{tool_instructions}
 
 <benchmark_task>
 {task_prompt}
@@ -285,6 +291,8 @@ class CodexCLIRunner:
         ]
         if self.config.profile:
             command.extend(["--profile", self.config.profile])
+        for root in self.config.writable_roots:
+            command.extend(["--add-dir", str(Path(root).resolve())])
         if self.config.reasoning_effort:
             command.extend(
                 [
@@ -433,6 +441,7 @@ class CodexCLIRunner:
         verification_command: Sequence[str] | None = None,
         benchmark_command: Sequence[str] | None = None,
         expected_baseline_ref: str | None = None,
+        tool_instructions: str = "",
     ) -> CodexRunResult:
         if benchmark_command and not verification_command:
             raise BenchLLMConfigurationError(
@@ -449,7 +458,7 @@ class CodexCLIRunner:
         normalized_allowed = checked["allowed_paths"]
         baseline_commit = checked["baseline_commit"]
         artifacts_dir.mkdir(parents=True, exist_ok=False)
-        prompt = build_agent_prompt(task_prompt, normalized_allowed)
+        prompt = build_agent_prompt(task_prompt, normalized_allowed, tool_instructions)
         (artifacts_dir / "prompt.txt").write_text(prompt, encoding="utf-8")
         last_message_path = artifacts_dir / "last_message.txt"
         events_path = artifacts_dir / "codex_events.jsonl"
@@ -461,22 +470,27 @@ class CodexCLIRunner:
         started = time.monotonic()
         timed_out = False
         try:
-            completed = subprocess.run(
-                command,
-                input=prompt,
-                text=True,
-                capture_output=True,
-                timeout=self.config.timeout_seconds,
-                check=False,
-            )
+            # Stream to disk so a detached run can be inspected while the agent works.
+            with events_path.open("w", encoding="utf-8") as events_file, stderr_path.open(
+                "w", encoding="utf-8"
+            ) as stderr_file:
+                completed = subprocess.run(
+                    command,
+                    input=prompt,
+                    text=True,
+                    stdout=events_file,
+                    stderr=stderr_file,
+                    timeout=self.config.timeout_seconds,
+                    check=False,
+                )
             returncode: int | None = completed.returncode
-            stdout = completed.stdout
-            stderr = completed.stderr
+            stdout = events_path.read_text(encoding="utf-8")
+            stderr = stderr_path.read_text(encoding="utf-8")
         except subprocess.TimeoutExpired as exc:
             timed_out = True
             returncode = None
-            stdout = _decode_timeout_output(exc.stdout)
-            stderr = _decode_timeout_output(exc.stderr)
+            stdout = events_path.read_text(encoding="utf-8")
+            stderr = stderr_path.read_text(encoding="utf-8")
             stderr += (
                 f"\nCodex timed out after {self.config.timeout_seconds} seconds\n"
             )

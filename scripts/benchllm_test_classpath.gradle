@@ -1,0 +1,14 @@
+// External init script; never modifies a benchmark project's build configuration.
+gradle.projectsEvaluated {
+    def records = [:]
+    rootProject.allprojects.each { p ->
+        def test = p.tasks.findByName('test')
+        if (test instanceof org.gradle.api.tasks.testing.Test) {
+            records[p.name] = test.classpath.files.collect { it.absolutePath }
+        }
+    }
+    def output = System.getProperty('benchllm.classpath.output')
+    if (output) {
+        new File(output).text = groovy.json.JsonOutput.toJson(records)
+    }
+}
