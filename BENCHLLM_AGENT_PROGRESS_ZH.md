@@ -119,3 +119,24 @@ flowchart LR
 - 独立 buggy baseline：`7d3eec51ef8aaa83ba058178f35e939ae1aaaac6`。
 - 正确性验证：`IntegerUtilTest`。
 - JMH 源码仍只在 Agent 退出后由评测 wrapper 注入，避免向 Agent 暴露参考实现。
+
+## 四 Prompt × 三类代码的完整试点
+
+选定 `RoaringBitmap/34bce1b`，从同一个 buggy parent 创建独立工作区：
+
+| Prompt | Agent 接收的额外信息 | 代码版本 |
+| --- | --- | --- |
+| 1 | 无 | 已完成，复用原始 Agent 补丁 |
+| 2 | 性能问题描述 | 新启动 Agent |
+| 3 | 目标 JMH 源码 | 新启动 Agent |
+| 4 | 性能问题描述和目标 JMH 源码 | 新启动 Agent |
+
+三个对照类别是 Original（buggy parent）、Developer（修复 commit）和 Agent。前两类各测
+一次，四个 Agent 补丁各测一次。Prompt 3/4 的文字本身含 JMH 源码；这是原 benchmark
+规定的信息量，不能称为对这两组 Agent “隐藏 JMH”。所有组都使用同一个 JMH 文件、
+JDK、参数和测量设置。
+
+该 JMH 的 `pos=2,count=2` 是无效组合。完整试点只测 `(0,1)`、`(0,2)` 和 `(2,1)`，
+每组使用 5 次预热、10 次测量、2 个 fork。评测脚本检查三个组合各有 `original` 和
+`optimized` 结果；缺少任何一项即失败。Agent 代码须通过 `IntegerUtilTest` 才会进入
+JMH。分析时以 `optimized` 测量生产方法，`original` 作为同次测量的旧算法对照。
