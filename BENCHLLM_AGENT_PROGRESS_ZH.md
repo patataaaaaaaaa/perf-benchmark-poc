@@ -109,3 +109,13 @@ flowchart LR
 - JMH 命令必须使用适用于当前 RoaringBitmap revision 的权威调用，不能直接复用会重置 Git
   或应用旧式文本 patch 的 BenchLLMRealSE shell 脚本。
 - 第一阶段不具备跨进程会话恢复；这将在第二阶段单独实现和评测。
+
+## 第二个第一阶段任务
+
+- 任务：`RoaringBitmap/34bce1b`。
+- 生产目标：`IntegerUtil.shiftLeftFromSpecifiedPosition`。
+- 选择原因：该任务的 JMH `optimized` 分支直接调用生产方法，能够测量 Agent 实际修改；
+  `original` 分支保留数组实现作为同进程对照，性能归因比 `1de6825` 更可靠。
+- 独立 buggy baseline：`7d3eec51ef8aaa83ba058178f35e939ae1aaaac6`。
+- 正确性验证：`IntegerUtilTest`。
+- JMH 源码仍只在 Agent 退出后由评测 wrapper 注入，避免向 Agent 暴露参考实现。
