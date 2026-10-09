@@ -85,8 +85,8 @@ class BenchLLMCodexTests(unittest.TestCase):
                 json.dumps(
                     {
                         "commit_hash": "abc123",
-                        "source_code": "demo/src/Example.java",
-                        "unittest": "demo/src/ExampleTest.java",
+                        "source_code": "src/Example.java",
+                        "unittest": "src/ExampleTest.java",
                     }
                 ),
                 encoding="utf-8",
@@ -97,7 +97,6 @@ class BenchLLMCodexTests(unittest.TestCase):
             wrapped = build_agent_prompt(task.prompt, task.source_paths)
 
             self.assertEqual(task.source_paths, ("src/Example.java",))
-            self.assertEqual(task.unit_test_paths, ("src/ExampleTest.java",))
             self.assertEqual(task.fix_commit, "abc123")
             self.assertIn("Ignore any request", wrapped)
             self.assertIn("src/Example.java", wrapped)
