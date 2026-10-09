@@ -27,7 +27,8 @@ cleanup() {
 trap cleanup EXIT
 
 cd "$workspace"
-./jmh/run.sh ".*IntermediateByteArrayBenchmark.*" \
+./gradlew --no-daemon :jmh:shadowJar
+java -jar jmh/build/libs/benchmarks.jar ".*IntermediateByteArrayBenchmark.*" \
   -wi 10 \
   -i 50 \
   -f 1 \

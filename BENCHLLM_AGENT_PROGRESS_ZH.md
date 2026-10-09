@@ -87,6 +87,14 @@ flowchart LR
 4. 正式运行 Codex Agent。
 5. Agent 退出后由 Runner 执行目标 JUnit 和 JMH，并归档完整结果。
 
+## 首次正式运行记录
+
+- 运行目录：`prompt1-20261009T032415Z`。
+- Codex Agent 正常退出，用时约 635 秒；只修改了白名单内的 `Node16.java`。
+- 外部 `Node16Test` 通过。
+- 首次 JMH 调用因 wrapper 与上游 `jmh/run.sh` 重复传递 `-i` 参数而失败。这是评测器
+  参数错误，不计为 Agent 或补丁失败；已改为直接启动构建好的 JMH jar，仅重跑性能评测。
+
 ## 已知风险
 
 - 服务器访问 Gradle 分发站点曾发生网络超时；这是基础设施问题，不应记为 Agent 失败。
