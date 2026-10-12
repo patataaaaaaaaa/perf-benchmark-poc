@@ -1,0 +1,77 @@
+[
+  {
+    "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameAndValueMatchFirst",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 10.11675601867212,
+      "developer": 8.179872095490994,
+      "agent": 9.935162630541319
+    },
+    "speedup_vs_original": {
+      "developer": 1.2367865781481837,
+      "agent": 1.018277847568652
+    }
+  },
+  {
+    "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameAndValueMatchLast",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 44.76078433144391,
+      "developer": 35.59239224359855,
+      "agent": 45.2916368197958
+    },
+    "speedup_vs_original": {
+      "developer": 1.2575941517247784,
+      "agent": 0.9882792381634601
+    }
+  },
+  {
+    "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameOnlyMatchBeginTable",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 62.051741546757036,
+      "developer": 6.389043466618322,
+      "agent": 12.09120645142012
+    },
+    "speedup_vs_original": {
+      "developer": 9.712211518197826,
+      "agent": 5.131972710586628
+    }
+  },
+  {
+    "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameOnlyMatchEndTable",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 10.025930331830505,
+      "developer": 7.536697431078149,
+      "agent": 8.672677414758859
+    },
+    "speedup_vs_original": {
+      "developer": 1.3302816549975607,
+      "agent": 1.1560363486792127
+    }
+  },
+  {
+    "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNoNameMatch",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 1.3920833357603908,
+      "developer": 1.3898806040336424,
+      "agent": 1.3982619573133435
+    },
+    "speedup_vs_original": {
+      "developer": 1.0015848352155974,
+      "agent": 0.9955812131477678
+    }
+  }
+]

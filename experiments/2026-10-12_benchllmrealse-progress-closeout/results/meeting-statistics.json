@@ -1,0 +1,197 @@
+{
+  "frozen_date": "2026-10-12",
+  "unique_tasks": 64,
+  "unique_actual_agent_tasks": 63,
+  "legacy_reused": 21,
+  "new_processed": 43,
+  "new_actual_agent_tasks": 42,
+  "new_patches": 41,
+  "new_test_passes": 34,
+  "new_jmh_passes": 18,
+  "complete_comparison_tasks": 14,
+  "matched_scenarios": 63,
+  "agent_faster_original_scenarios": 40,
+  "agent_slower_original_scenarios": 23,
+  "agent_faster_developer_scenarios": 30,
+  "agent_slower_developer_scenarios": 33,
+  "task_point_estimate_patterns": {
+    "全部场景点估计快于原版": 3,
+    "快慢混合": 10,
+    "全部场景点估计慢于原版": 1
+  },
+  "validated_raw_jmh_files": 42,
+  "project_table": [
+    [
+      "kafka",
+      16,
+      16,
+      7,
+      9,
+      9,
+      6,
+      0,
+      0
+    ],
+    [
+      "netty",
+      18,
+      18,
+      9,
+      9,
+      9,
+      9,
+      5,
+      3
+    ],
+    [
+      "presto",
+      25,
+      24,
+      0,
+      24,
+      23,
+      19,
+      13,
+      11
+    ],
+    [
+      "RoaringBitmap",
+      5,
+      5,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "合计",
+      64,
+      63,
+      21,
+      42,
+      41,
+      34,
+      18,
+      14
+    ]
+  ],
+  "logged_usage_only": {
+    "首轮新增": {
+      "actual_calls": 42,
+      "records_with_usage": 29,
+      "logged_tokens": {
+        "input_tokens": 66230119,
+        "cached_input_tokens": 64045312,
+        "output_tokens": 526274,
+        "total_tokens": 66756393
+      }
+    },
+    "超时第二次尝试": {
+      "actual_calls": 13,
+      "records_with_usage": 6,
+      "logged_tokens": {
+        "input_tokens": 13517125,
+        "cached_input_tokens": 13090304,
+        "output_tokens": 110570,
+        "total_tokens": 13627695
+      }
+    }
+  },
+  "modes": {
+    "thrpt": 20,
+    "avgt": 43
+  },
+  "three_version_order_counts": {
+    "Agent ＞ 开发者 ＞ 原版": 16,
+    "Agent ＞ 原版 ＞ 开发者": 5,
+    "开发者 ＞ Agent ＞ 原版": 19,
+    "开发者 ＞ 原版 ＞ Agent": 8,
+    "原版 ＞ 开发者 ＞ Agent": 6,
+    "原版 ＞ Agent ＞ 开发者": 9
+  },
+  "three_version_order_counts_by_mode": {
+    "avgt": {
+      "开发者 ＞ Agent ＞ 原版": 14,
+      "开发者 ＞ 原版 ＞ Agent": 8,
+      "Agent ＞ 开发者 ＞ 原版": 9,
+      "原版 ＞ Agent ＞ 开发者": 6,
+      "原版 ＞ 开发者 ＞ Agent": 3,
+      "Agent ＞ 原版 ＞ 开发者": 3
+    },
+    "thrpt": {
+      "Agent ＞ 开发者 ＞ 原版": 7,
+      "Agent ＞ 原版 ＞ 开发者": 2,
+      "开发者 ＞ Agent ＞ 原版": 5,
+      "原版 ＞ 开发者 ＞ Agent": 3,
+      "原版 ＞ Agent ＞ 开发者": 3
+    }
+  },
+  "metric_units": {
+    "ops/s": 20,
+    "ns/op": 34,
+    "ms/op": 2,
+    "us/op": 7
+  },
+  "secondary_metric_keys": [],
+  "raw_jmh_sha256": {
+    "results/initial-comparisons/cases/three-versions-netty-9abeaf1/versions/original-jmh.json": "bb6dbade4bb10e992c55eca082978a277459808cebf549db5419a755e8c144c7",
+    "results/initial-comparisons/cases/three-versions-netty-9abeaf1/versions/developer-jmh.json": "80b63ef37fb47993373d5d67a48e31eaf7d72db964b3eec301aba9bf3e9b42db",
+    "results/initial-comparisons/cases/three-versions-netty-9abeaf1/versions/agent-jmh.json": "839a40273f2c4f436d1b5847bf4d204d09e1e02a4aed3d2271138d74e59dba4e",
+    "results/eligible-comparisons/tasks/netty/ab8c4f2/original-jmh.json": "6c4d14c5b8a6f15462cd4d22bd16cd795c97f4c98978067efdb044c5f7e718a2",
+    "results/eligible-comparisons/tasks/netty/ab8c4f2/developer-jmh.json": "ac9be8bb5f761e03f95c19c98c5ea6526df4bb851510e410252b1d4f85602786",
+    "results/eligible-comparisons/tasks/netty/ab8c4f2/agent-jmh.json": "53a05782b01e7f900a69625ceda56b35e9830818d10eb0147942af8e08b67b1f",
+    "results/eligible-comparisons/tasks/netty/dd69a81/original-jmh.json": "d2cf4da27b38c52396fcc9ae7b5051e968934f9aecde575b89e728da831b8dc3",
+    "results/eligible-comparisons/tasks/netty/dd69a81/developer-jmh.json": "d50c08c973a1a4e1818e30a5aac3f86d7469c90ae50b05faec8a38b84cd1edb3",
+    "results/eligible-comparisons/tasks/netty/dd69a81/agent-jmh.json": "116876a8e1d05e0005d272c30e76b24046693d826028e04a567c091e75c9a401",
+    "results/initial-comparisons/cases/three-versions-presto-239f726/versions/original-jmh.json": "48fe90a40aaea8a57d4f33d2e984833498a8b201847502f2721f1e7b7df7a2bc",
+    "results/initial-comparisons/cases/three-versions-presto-239f726/versions/developer-jmh.json": "1a46be350c91109f189335f6fd8d2236f9945679bc285452d46211e447bc39bf",
+    "results/initial-comparisons/cases/three-versions-presto-239f726/versions/agent-jmh.json": "f6d1a0958ec133635cbc192511a793ac26129f3c849be423bba4b74a59ff6a29",
+    "results/eligible-comparisons/tasks/presto/290f5be/original-jmh.json": "8272511094357f8ae22ceba68c658717ece7ae9fd9fd8dc1cc4284bb46d2c658",
+    "results/eligible-comparisons/tasks/presto/290f5be/developer-jmh.json": "5eae99d2d1ef36c538cea8c7d5a01e78b30c4a8acfea0816bd0f1687e6c73642",
+    "results/eligible-comparisons/tasks/presto/290f5be/agent-jmh.json": "50c1df1d29382a964abb0a987866ebf251972f45a117f2162ceef402b1ffa0ff",
+    "results/initial-comparisons/cases/three-versions-presto-3f63ade/versions/original-jmh.json": "ea0e3c9e09fdf3f2dbaba65e95af6b0390cec1fdc6242c221f7ba1e9083dc112",
+    "results/initial-comparisons/cases/three-versions-presto-3f63ade/versions/developer-jmh.json": "0d5eb6d6e8d39759ca601de0f5604789332f1e430b7f9425e57f1ab7f771981e",
+    "results/initial-comparisons/cases/three-versions-presto-3f63ade/versions/agent-jmh.json": "69b579c3127143f5753c34cfaafee799f7d7e5b999930fd5b918e84aff6d8302",
+    "results/initial-comparisons/cases/three-versions-presto-46d219f/versions/original-jmh.json": "2ffd0085329d06230427332c1ca5f574e52d1b263822f4158da0f16120d54fc4",
+    "results/initial-comparisons/cases/three-versions-presto-46d219f/versions/developer-jmh.json": "08fc1a63f18f68598f06a16b6a2cd5d948d0336e365b702359d8c1832bd3e9fc",
+    "results/initial-comparisons/cases/three-versions-presto-46d219f/versions/agent-jmh.json": "a138495bae8cf6b22ef85ee13496569bcbefce89cb219c93604c53e765786031",
+    "results/initial-comparisons/cases/three-versions-presto-53aa7f6/versions/original-jmh.json": "2ca4f4a6852c8ef9fcbcf279d1ccd1ece1c4eedc21836b8e085c052efe62d127",
+    "results/initial-comparisons/cases/three-versions-presto-53aa7f6/versions/developer-jmh.json": "519e041539b10600e85cf864ca3af9f880e3638812ded8fe4dc8442e6a97d244",
+    "results/initial-comparisons/cases/three-versions-presto-53aa7f6/versions/agent-jmh.json": "927b73d878127b013b9a2730b98bdb5b36720d1f49c80e9bf51e1150174a8dbc",
+    "results/initial-comparisons/cases/three-versions-presto-60a5a5c/versions/original-jmh.json": "a473ed5eb9f6ce1bc72eac1f6e7f0978d9e9eed3ce7a3a5bd8c52fb5508a57a5",
+    "results/initial-comparisons/cases/three-versions-presto-60a5a5c/versions/developer-jmh.json": "c5b3e759613776126682c391d43fb2ce6044a5f710beac61fee824a1f2ffefae",
+    "results/initial-comparisons/cases/three-versions-presto-60a5a5c/versions/agent-jmh.json": "e9c567b5e1db7b6c91c6d2fa242e16ccba3696d001754d3bc21a07b58b50e0c0",
+    "results/initial-comparisons/cases/three-versions-presto-a26f440/versions/original-jmh.json": "cf3a022fc69c4a2a3a9cd43824d896f726dd55e3644c2bc90efb4a6a4f01dcb4",
+    "results/initial-comparisons/cases/three-versions-presto-a26f440/versions/developer-jmh.json": "3ec059f7e76843b8afd7dacd06ae790540212932bff5b5425c9289ff66fb3434",
+    "results/initial-comparisons/cases/three-versions-presto-a26f440/versions/agent-jmh.json": "d3a4b5745221d013b616ccadbfe77b3de0005a22212d10bb40ce1f5d51adf3bf",
+    "results/initial-comparisons/cases/three-versions-presto-bfb18d6/versions/original-jmh.json": "4481d0f5d29b4c461bdb62d7d5db4833f2b18b5ba9a960d7844d9c14b4f969b6",
+    "results/initial-comparisons/cases/three-versions-presto-bfb18d6/versions/developer-jmh.json": "6969aa7f255aa02c922d52fbf2340d2dcdaa524006c741621c3ecd17ca0e3634",
+    "results/initial-comparisons/cases/three-versions-presto-bfb18d6/versions/agent-jmh.json": "4194e6fb9ffb168cb7ddd4e1d4d819e1926ebc3c7d45306f567d5f3f42aa91c9",
+    "results/initial-comparisons/cases/three-versions-presto-ee74e4b/versions/original-jmh.json": "9f7258fef91afaf383095a58d8fb6a299051d7db0ef554beb4738d0f43dce0e5",
+    "results/initial-comparisons/cases/three-versions-presto-ee74e4b/versions/developer-jmh.json": "8105f7bb3fcf602a38c514da7cc1fa93e4a2e439d774354743a1a70e05f55ee1",
+    "results/initial-comparisons/cases/three-versions-presto-ee74e4b/versions/agent-jmh.json": "76ee1ed700f57b142c3bf5a2baca58432bf49d22747af9d61b4de4ae064f3767",
+    "results/initial-comparisons/cases/three-versions-presto-fa655f6/versions/original-jmh.json": "22a4bf7349e5bec995c231a50371a8f048ef411f6c821dc4e9fc2a440bb77bbc",
+    "results/initial-comparisons/cases/three-versions-presto-fa655f6/versions/developer-jmh.json": "22dff508ae99968c51b9df1912f52a045e44c2a369756fc0506304036993e978",
+    "results/initial-comparisons/cases/three-versions-presto-fa655f6/versions/agent-jmh.json": "3ddfe74d3f0f9110351cdaff557d575997e76dfb8091b5d949b7cb2460c423d3",
+    "results/initial-comparisons/cases/three-versions-presto-fdb7611/versions/original-jmh.json": "b6da283f97fa796ad09ecd07ee78057efd8e601a528e09b3c34ddd2dcd8a7873",
+    "results/initial-comparisons/cases/three-versions-presto-fdb7611/versions/developer-jmh.json": "a4c433919e94d0208660e66e71b9010be98fabb128b15d987847ee0c34d6e846",
+    "results/initial-comparisons/cases/three-versions-presto-fdb7611/versions/agent-jmh.json": "83a720a6e883072808130933c43218fca7e023a4fd853074b0a550be16b9fafa"
+  },
+  "input_sha256": {
+    "experiments/2026-10-12_benchllmrealse-progress-closeout/results/progress.json": "9122d85371703b331e020d08cbe49b1270abb3160f932f0c03d03ada0e2d7629",
+    "experiments/2026-10-12_benchllmrealse-progress-closeout/results/task-statuses-64.json": "76c346965c165abca0c1ce35b3929748f991f7629026dfc85b1158d6a8527868",
+    "experiments/2026-10-12_benchllmrealse-progress-closeout/results/matched-comparisons.json": "392f83d0729d5728a1112d1210e74a1a52bc5c397fae2feff9c5cad384c85c23",
+    "experiments/2026-10-12_benchllmrealse-progress-closeout/results/failure-catalog.json": "86ea68ca056a8c6d123e30d87024bbdf7f1aae6764d78a3825480f5e4fafc085",
+    "experiments/2026-10-12_benchllmrealse-progress-closeout/report-runtime-evidence.json": "398b68fa918fe9ea106130275413ae59170429ad277ce21dde448b2a00972995",
+    "experiments/2026-10-11_benchllmrealse-agent-first64/results/summary.json": "b317e508854ee1e333f2cfcbc7cf9182391198937002930b92f61ef714388189",
+    "experiments/2026-10-12_benchllmrealse-timeout-retry14/results/summary.json": "4ac56adbf04e68af498bc25cd46b05eed43c6b9d4794a74ab793cbb414bbbce6"
+  },
+  "limitations": [
+    "历史与新协议不混合为同协议成绩",
+    "首次与重试分开，不把重复调用当新任务",
+    "命令/环境失败不自动计为模型错误",
+    "一次JMH对照不是稳定加速或显著性结论"
+  ]
+}

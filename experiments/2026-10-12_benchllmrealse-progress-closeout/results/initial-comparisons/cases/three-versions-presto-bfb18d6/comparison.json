@@ -1,0 +1,107 @@
+[
+  {
+    "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionComplexPolygonLargeEnvelope",
+    "params": {},
+    "mode": "avgt",
+    "unit": "us/op",
+    "scores": {
+      "original": 9123.35537583049,
+      "developer": 0.04150602340385743,
+      "agent": 88.0738230943919
+    },
+    "speedup_vs_original": {
+      "developer": 219807.98514614138,
+      "agent": 103.58759339937657
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionComplexPolygonSmallEnvelope",
+    "params": {},
+    "mode": "avgt",
+    "unit": "us/op",
+    "scores": {
+      "original": 1049.4188151968926,
+      "developer": 1056.2547943965465,
+      "agent": 574.8011650417044
+    },
+    "speedup_vs_original": {
+      "developer": 0.9935280964063606,
+      "agent": 1.825707529873835
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionComplexPolygons",
+    "params": {},
+    "mode": "avgt",
+    "unit": "us/op",
+    "scores": {
+      "original": 13894.758721388893,
+      "developer": 14045.52542960485,
+      "agent": 0.008827203049443911
+    },
+    "speedup_vs_original": {
+      "developer": 0.9892658548822835,
+      "agent": 1574083.9588213873
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimpleComplexPolygons",
+    "params": {},
+    "mode": "avgt",
+    "unit": "us/op",
+    "scores": {
+      "original": 2845.6998724526666,
+      "developer": 2751.247528706365,
+      "agent": 2953.0236898161947
+    },
+    "speedup_vs_original": {
+      "developer": 1.0343307327896858,
+      "agent": 0.9636562965161284
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimplePolygonLargeEnvelope",
+    "params": {},
+    "mode": "avgt",
+    "unit": "us/op",
+    "scores": {
+      "original": 13.182229045917712,
+      "developer": 0.041432815448388116,
+      "agent": 0.3528080988793758
+    },
+    "speedup_vs_original": {
+      "developer": 318.1591427775046,
+      "agent": 37.363737079132875
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimplePolygonSmallEnvelope",
+    "params": {},
+    "mode": "avgt",
+    "unit": "us/op",
+    "scores": {
+      "original": 27.67022713707789,
+      "developer": 26.672593537272704,
+      "agent": 2.6625948927481495
+    },
+    "speedup_vs_original": {
+      "developer": 1.037402946901698,
+      "agent": 10.392203189617991
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimplePolygons",
+    "params": {},
+    "mode": "avgt",
+    "unit": "us/op",
+    "scores": {
+      "original": 10.287067960260504,
+      "developer": 9.993932822988596,
+      "agent": 0.008024466470503918
+    },
+    "speedup_vs_original": {
+      "developer": 1.0293313095518937,
+      "agent": 1281.9628567299005
+    }
+  }
+]

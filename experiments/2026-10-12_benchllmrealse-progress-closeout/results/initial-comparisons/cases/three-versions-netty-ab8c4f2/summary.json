@@ -1,0 +1,26 @@
+[
+  {
+    "version": "original",
+    "started": "2026-10-12T05:34:30.765888+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/original', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/versions/original-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-12T05:36:21.280944+00:00"
+  },
+  {
+    "version": "developer",
+    "started": "2026-10-12T05:36:21.281135+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/developer', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/versions/developer-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-12T05:38:08.225065+00:00"
+  },
+  {
+    "version": "agent",
+    "started": "2026-10-12T05:38:08.225696+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/agent', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/versions/agent-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-12T05:39:56.716587+00:00"
+  }
+]

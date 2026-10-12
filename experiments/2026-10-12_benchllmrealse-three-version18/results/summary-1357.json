@@ -1,0 +1,106 @@
+[
+  {
+    "repository": "presto",
+    "task": "20dcaed",
+    "started": "2026-10-12T03:37:49.871021+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-20dcaed",
+    "outcome": "version_failure",
+    "ended": "2026-10-12T03:47:01.075702+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "239f726",
+    "started": "2026-10-12T03:47:01.118085+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-239f726",
+    "outcome": "succeeded",
+    "ended": "2026-10-12T04:14:13.047582+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "290f5be",
+    "started": "2026-10-12T04:14:13.047823+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be",
+    "outcome": "version_failure",
+    "ended": "2026-10-12T04:16:48.465229+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "7b91edd",
+    "started": "2026-10-12T04:16:48.465474+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-7b91edd",
+    "outcome": "version_failure",
+    "ended": "2026-10-12T04:30:50.675172+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "3f63ade",
+    "started": "2026-10-12T04:30:50.675378+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-3f63ade",
+    "outcome": "succeeded",
+    "ended": "2026-10-12T04:40:17.898016+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "46d219f",
+    "started": "2026-10-12T04:40:17.898629+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-46d219f",
+    "outcome": "succeeded",
+    "ended": "2026-10-12T04:56:14.298385+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "53aa7f6",
+    "started": "2026-10-12T04:56:14.299023+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-53aa7f6",
+    "outcome": "succeeded",
+    "ended": "2026-10-12T05:02:30.107595+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "9abeaf1",
+    "started": "2026-10-12T05:02:30.107860+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-9abeaf1",
+    "outcome": "succeeded",
+    "ended": "2026-10-12T05:16:24.808890+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "60a5a5c",
+    "started": "2026-10-12T05:16:24.809094+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-60a5a5c",
+    "outcome": "succeeded",
+    "ended": "2026-10-12T05:32:48.254852+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "ab8c4f2",
+    "started": "2026-10-12T05:32:48.273591+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2",
+    "outcome": "version_failure",
+    "ended": "2026-10-12T05:39:56.748212+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "dd69a81",
+    "started": "2026-10-12T05:39:56.748440+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81",
+    "outcome": "version_failure",
+    "ended": "2026-10-12T05:43:41.908229+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "8d7f587",
+    "started": "2026-10-12T05:43:41.908442+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-8d7f587",
+    "outcome": "version_failure",
+    "ended": "2026-10-12T05:45:57.762418+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "e542a2c",
+    "started": "2026-10-12T05:45:57.762648+00:00",
+    "case_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c",
+    "outcome": "version_failure",
+    "ended": "2026-10-12T05:52:42.190057+00:00"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkArrayJoin.benchmark",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 99.50223959818182,
+      "developer": 91.13690663181818,
+      "agent": 96.04901084585858
+    },
+    "speedup_vs_original": {
+      "developer": 1.091788642774091,
+      "agent": 1.0359527778777968
+    }
+  }
+]

@@ -1,0 +1,4 @@
+diagnostics/deps/
+diagnostics/out/
+diagnostics/__pycache__/
+server-validation/__pycache__/

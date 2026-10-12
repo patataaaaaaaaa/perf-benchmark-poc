@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-09",
+  "task": "abdd6ff",
+  "original_batch": "roaring-singleconfig-20261009-nextbatch",
+  "cause": "Developer reference removes from MutableRoaringBitmap while advancing its live iterator; array-backed containers skip shifted elements. Failure occurs on 1000 equal-valued rows; 10000-row cases passed these probes.",
+  "reference_source_modified": false,
+  "jmh_cases_removed": false,
+  "new_model_calls_during_diagnosis": 0,
+  "runs": [
+    {
+      "version": "original",
+      "returncode": 0,
+      "stdout": "topK count=1000 k=20 actual=20 status=PASS\ntopK count=1000 k=200 actual=200 status=PASS\ntopK count=10000 k=20 actual=20 status=PASS\ntopK count=10000 k=200 actual=200 status=PASS\niterator_external_remove expectedCardinality=20 actualCardinality=499 removed=501 remainingToRemove=479\n",
+      "stderr": ""
+    },
+    {
+      "version": "developer",
+      "returncode": 0,
+      "stdout": "topK count=1000 k=20 status=EXCEPTION java.lang.RuntimeException: bugs found when compute topK\ntopK count=1000 k=200 status=EXCEPTION java.lang.RuntimeException: bugs found when compute topK\ntopK count=10000 k=20 actual=20 status=PASS\ntopK count=10000 k=200 actual=200 status=PASS\niterator_external_remove expectedCardinality=20 actualCardinality=499 removed=501 remainingToRemove=479\n",
+      "stderr": ""
+    }
+  ]
+}

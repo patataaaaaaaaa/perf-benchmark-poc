@@ -1,0 +1,35 @@
+{
+  "repository": "netty",
+  "task": "dd69a81",
+  "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81",
+  "started": "2026-10-12T08:21:30.823176+00:00",
+  "attempt_kind": "unpaid measurement retry",
+  "versions": [
+    {
+      "version": "original",
+      "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/original/.benchllm-results/isolated-java-temp-1791793290970059219",
+      "started": "2026-10-12T08:21:30.970156+00:00",
+      "verify": "passed",
+      "benchmark": "passed",
+      "ended": "2026-10-12T08:24:32.395003+00:00"
+    },
+    {
+      "version": "developer",
+      "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/developer/.benchllm-results/isolated-java-temp-1791793472465745116",
+      "started": "2026-10-12T08:24:32.466003+00:00",
+      "verify": "passed",
+      "benchmark": "passed",
+      "ended": "2026-10-12T08:27:22.551580+00:00"
+    },
+    {
+      "version": "agent",
+      "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/agent/.benchllm-results/isolated-java-temp-1791793642641608979",
+      "started": "2026-10-12T08:27:22.641692+00:00",
+      "verify": "passed",
+      "benchmark": "passed",
+      "ended": "2026-10-12T08:30:12.654554+00:00"
+    }
+  ],
+  "outcome": "succeeded",
+  "ended": "2026-10-12T08:30:12.654841+00:00"
+}

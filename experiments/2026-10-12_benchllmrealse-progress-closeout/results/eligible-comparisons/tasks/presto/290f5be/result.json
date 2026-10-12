@@ -1,0 +1,35 @@
+{
+  "repository": "presto",
+  "task": "290f5be",
+  "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be",
+  "started": "2026-10-12T07:45:32.127776+00:00",
+  "attempt_kind": "unpaid measurement retry",
+  "versions": [
+    {
+      "version": "original",
+      "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/original/.benchllm-results/isolated-java-temp-1791791135042399586",
+      "started": "2026-10-12T07:45:35.042519+00:00",
+      "verify": "passed",
+      "benchmark": "passed",
+      "ended": "2026-10-12T07:51:18.145968+00:00"
+    },
+    {
+      "version": "developer",
+      "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/developer/.benchllm-results/isolated-java-temp-1791791480211802687",
+      "started": "2026-10-12T07:51:20.211885+00:00",
+      "verify": "passed",
+      "benchmark": "passed",
+      "ended": "2026-10-12T07:56:44.455604+00:00"
+    },
+    {
+      "version": "agent",
+      "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/agent/.benchllm-results/isolated-java-temp-1791791806359042168",
+      "started": "2026-10-12T07:56:46.359149+00:00",
+      "verify": "passed",
+      "benchmark": "passed",
+      "ended": "2026-10-12T08:02:10.105198+00:00"
+    }
+  ],
+  "outcome": "succeeded",
+  "ended": "2026-10-12T08:02:10.105552+00:00"
+}

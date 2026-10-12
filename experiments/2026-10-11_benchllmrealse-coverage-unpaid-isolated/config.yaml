@@ -1,0 +1,23 @@
+phase: coverage-unpaid-isolated
+date_beijing: 2026-10-11
+model_calls: 0
+execution_host: local_macos
+java_home: /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home
+java_version: 1.8.0_302
+source_controls: [6, 7, 8]
+junit_version: '4.12'
+netty_task: '2791f0f'
+netty_test: io.netty.channel.PendingWriteQueueTest
+presto_task: '000fa29'
+presto_parent: com.facebook.airlift:airbase:98
+historical_git_plugin: pl.project13.maven:git-commit-id-plugin:2.1.13
+jgit_version: 3.4.1.201406201815-r
+isolation:
+  server_access: read_only_status_and_copy_small_existing_inputs
+  mutate_active_runner: false
+  mutate_server_caches: false
+  server_builds: false
+  server_benchmarks: false
+  local_fixture: synthetic_shallow_repository_with_no_benchmark_answers
+full_task_preparation_confirmed: false
+new_agent_results: 0

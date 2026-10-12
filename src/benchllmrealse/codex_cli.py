@@ -10,6 +10,8 @@ from dataclasses import asdict, dataclass
 from pathlib import Path, PurePosixPath
 from typing import Any, Sequence
 
+from .process import run_isolated
+
 
 class BenchLLMConfigurationError(ValueError):
     """Raised when a benchmark task or workspace is unsafe or incomplete."""
@@ -321,7 +323,7 @@ class CodexCLIRunner:
         )
         started = time.monotonic()
         try:
-            result = subprocess.run(
+            result = run_isolated(
                 list(expanded_command),
                 cwd=workspace,
                 text=True,
@@ -474,7 +476,7 @@ class CodexCLIRunner:
             with events_path.open("w", encoding="utf-8") as events_file, stderr_path.open(
                 "w", encoding="utf-8"
             ) as stderr_file:
-                completed = subprocess.run(
+                completed = run_isolated(
                     command,
                     input=prompt,
                     text=True,

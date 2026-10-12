@@ -1,0 +1,41 @@
+status: launched_not_complete
+dataset: BenchLLMRealSE_PerfOpt
+task_count: 64
+repository_counts:
+  RoaringBitmap: 5
+  netty: 18
+  kafka: 16
+  presto: 25
+prompt: 4
+model: deepseek-v4-pro
+agent: codex_cli
+one_fresh_session_per_task: true
+outer_optimization_loop: false
+failure_isolation: per_task
+agent_timeout_seconds: 900
+preparation_timeout_seconds: 1800
+reference_test_timeout_seconds: 600
+reference_jmh_timeout_seconds: 1800
+final_jmh:
+  forks: 2
+  warmup_iterations: 5
+  measurement_iterations: 10
+  iteration_seconds: 1
+quick_jmh:
+  forks: 0
+  warmup_iterations: 1
+  measurement_iterations: 2
+  iteration_seconds: 1
+  authoritative: false
+cross_project_parameter_policy: all_official_defaults
+source_recompilation: metadata_sources_overlay_prepared_baseline_classes
+correctness_scope: selected_project_tests_not_full_suite
+continue_on_reference_failure: true
+pay_on_broken_baseline_harness: false
+initial_observed_balance_cny: 110.44
+reserve_cny: 2
+batch_spending_cap_cny: null
+automatic_recharge: false
+balance_guard: between_calls_not_hard_runtime_cap
+background_pid: 1615827
+artifact_batch_name: full64-p4-20261010T021000Z

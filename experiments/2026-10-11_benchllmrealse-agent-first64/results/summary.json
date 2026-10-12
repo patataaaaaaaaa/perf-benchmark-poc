@@ -1,0 +1,1313 @@
+[
+  {
+    "repository": "RoaringBitmap",
+    "task": "34bce1b",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/RoaringBitmap/34bce1b/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 204156,
+      "cached_input_tokens": 193408,
+      "output_tokens": 8142,
+      "reasoning_tokens": null,
+      "total_tokens": 212298
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "RoaringBitmap",
+    "task": "53ba593",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/RoaringBitmap/53ba593/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1434361,
+      "cached_input_tokens": 1369728,
+      "output_tokens": 10964,
+      "reasoning_tokens": null,
+      "total_tokens": 1445325
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "RoaringBitmap",
+    "task": "1de6825",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/RoaringBitmap/1de6825/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 525265,
+      "cached_input_tokens": 492544,
+      "output_tokens": 8054,
+      "reasoning_tokens": null,
+      "total_tokens": 533319
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "RoaringBitmap",
+    "task": "abdd6ff",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/RoaringBitmap/abdd6ff/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 339674,
+      "cached_input_tokens": 319744,
+      "output_tokens": 8553,
+      "reasoning_tokens": null,
+      "total_tokens": 348227
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "RoaringBitmap",
+    "task": "b5b4af6",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/RoaringBitmap/b5b4af6/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 5780978,
+      "cached_input_tokens": 5655168,
+      "output_tokens": 35210,
+      "reasoning_tokens": null,
+      "total_tokens": 5816188
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "2ed95c9",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/netty/2ed95c9/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 3856927,
+      "cached_input_tokens": 3795712,
+      "output_tokens": 53027,
+      "reasoning_tokens": null,
+      "total_tokens": 3909954
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "67d3a78",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/netty/67d3a78/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1188584,
+      "cached_input_tokens": 1159680,
+      "output_tokens": 25234,
+      "reasoning_tokens": null,
+      "total_tokens": 1213818
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "aecd47b",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/kafka/aecd47b/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1266874,
+      "cached_input_tokens": 1231360,
+      "output_tokens": 21788,
+      "reasoning_tokens": null,
+      "total_tokens": 1288662
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "8a8337e",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z/tasks/netty/8a8337e/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1981137,
+      "cached_input_tokens": 1938560,
+      "output_tokens": 35108,
+      "reasoning_tokens": null,
+      "total_tokens": 2016245
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "5a9b28a",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z/tasks/netty/5a9b28a/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 949727,
+      "cached_input_tokens": 915712,
+      "output_tokens": 17624,
+      "reasoning_tokens": null,
+      "total_tokens": 967351
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "922a95a",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "benchmark_failed",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z/tasks/kafka/922a95a/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1185812,
+      "cached_input_tokens": 1109760,
+      "output_tokens": 16884,
+      "reasoning_tokens": null,
+      "total_tokens": 1202696
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "b25c96a",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z/tasks/kafka/b25c96a/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 307658,
+      "cached_input_tokens": 276736,
+      "output_tokens": 3792,
+      "reasoning_tokens": null,
+      "total_tokens": 311450
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "b36e3c2",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "benchmark_failed",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z/tasks/kafka/b36e3c2/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 307003,
+      "cached_input_tokens": 275200,
+      "output_tokens": 3209,
+      "reasoning_tokens": null,
+      "total_tokens": 310212
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "c05403f",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z/tasks/kafka/c05403f/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 172624,
+      "cached_input_tokens": 156672,
+      "output_tokens": 4680,
+      "reasoning_tokens": null,
+      "total_tokens": 177304
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "cfc34ca",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z/tasks/kafka/cfc34ca/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1090013,
+      "cached_input_tokens": 1052544,
+      "output_tokens": 23459,
+      "reasoning_tokens": null,
+      "total_tokens": 1113472
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "eb24ed8",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "benchmark_failed",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z/tasks/kafka/eb24ed8/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1028570,
+      "cached_input_tokens": 991872,
+      "output_tokens": 13612,
+      "reasoning_tokens": null,
+      "total_tokens": 1042182
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "2791f0f",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/2791f0f/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 522424,
+      "cached_input_tokens": 496512,
+      "output_tokens": 20589,
+      "reasoning_tokens": null,
+      "total_tokens": 543013
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "687308b",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/687308b/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 215516,
+      "cached_input_tokens": 199936,
+      "output_tokens": 7958,
+      "reasoning_tokens": null,
+      "total_tokens": 223474
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "83a19d5",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/83a19d5/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 1306470,
+      "cached_input_tokens": 1263104,
+      "output_tokens": 43870,
+      "reasoning_tokens": null,
+      "total_tokens": 1350340
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "b2eaab0",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/b2eaab0/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 3474616,
+      "cached_input_tokens": 3382272,
+      "output_tokens": 37978,
+      "reasoning_tokens": null,
+      "total_tokens": 3512594
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "netty",
+    "task": "feb804d",
+    "outcome": "reused_prior_attempt",
+    "prior_outcome": "succeeded",
+    "prior_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/feb804d/prompt4/result.json",
+    "prior_protocol": true,
+    "usage": {
+      "input_tokens": 3980136,
+      "cached_input_tokens": 3923328,
+      "output_tokens": 46432,
+      "reasoning_tokens": null,
+      "total_tokens": 4026568
+    },
+    "new_agent_started": false,
+    "independent_evaluation": "prior results only; not regraded"
+  },
+  {
+    "repository": "kafka",
+    "task": "39eb31f",
+    "started": "2026-10-11T11:39:18.977721+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed_with_environment_changes",
+    "usage": {
+      "input_tokens": 1721264,
+      "cached_input_tokens": 1649792,
+      "output_tokens": 21928,
+      "reasoning_tokens": null,
+      "total_tokens": 1743192
+    },
+    "error": "Agent modified files outside the task source allowlist",
+    "has_source_patch": true,
+    "environment_changes": [
+      "build.gradle"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-39eb31f",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/39eb31f/agent/result.json",
+    "ended": "2026-10-11T11:46:53.636995+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "000fa29",
+    "started": "2026-10-11T11:46:58.850899+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1519334,
+      "cached_input_tokens": 1454848,
+      "output_tokens": 10605,
+      "reasoning_tokens": null,
+      "total_tokens": 1529939
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-000fa29",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/000fa29/agent/result.json",
+    "ended": "2026-10-11T11:53:44.753825+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "4fa5bdc",
+    "started": "2026-10-11T11:53:49.901911+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [
+      "gradle/dependencies.gradle"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-4fa5bdc",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/4fa5bdc/agent/result.json",
+    "ended": "2026-10-11T12:03:50.859790+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "20dcaed",
+    "started": "2026-10-11T12:03:56.010998+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 577819,
+      "cached_input_tokens": 524032,
+      "output_tokens": 4113,
+      "reasoning_tokens": null,
+      "total_tokens": 581932
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-20dcaed",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/20dcaed/agent/result.json",
+    "ended": "2026-10-11T12:05:55.214605+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "59a75f4",
+    "started": "2026-10-11T12:06:00.400939+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [
+      "gradle/dependencies.gradle"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-59a75f4",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/59a75f4/agent/result.json",
+    "ended": "2026-10-11T12:16:01.307990+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "239f726",
+    "started": "2026-10-11T12:16:06.432017+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1705419,
+      "cached_input_tokens": 1645056,
+      "output_tokens": 10783,
+      "reasoning_tokens": null,
+      "total_tokens": 1716202
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-239f726",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/239f726/agent/result.json",
+    "ended": "2026-10-11T12:20:27.925715+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "8dff0b1",
+    "started": "2026-10-11T12:20:33.111152+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [
+      "gradle/dependencies.gradle"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-8dff0b1",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/8dff0b1/agent/result.json",
+    "ended": "2026-10-11T12:30:33.984245+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "290f5be",
+    "started": "2026-10-11T12:30:39.221700+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1337416,
+      "cached_input_tokens": 1277568,
+      "output_tokens": 14780,
+      "reasoning_tokens": null,
+      "total_tokens": 1352196
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-290f5be",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/290f5be/agent/result.json",
+    "ended": "2026-10-11T12:34:14.082269+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "297b089",
+    "started": "2026-10-11T12:34:19.199525+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-297b089",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/297b089/agent/result.json",
+    "ended": "2026-10-11T12:44:21.463672+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "7b91edd",
+    "started": "2026-10-11T12:44:26.609480+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 2542828,
+      "cached_input_tokens": 2458368,
+      "output_tokens": 27341,
+      "reasoning_tokens": null,
+      "total_tokens": 2570169
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-7b91edd",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/7b91edd/agent/result.json",
+    "ended": "2026-10-11T12:54:18.814552+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "9bb2f78",
+    "started": "2026-10-11T12:54:23.959411+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 330816,
+      "cached_input_tokens": 315008,
+      "output_tokens": 6183,
+      "reasoning_tokens": null,
+      "total_tokens": 336999
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-9bb2f78",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/9bb2f78/agent/result.json",
+    "ended": "2026-10-11T12:56:27.035606+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "3a4f2e3",
+    "started": "2026-10-11T12:56:32.158110+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": 3551571,
+      "cached_input_tokens": 3480192,
+      "output_tokens": 20291,
+      "reasoning_tokens": null,
+      "total_tokens": 3571862
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-3a4f2e3",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/3a4f2e3/agent/result.json",
+    "ended": "2026-10-11T13:06:33.995637+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "3f63ade",
+    "started": "2026-10-11T13:06:39.167935+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed_with_environment_changes",
+    "usage": {
+      "input_tokens": 4778472,
+      "cached_input_tokens": 4617344,
+      "output_tokens": 16022,
+      "reasoning_tokens": null,
+      "total_tokens": 4794494
+    },
+    "error": "Agent modified files outside the task source allowlist",
+    "has_source_patch": true,
+    "environment_changes": [
+      "pom.xml"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-3f63ade",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/3f63ade/agent/result.json",
+    "ended": "2026-10-11T13:15:37.420674+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "87ec2f8",
+    "started": "2026-10-11T13:15:42.564239+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 836563,
+      "cached_input_tokens": 791424,
+      "output_tokens": 11598,
+      "reasoning_tokens": null,
+      "total_tokens": 848161
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-87ec2f8",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/87ec2f8/agent/result.json",
+    "ended": "2026-10-11T13:21:09.324407+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "46d219f",
+    "started": "2026-10-11T13:21:14.544859+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed_with_environment_changes",
+    "usage": {
+      "input_tokens": 2566948,
+      "cached_input_tokens": 2465152,
+      "output_tokens": 19245,
+      "reasoning_tokens": null,
+      "total_tokens": 2586193
+    },
+    "error": "Agent modified files outside the task source allowlist",
+    "has_source_patch": true,
+    "environment_changes": [
+      ".mvn/maven.config",
+      "pom.xml"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-46d219f",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/46d219f/agent/result.json",
+    "ended": "2026-10-11T13:28:18.852978+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "4e71bf3",
+    "started": "2026-10-11T13:28:23.982370+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-4e71bf3",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/4e71bf3/agent/result.json",
+    "ended": "2026-10-11T13:38:25.990026+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "95b8db0",
+    "started": "2026-10-11T13:38:31.134087+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1783461,
+      "cached_input_tokens": 1708544,
+      "output_tokens": 20216,
+      "reasoning_tokens": null,
+      "total_tokens": 1803677
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-95b8db0",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/95b8db0/agent/result.json",
+    "ended": "2026-10-11T13:44:52.466205+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "53aa7f6",
+    "started": "2026-10-11T13:44:57.590683+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1247211,
+      "cached_input_tokens": 1178112,
+      "output_tokens": 16475,
+      "reasoning_tokens": null,
+      "total_tokens": 1263686
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-53aa7f6",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/53aa7f6/agent/result.json",
+    "ended": "2026-10-11T13:49:21.791217+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "9abeaf1",
+    "started": "2026-10-11T13:49:26.910300+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 518820,
+      "cached_input_tokens": 495616,
+      "output_tokens": 11543,
+      "reasoning_tokens": null,
+      "total_tokens": 530363
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-9abeaf1",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/9abeaf1/agent/result.json",
+    "ended": "2026-10-11T13:53:26.871903+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "c7bc8f7",
+    "started": "2026-10-11T13:53:31.994817+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [
+      "build.gradle",
+      "gradle/buildscript.gradle"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-c7bc8f7",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/c7bc8f7/agent/result.json",
+    "ended": "2026-10-11T14:03:33.540792+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "60a5a5c",
+    "started": "2026-10-11T14:03:38.665962+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1795903,
+      "cached_input_tokens": 1740288,
+      "output_tokens": 24198,
+      "reasoning_tokens": null,
+      "total_tokens": 1820101
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-60a5a5c",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/60a5a5c/agent/result.json",
+    "ended": "2026-10-11T14:10:37.607650+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "ab8c4f2",
+    "started": "2026-10-11T14:10:42.743333+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1169739,
+      "cached_input_tokens": 1120256,
+      "output_tokens": 14581,
+      "reasoning_tokens": null,
+      "total_tokens": 1184320
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-ab8c4f2",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/ab8c4f2/agent/result.json",
+    "ended": "2026-10-11T14:16:03.684632+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "c8af740",
+    "started": "2026-10-11T14:16:08.803482+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 2652399,
+      "cached_input_tokens": 2592896,
+      "output_tokens": 21645,
+      "reasoning_tokens": null,
+      "total_tokens": 2674044
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-c8af740",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/c8af740/agent/result.json",
+    "ended": "2026-10-11T14:25:46.073805+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "659c3ee",
+    "started": "2026-10-11T14:25:51.239714+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-659c3ee",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/659c3ee/agent/result.json",
+    "ended": "2026-10-11T14:36:45.593777+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "6908344",
+    "started": "2026-10-11T14:36:50.705009+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-6908344",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/6908344/agent/result.json",
+    "ended": "2026-10-11T14:46:52.074877+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "b72fea3",
+    "started": "2026-10-11T14:46:57.189953+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1979207,
+      "cached_input_tokens": 1927936,
+      "output_tokens": 24794,
+      "reasoning_tokens": null,
+      "total_tokens": 2004001
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-b72fea3",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/b72fea3/agent/result.json",
+    "ended": "2026-10-11T14:53:58.878673+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "e2e2c62",
+    "started": "2026-10-11T14:54:04.026903+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-e2e2c62",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/e2e2c62/agent/result.json",
+    "ended": "2026-10-11T15:04:05.426528+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "8abba9e",
+    "started": "2026-10-11T15:04:10.746193+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": false,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-8abba9e",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/8abba9e/agent/result.json",
+    "ended": "2026-10-11T15:14:12.899929+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "dd69a81",
+    "started": "2026-10-11T15:14:18.039570+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-dd69a81",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/dd69a81/agent/result.json",
+    "ended": "2026-10-11T15:24:18.830436+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "e3ccf20",
+    "started": "2026-10-11T15:24:23.977260+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [
+      "gradle/dependencies.gradle"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-e3ccf20",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/e3ccf20/agent/result.json",
+    "ended": "2026-10-11T15:34:24.936879+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "8d7f587",
+    "started": "2026-10-11T15:34:30.722738+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1131110,
+      "cached_input_tokens": 1078016,
+      "output_tokens": 9629,
+      "reasoning_tokens": null,
+      "total_tokens": 1140739
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-8d7f587",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/8d7f587/agent/result.json",
+    "ended": "2026-10-11T15:37:52.292683+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "deea51e",
+    "started": "2026-10-11T15:37:57.467105+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1512238,
+      "cached_input_tokens": 1449216,
+      "output_tokens": 12771,
+      "reasoning_tokens": null,
+      "total_tokens": 1525009
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-deea51e",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/deea51e/agent/result.json",
+    "ended": "2026-10-11T15:42:52.348648+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "9e010a7",
+    "started": "2026-10-11T15:42:57.490926+00:00",
+    "new_agent_started": false,
+    "outcome": "task_error",
+    "error_type": "TimeoutExpired",
+    "error": "Command '['git', '-C', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/sources/presto-9e010a7', 'fetch', '--depth=2', 'https://github.com/prestodb/presto.git', '9e010a7070bdf76ccf9f81ef57e6a2c251f1ad55']' timed out after 119.99998596124351 seconds",
+    "ended": "2026-10-11T15:44:57.516033+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "e542a2c",
+    "started": "2026-10-11T15:45:02.677950+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 4643423,
+      "cached_input_tokens": 4494848,
+      "output_tokens": 18850,
+      "reasoning_tokens": null,
+      "total_tokens": 4662273
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-e542a2c",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/e542a2c/agent/result.json",
+    "ended": "2026-10-11T15:51:12.667029+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "a26f440",
+    "started": "2026-10-11T15:51:17.823785+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 3104505,
+      "cached_input_tokens": 2998400,
+      "output_tokens": 27936,
+      "reasoning_tokens": null,
+      "total_tokens": 3132441
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-a26f440",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/a26f440/agent/result.json",
+    "ended": "2026-10-11T16:00:50.500300+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "aed4c9a",
+    "started": "2026-10-11T16:00:55.738672+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 3895605,
+      "cached_input_tokens": 3786496,
+      "output_tokens": 30341,
+      "reasoning_tokens": null,
+      "total_tokens": 3925946
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-aed4c9a",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/aed4c9a/agent/result.json",
+    "ended": "2026-10-11T16:10:40.649323+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "b54d248",
+    "started": "2026-10-11T16:10:45.782989+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 764501,
+      "cached_input_tokens": 719744,
+      "output_tokens": 11575,
+      "reasoning_tokens": null,
+      "total_tokens": 776076
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-b54d248",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/b54d248/agent/result.json",
+    "ended": "2026-10-11T16:16:47.199180+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "bfb18d6",
+    "started": "2026-10-11T16:16:52.361672+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 6404248,
+      "cached_input_tokens": 6228096,
+      "output_tokens": 31828,
+      "reasoning_tokens": null,
+      "total_tokens": 6436076
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-bfb18d6",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/bfb18d6/agent/result.json",
+    "ended": "2026-10-11T16:25:41.328745+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "c3cb7a9",
+    "started": "2026-10-11T16:25:46.451873+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 3477661,
+      "cached_input_tokens": 3378944,
+      "output_tokens": 25510,
+      "reasoning_tokens": null,
+      "total_tokens": 3503171
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-c3cb7a9",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/c3cb7a9/agent/result.json",
+    "ended": "2026-10-11T16:34:55.557878+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "ee74e4b",
+    "started": "2026-10-11T16:35:00.698713+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 1833700,
+      "cached_input_tokens": 1767936,
+      "output_tokens": 17141,
+      "reasoning_tokens": null,
+      "total_tokens": 1850841
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-ee74e4b",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/ee74e4b/agent/result.json",
+    "ended": "2026-10-11T16:39:32.922943+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "efd0834",
+    "started": "2026-10-11T16:39:38.079148+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 564749,
+      "cached_input_tokens": 535168,
+      "output_tokens": 9630,
+      "reasoning_tokens": null,
+      "total_tokens": 574379
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-efd0834",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/efd0834/agent/result.json",
+    "ended": "2026-10-11T16:42:00.225763+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "fa655f6",
+    "started": "2026-10-11T16:42:05.364181+00:00",
+    "new_agent_started": true,
+    "outcome": "agent_completed",
+    "usage": {
+      "input_tokens": 6283189,
+      "cached_input_tokens": 6166016,
+      "output_tokens": 34722,
+      "reasoning_tokens": null,
+      "total_tokens": 6317911
+    },
+    "error": null,
+    "has_source_patch": true,
+    "environment_changes": [],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-fa655f6",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/fa655f6/agent/result.json",
+    "ended": "2026-10-11T16:51:27.583310+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "fdb7611",
+    "started": "2026-10-11T16:51:32.717934+00:00",
+    "new_agent_started": true,
+    "outcome": "timeout",
+    "usage": {
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "total_tokens": null
+    },
+    "error": "Codex exceeded 600 seconds",
+    "has_source_patch": true,
+    "environment_changes": [
+      ".mvn/maven.config"
+    ],
+    "invalid_changes": [],
+    "workspace": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-fdb7611",
+    "independent_evaluation": "pending",
+    "agent_result": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/fdb7611/agent/result.json",
+    "ended": "2026-10-11T17:01:34.634110+00:00"
+  }
+]

@@ -1,0 +1,26 @@
+phase: two_typical_original_environment_validation
+attempt: 2
+attempt_status: complete_netty_validated_presto_classpath_export_skipped
+ssh_entry: lab-server
+server_root: /downloads/patataWJY/benchllm-agent-eval
+run_root: /downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/coverage-typical-unpaid-20261011T080300Z
+pid: 2799960
+tasks: [netty/2791f0f, presto/000fa29]
+model_calls: 0
+production_edits: false
+test_exclusions: false
+candidate_changes:
+  netty: remove_forced_compiler_source_target_8_preserve_original_pom
+  presto: detect_inherited_git_plugin_and_tag_only_original_head
+isolation:
+  runner: copied_scripts_and_src_from_current_server_deployment
+  maven: private_full_copy_no_hardlinks_or_writable_symlinks
+  git: private_initialized_bare_refs_with_explicit_read_only_object_alternates
+  workspaces: shallow_original_parent_only_no_future_fix_history
+  sandbox_permissions: unchanged
+  paid_queue_overlap: prohibited
+stages: [prepare_build_and_jmh_registration, sandbox_selected_tests, original_formal_jmh]
+timeouts_seconds: {build: 1800, tests: 600, benchmark: 1800}
+jmh: {forks: 2, warmup: 5, measurement: 10, seconds: 1, parameters: all_defaults}
+failure_policy: record_and_continue_to_next_task
+interpretation: original_environment_coverage_not_agent_performance_or_full_test_suite

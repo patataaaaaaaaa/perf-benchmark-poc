@@ -1,0 +1,402 @@
+{
+  "checked_utc": "2026-10-11T11:06:23.261972+00:00",
+  "batch": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z",
+  "status": "evaluation 6/27; netty/feb804d: P4 Agent",
+  "completed": [
+    {
+      "repository": "netty",
+      "task": "2791f0f",
+      "outcome": "succeeded",
+      "agent_started": true
+    },
+    {
+      "repository": "netty",
+      "task": "687308b",
+      "outcome": "succeeded",
+      "agent_started": true
+    },
+    {
+      "repository": "netty",
+      "task": "83a19d5",
+      "outcome": "succeeded",
+      "agent_started": true
+    },
+    {
+      "repository": "netty",
+      "task": "95b8db0",
+      "outcome": "reference_evaluation_failed_no_new_agent",
+      "agent_started": false
+    },
+    {
+      "repository": "netty",
+      "task": "b2eaab0",
+      "outcome": "succeeded",
+      "agent_started": true
+    },
+    {
+      "repository": "netty",
+      "task": "b72fea3",
+      "outcome": "reference_evaluation_failed_no_new_agent",
+      "agent_started": false
+    }
+  ],
+  "pilot_results": [
+    {
+      "task": "2791f0f",
+      "patch_exists": true,
+      "patch_bytes": 3224,
+      "result": {
+        "outcome": "succeeded",
+        "usage": {
+          "input_tokens": 522424,
+          "cached_input_tokens": 496512,
+          "output_tokens": 20589,
+          "reasoning_tokens": null,
+          "total_tokens": 543013
+        },
+        "verification": {
+          "name": "verification",
+          "command": [
+            "/usr/bin/timeout",
+            "--kill-after=5s",
+            "600",
+            "/usr/bin/python3",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/runner-snapshot/scripts/benchllm_project_tools.py",
+            "verify",
+            "--support",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/support/netty/2791f0f",
+            "--workspace",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/workspaces/netty-2791f0f-prompt4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.62756522372365,
+          "stdout_file": "verification.stdout.log",
+          "stderr_file": "verification.stderr.log"
+        },
+        "benchmark": {
+          "name": "benchmark",
+          "command": [
+            "/usr/bin/python3",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/runner-snapshot/scripts/benchllm_project_tools.py",
+            "benchmark",
+            "--support",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/support/netty/2791f0f",
+            "--workspace",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/workspaces/netty-2791f0f-prompt4",
+            "--output",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/2791f0f/prompt4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 35.54373927321285,
+          "stdout_file": "benchmark.stdout.log",
+          "stderr_file": "benchmark.stderr.log"
+        },
+        "forbidden_changes": []
+      },
+      "rows": [
+        {
+          "benchmark": "io.netty.util.concurrent.ScheduleFutureTaskBenchmark.scheduleLots",
+          "params": {
+            "num": "100000"
+          },
+          "mode": "thrpt",
+          "unit": "ops/s",
+          "original": 483.36173960554214,
+          "developer": 960.2320473764441,
+          "agent": 1815.5812958224378,
+          "agent_vs_original_speedup": 3.756154339613397
+        }
+      ]
+    },
+    {
+      "task": "687308b",
+      "patch_exists": true,
+      "patch_bytes": 1199,
+      "result": {
+        "outcome": "succeeded",
+        "usage": {
+          "input_tokens": 215516,
+          "cached_input_tokens": 199936,
+          "output_tokens": 7958,
+          "reasoning_tokens": null,
+          "total_tokens": 223474
+        },
+        "verification": {
+          "name": "verification",
+          "command": [
+            "/usr/bin/timeout",
+            "--kill-after=5s",
+            "600",
+            "/usr/bin/python3",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/runner-snapshot/scripts/benchllm_project_tools.py",
+            "verify",
+            "--support",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/support/netty/687308b",
+            "--workspace",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/workspaces/netty-687308b-prompt4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.5633655954152346,
+          "stdout_file": "verification.stdout.log",
+          "stderr_file": "verification.stderr.log"
+        },
+        "benchmark": {
+          "name": "benchmark",
+          "command": [
+            "/usr/bin/python3",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/runner-snapshot/scripts/benchllm_project_tools.py",
+            "benchmark",
+            "--support",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/support/netty/687308b",
+            "--workspace",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/workspaces/netty-687308b-prompt4",
+            "--output",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/687308b/prompt4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 184.91764127556235,
+          "stdout_file": "benchmark.stdout.log",
+          "stderr_file": "benchmark.stderr.log"
+        },
+        "forbidden_changes": []
+      },
+      "rows": [
+        {
+          "benchmark": "io.netty.handler.codec.http.QueryStringEncoderBenchmark.longAscii",
+          "params": {},
+          "mode": "thrpt",
+          "unit": "ops/us",
+          "original": 0.9037639786173228,
+          "developer": 3.818785578232512,
+          "agent": 3.3669334741761054,
+          "agent_vs_original_speedup": 3.725456594682175
+        },
+        {
+          "benchmark": "io.netty.handler.codec.http.QueryStringEncoderBenchmark.longAsciiFirst",
+          "params": {},
+          "mode": "thrpt",
+          "unit": "ops/us",
+          "original": 0.09969170342991697,
+          "developer": 0.10733747288152495,
+          "agent": 0.10342938626432885,
+          "agent_vs_original_speedup": 1.0374924161772345
+        },
+        {
+          "benchmark": "io.netty.handler.codec.http.QueryStringEncoderBenchmark.longUtf8",
+          "params": {},
+          "mode": "thrpt",
+          "unit": "ops/us",
+          "original": 0.10876785054173681,
+          "developer": 0.10249925971309064,
+          "agent": 0.10904831501104703,
+          "agent_vs_original_speedup": 1.0025785603734314
+        },
+        {
+          "benchmark": "io.netty.handler.codec.http.QueryStringEncoderBenchmark.shortAscii",
+          "params": {},
+          "mode": "thrpt",
+          "unit": "ops/us",
+          "original": 54.04965573249616,
+          "developer": 58.897424818667176,
+          "agent": 57.598573458683724,
+          "agent_vs_original_speedup": 1.06566032064574
+        },
+        {
+          "benchmark": "io.netty.handler.codec.http.QueryStringEncoderBenchmark.shortAsciiFirst",
+          "params": {},
+          "mode": "thrpt",
+          "unit": "ops/us",
+          "original": 8.731461864824517,
+          "developer": 8.685589267131496,
+          "agent": 8.820107345661098,
+          "agent_vs_original_speedup": 1.01015242146263
+        },
+        {
+          "benchmark": "io.netty.handler.codec.http.QueryStringEncoderBenchmark.shortUtf8",
+          "params": {},
+          "mode": "thrpt",
+          "unit": "ops/us",
+          "original": 9.78497421069083,
+          "developer": 9.927500103974278,
+          "agent": 10.027570782602627,
+          "agent_vs_original_speedup": 1.0247927655901987
+        }
+      ]
+    },
+    {
+      "task": "83a19d5",
+      "patch_exists": true,
+      "patch_bytes": 10267,
+      "result": {
+        "outcome": "succeeded",
+        "usage": {
+          "input_tokens": 1306470,
+          "cached_input_tokens": 1263104,
+          "output_tokens": 43870,
+          "reasoning_tokens": null,
+          "total_tokens": 1350340
+        },
+        "verification": {
+          "name": "verification",
+          "command": [
+            "/usr/bin/timeout",
+            "--kill-after=5s",
+            "600",
+            "/usr/bin/python3",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/runner-snapshot/scripts/benchllm_project_tools.py",
+            "verify",
+            "--support",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/support/netty/83a19d5",
+            "--workspace",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/workspaces/netty-83a19d5-prompt4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.5827478170394897,
+          "stdout_file": "verification.stdout.log",
+          "stderr_file": "verification.stderr.log"
+        },
+        "benchmark": {
+          "name": "benchmark",
+          "command": [
+            "/usr/bin/python3",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/runner-snapshot/scripts/benchllm_project_tools.py",
+            "benchmark",
+            "--support",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/support/netty/83a19d5",
+            "--workspace",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/workspaces/netty-83a19d5-prompt4",
+            "--output",
+            "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/tasks/netty/83a19d5/prompt4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 307.6868132594973,
+          "stdout_file": "benchmark.stdout.log",
+          "stderr_file": "benchmark.stderr.log"
+        },
+        "forbidden_changes": []
+      },
+      "rows": [
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseContended",
+          "params": {
+            "delay": "1"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 264.9731610323584,
+          "developer": 216.04033435999824,
+          "agent": 225.43853274115853,
+          "agent_vs_original_speedup": 1.1753676614662512
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseContended",
+          "params": {
+            "delay": "10"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 319.1740030134294,
+          "developer": 213.88484346572727,
+          "agent": 219.74221650717314,
+          "agent_vs_original_speedup": 1.4524928713596117
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseContended",
+          "params": {
+            "delay": "100"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 402.5636412676052,
+          "developer": 306.19433703111247,
+          "agent": 396.5272292656093,
+          "agent_vs_original_speedup": 1.0152231966848169
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseContended",
+          "params": {
+            "delay": "1000"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 1152.3886384864202,
+          "developer": 1199.7010250859307,
+          "agent": 1206.7095431898463,
+          "agent_vs_original_speedup": 0.9549842752052554
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseContended",
+          "params": {
+            "delay": "10000"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 11178.487369989565,
+          "developer": 11421.823749973848,
+          "agent": 11531.365370053276,
+          "agent_vs_original_speedup": 0.969398419984148
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseUncontended",
+          "params": {
+            "delay": "1"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 21.718497778666627,
+          "developer": 21.06244750384794,
+          "agent": 22.83411360921379,
+          "agent_vs_original_speedup": 0.9511425821190186
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseUncontended",
+          "params": {
+            "delay": "10"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 25.88870988460468,
+          "developer": 25.547634065283965,
+          "agent": 28.646850173287124,
+          "agent_vs_original_speedup": 0.9037192475962198
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseUncontended",
+          "params": {
+            "delay": "100"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 122.23033212253911,
+          "developer": 122.07098064364041,
+          "agent": 122.86877579210665,
+          "agent_vs_original_speedup": 0.9948038574857474
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseUncontended",
+          "params": {
+            "delay": "1000"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 1088.0594238043104,
+          "developer": 1087.7331570689457,
+          "agent": 1087.9328594737533,
+          "agent_vs_original_speedup": 1.0001163346887219
+        },
+        {
+          "benchmark": "io.netty.buffer.AbstractReferenceCountedByteBufBenchmark.retainReleaseUncontended",
+          "params": {
+            "delay": "10000"
+          },
+          "mode": "sample",
+          "unit": "ns/op",
+          "original": 10736.01143949072,
+          "developer": 10714.03131755244,
+          "agent": 10730.874607343323,
+          "agent_vs_original_speedup": 1.0004786965028816
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkCopyT",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 2548.925616705165,
+      "developer": 1824.764649249418,
+      "agent": 1098.184788941182
+    },
+    "speedup_vs_original": {
+      "developer": 1.396851707837291,
+      "agent": 2.3210352596148405
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkDeserializeT",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 1151.279522677395,
+      "developer": 103.24382405982469,
+      "agent": 136.8878718482731
+    },
+    "speedup_vs_original": {
+      "developer": 11.151074005262393,
+      "agent": 8.410383674847955
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkInsertsT",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 48.475992671939395,
+      "developer": 57.064456790577914,
+      "agent": 49.575596879501255
+    },
+    "speedup_vs_original": {
+      "developer": 0.8494953846637406,
+      "agent": 0.9778196476336015
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkMergeT",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 2692.5207896205097,
+      "developer": 1964.8847499654748,
+      "agent": 1253.7667582228476
+    },
+    "speedup_vs_original": {
+      "developer": 1.3703199588005455,
+      "agent": 2.1475452048489663
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+    "params": {
+      "quantile": "0.0001"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 11.068525251335284,
+      "developer": 10.891796988716429,
+      "agent": 11.753539993900276
+    },
+    "speedup_vs_original": {
+      "developer": 1.0162258131327586,
+      "agent": 0.941718431815394
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+    "params": {
+      "quantile": "0.01"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 16.213154040825952,
+      "developer": 15.654883717617437,
+      "agent": 15.41226355735845
+    },
+    "speedup_vs_original": {
+      "developer": 1.0356610967720097,
+      "agent": 1.051964494409721
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+    "params": {
+      "quantile": "0.2500"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 18.473320065605716,
+      "developer": 18.583484841101946,
+      "agent": 18.554273453860517
+    },
+    "speedup_vs_original": {
+      "developer": 0.9940718989770652,
+      "agent": 0.9956369410822735
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+    "params": {
+      "quantile": "0.5000"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 19.075065696402643,
+      "developer": 19.6709491978683,
+      "agent": 19.16061575387284
+    },
+    "speedup_vs_original": {
+      "developer": 0.9697074352909095,
+      "agent": 0.9955351091755543
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+    "params": {
+      "quantile": "0.7500"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 20.586868849080084,
+      "developer": 20.444541741494955,
+      "agent": 20.697991844710238
+    },
+    "speedup_vs_original": {
+      "developer": 1.006961618870442,
+      "agent": 0.994631218503521
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+    "params": {
+      "quantile": "0.9999"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 27.885697059461986,
+      "developer": 28.01517298454506,
+      "agent": 28.068900343332658
+    },
+    "speedup_vs_original": {
+      "developer": 0.9953783642473134,
+      "agent": 0.9934730865253085
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkSerializeT",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 103.31810422071639,
+      "developer": 104.72150739993504,
+      "agent": 104.92462255224493
+    },
+    "speedup_vs_original": {
+      "developer": 0.9865987110569465,
+      "agent": 0.9846888338270781
+    }
+  }
+]

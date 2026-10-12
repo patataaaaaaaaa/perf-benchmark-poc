@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-11T10:44:22.374989+00:00",
+  "pid": 2834321,
+  "alive": true,
+  "status": "evaluation 3/27; netty/95b8db0: original",
+  "unpaid_checked": 48,
+  "unpaid_total": 48,
+  "unpaid_outcomes": {"preparable": 24, "infrastructure_failed": 24},
+  "evaluation_queue_length": 27,
+  "evaluations_completed": 3,
+  "evaluation_outcomes": {"succeeded": 3},
+  "positive_usage_agent_results": 3,
+  "replayed_patches_succeeded": 0,
+  "queue_error": null,
+  "confirmed_new_results": [
+    {"repository": "netty", "task": "2791f0f", "original": "succeeded", "developer": "succeeded", "agent": "succeeded", "verification_returncode": 0, "benchmark_returncode": 0, "jmh_rows": 1, "total_tokens": 543013},
+    {"repository": "netty", "task": "687308b", "original": "succeeded", "developer": "succeeded", "agent": "succeeded", "verification_returncode": 0, "benchmark_returncode": 0, "jmh_rows": 6, "total_tokens": 223474},
+    {"repository": "netty", "task": "83a19d5", "original": "succeeded", "developer": "succeeded", "agent": "succeeded", "verification_returncode": 0, "benchmark_returncode": 0, "jmh_rows": 10, "total_tokens": 1350340}
+  ],
+  "current_measurement": {"repository": "netty", "task": "95b8db0", "version": "original", "log_recently_updated": true},
+  "interpretation": "selected tests and complete JMH passed; no performance improvement or full-correctness claim"
+}

@@ -1,0 +1,26 @@
+// Preparation only: resolve selected project classpaths outside the agent sandbox.
+gradle.projectsEvaluated {
+    def selected = System.getProperty('benchllm.modules').split(',') as Set
+    def records = [:]
+    rootProject.allprojects.each { p ->
+        if (selected.contains(p.path)) {
+            def paths = []
+            def ss = p.extensions.findByName('sourceSets')
+            if (ss) {
+                ['main', 'test'].each { name ->
+                    def s = ss.findByName(name)
+                    if (s) {
+                        paths.addAll(s.runtimeClasspath.files.collect { it.absolutePath })
+                        paths.addAll(s.compileClasspath.files.collect { it.absolutePath })
+                    }
+                }
+            }
+            def scala = p.tasks.findByName('compileScala')
+            if (scala && scala.hasProperty('scalaClasspath')) {
+                paths.addAll(scala.scalaClasspath.files.collect { it.absolutePath })
+            }
+            records[p.path] = paths.unique()
+        }
+    }
+    new File(System.getProperty('benchllm.classpath.output')).text = groovy.json.JsonOutput.toJson(records)
+}

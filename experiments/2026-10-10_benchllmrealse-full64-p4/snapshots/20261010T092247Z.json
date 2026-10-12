@@ -1,0 +1,31 @@
+{
+  "observed_at_beijing": "2026-10-10 17:22 CST",
+  "observed_at_utc": "2026-10-10T09:22:47Z",
+  "batch_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z",
+  "queue_pid": 1664573,
+  "queue_alive": true,
+  "cmdline_contains_this_batch": true,
+  "status": "30/64 complete; kafka/b36e3c2: preparing (unpaid)",
+  "processed_tasks": 30,
+  "outcomes": {"succeeded": 9, "infrastructure_failed": 21},
+  "agent_runs_started": 9,
+  "confirmed_successes": 9,
+  "new_successes_since_1639": [
+    {"repository": "kafka", "task": "aecd47b", "jmh_rows": 12, "total_tokens": 1288662},
+    {"repository": "netty", "task": "8a8337e", "jmh_rows": 4, "total_tokens": 2016245}
+  ],
+  "new_infrastructure_failures": [
+    {"repository": "presto", "task": "3f63ade", "class": "findbugs-maven-plugin 2.5.2 configuration"},
+    {"repository": "netty", "task": "87ec2f8", "class": "PendingWriteQueueTest assertEquals ambiguity"},
+    {"repository": "kafka", "task": "b25c96a", "class": "sandbox Mockito self-attach"},
+    {"repository": "presto", "task": "46d219f", "class": "findbugs-maven-plugin 2.5.2 configuration"}
+  ],
+  "current_task": {
+    "task": "kafka/b36e3c2",
+    "phase": "preparing, unpaid, in-process Gradle download",
+    "distribution": "gradle-6.6-bin.zip",
+    "bytes_at_sample": 13172736,
+    "bytes_gained_in_3_seconds": 65536,
+    "status_file_age_seconds": 879
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-10-12",
+  "collection": "read-only SSH through lab-server; selected non-secret fields only",
+  "server_cpu": "13th Gen Intel(R) Core(TM) i9-13900K",
+  "logical_cpus": 32,
+  "physical_cores": 24,
+  "memory_kib": 131581068,
+  "python_version": "3.10.12",
+  "codex_cli_version": "0.161.0",
+  "agent_batch_config": {
+    "model": "deepseek-v4-pro",
+    "model_provider": "deepseek",
+    "wire_api": "responses",
+    "model_reasoning_effort": "high",
+    "endpoint_location": "remote"
+  },
+  "provider_caveat": "These are configured identifiers. The provider implementation and actual underlying model identity were not independently verified; no claim of native DeepSeek Responses support is made.",
+  "p4_example_task": "netty/9abeaf1",
+  "p4_example_sections": [
+    "The performance issue is",
+    "The source files are",
+    "The unit tests are",
+    "The target benchmark functions are"
+  ],
+  "benchmark_git_revision": null,
+  "benchmark_revision_caveat": "Server BenchLLMRealSE is a file copy without .git; do not invent a commit fingerprint. See the existing official pipeline audit for script hashes.",
+  "secrets_exported": false,
+  "new_model_calls": 0
+}

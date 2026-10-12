@@ -1,0 +1,77 @@
+[
+  {
+    "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithBitShifting",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 1.3732550172365248,
+      "developer": 1.3503268449445647,
+      "agent": 1.3457546715682112
+    },
+    "speedup_vs_original": {
+      "developer": 1.0169797204119877,
+      "agent": 1.020434887761725
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithDivision",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 1.3637074461413028,
+      "developer": 1.3483219550109258,
+      "agent": 1.355238308936812
+    },
+    "speedup_vs_original": {
+      "developer": 1.011410843732981,
+      "agent": 1.0062491866918482
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithFloorMod",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 1.8462237320139026,
+      "developer": 1.8429231321205484,
+      "agent": 1.8436153617270907
+    },
+    "speedup_vs_original": {
+      "developer": 1.0017909590670537,
+      "agent": 1.0014148126235878
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithMask",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 1.3925902617392756,
+      "developer": 1.4149132826118094,
+      "agent": 1.3953149179209319
+    },
+    "speedup_vs_original": {
+      "developer": 0.9842230466369448,
+      "agent": 0.9980472822682093
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithMod",
+    "params": {},
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 1.4724872337823942,
+      "developer": 1.4703509407463609,
+      "agent": 1.4789966439667186
+    },
+    "speedup_vs_original": {
+      "developer": 1.0014529137070833,
+      "agent": 0.9955987660885653
+    }
+  }
+]

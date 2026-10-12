@@ -1,0 +1,27 @@
+{
+  "started": "2026-10-12T05:16:24.938078+00:00",
+  "repository": "presto",
+  "task": "60a5a5c",
+  "source_batch": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z",
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "versions": [
+    "original",
+    "developer",
+    "agent"
+  ],
+  "test_seconds": 600,
+  "benchmark_seconds": 900,
+  "jmh": {
+    "warmup": 10,
+    "measurement": 50,
+    "forks": 1,
+    "seconds": 1
+  },
+  "model_calls": 0,
+  "agent_results_remeasured": true,
+  "common_environment_changes": [],
+  "limitations": "One measurement round; concurrent host memory/IO load can still affect results"
+}

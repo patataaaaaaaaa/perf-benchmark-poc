@@ -1,0 +1,34 @@
+diff --git a/bsi/src/main/java/org/roaringbitmap/bsi/buffer/BitSliceIndexBase.java b/bsi/src/main/java/org/roaringbitmap/bsi/buffer/BitSliceIndexBase.java
+index c40c836..d25ddc6 100644
+--- a/bsi/src/main/java/org/roaringbitmap/bsi/buffer/BitSliceIndexBase.java
++++ b/bsi/src/main/java/org/roaringbitmap/bsi/buffer/BitSliceIndexBase.java
+@@ -3,7 +3,6 @@ package org.roaringbitmap.bsi.buffer;
+ 
+ import org.roaringbitmap.BatchIterator;
+ import org.roaringbitmap.IntConsumer;
+-import org.roaringbitmap.IntIterator;
+ import org.roaringbitmap.RoaringBitmap;
+ import org.roaringbitmap.bsi.BitmapSliceIndex;
+ import org.roaringbitmap.bsi.Pair;
+@@ -318,14 +317,8 @@ public class BitSliceIndexBase {
+     MutableRoaringBitmap F = ImmutableRoaringBitmap.or(G, E);
+     long n = F.getLongCardinality() - k;
+     if (n > 0) {
+-      // TODO: make faster
+-      IntIterator i = F.getIntIterator();
+-      MutableRoaringBitmap turnoff = new MutableRoaringBitmap();
+-      while (i.hasNext() && n > 0) {
+-        turnoff.add(i.next());
+-        --n;
+-      }
+-      F.andNot(turnoff);
++      int nth = F.select((int) n - 1);
++      F.remove(Integer.toUnsignedLong(F.first()), Integer.toUnsignedLong(nth) + 1L);
+     }
+ 
+     if (F.getCardinality() != k)
+@@ -632,4 +625,3 @@ public class BitSliceIndexBase {
+     return result;
+   }
+ }
+-

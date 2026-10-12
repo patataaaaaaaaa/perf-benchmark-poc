@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-12T06:17:26.752304+00:00",
+  "predecessor": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z",
+  "model_calls": 0,
+  "eligibility": "All three native tests passed; every failed JMH version failed solely on the shared lock",
+  "cpus": [
+    0,
+    1
+  ],
+  "test_seconds": 600,
+  "benchmark_seconds": 900,
+  "jmh": {
+    "warmup": 10,
+    "measurement": 50,
+    "forks": 1,
+    "seconds": 1
+  },
+  "temp_policy": "Private per-version java.io.tmpdir; do not disable JMH locking",
+  "policy": "Wait for existing comparisons; one remeasurement per eligible task, serial; preserve originals"
+}

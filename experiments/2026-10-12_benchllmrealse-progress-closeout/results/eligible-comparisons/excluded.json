@@ -1,0 +1,94 @@
+[
+  {
+    "repository": "presto",
+    "task": "20dcaed",
+    "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-20dcaed",
+    "versions": [
+      {
+        "version": "original",
+        "verify": "CalledProcessError",
+        "benchmark": "not_run_test_failed"
+      },
+      {
+        "version": "developer",
+        "verify": "passed",
+        "benchmark": "passed"
+      },
+      {
+        "version": "agent",
+        "verify": "passed",
+        "benchmark": "passed"
+      }
+    ],
+    "reason": "not all three tests passed, or a non-lock benchmark failure; no further attempt"
+  },
+  {
+    "repository": "netty",
+    "task": "7b91edd",
+    "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-7b91edd",
+    "versions": [
+      {
+        "version": "original",
+        "verify": "passed",
+        "benchmark": "CalledProcessError"
+      },
+      {
+        "version": "developer",
+        "verify": "passed",
+        "benchmark": "passed"
+      },
+      {
+        "version": "agent",
+        "verify": "passed",
+        "benchmark": "CalledProcessError"
+      }
+    ],
+    "reason": "not all three tests passed, or a non-lock benchmark failure; no further attempt"
+  },
+  {
+    "repository": "presto",
+    "task": "8d7f587",
+    "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-8d7f587",
+    "versions": [
+      {
+        "version": "original",
+        "verify": "CalledProcessError",
+        "benchmark": "not_run_test_failed"
+      },
+      {
+        "version": "developer",
+        "verify": "passed",
+        "benchmark": "CalledProcessError"
+      },
+      {
+        "version": "agent",
+        "verify": "passed",
+        "benchmark": "CalledProcessError"
+      }
+    ],
+    "reason": "not all three tests passed, or a non-lock benchmark failure; no further attempt"
+  },
+  {
+    "repository": "netty",
+    "task": "e542a2c",
+    "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c",
+    "versions": [
+      {
+        "version": "original",
+        "verify": "CalledProcessError",
+        "benchmark": "not_run_test_failed"
+      },
+      {
+        "version": "developer",
+        "verify": "passed",
+        "benchmark": "CalledProcessError"
+      },
+      {
+        "version": "agent",
+        "verify": "passed",
+        "benchmark": "passed"
+      }
+    ],
+    "reason": "not all three tests passed, or a non-lock benchmark failure; no further attempt"
+  }
+]

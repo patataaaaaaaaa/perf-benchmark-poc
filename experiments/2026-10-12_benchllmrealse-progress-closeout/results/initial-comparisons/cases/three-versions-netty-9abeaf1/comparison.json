@@ -1,0 +1,47 @@
+[
+  {
+    "benchmark": "io.netty.microbench.channel.epoll.EpollSocketChannelBenchmark.executeMulti",
+    "params": {},
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 438437.2576628041,
+      "developer": 688511.4830632855,
+      "agent": 703131.3485281742
+    },
+    "speedup_vs_original": {
+      "developer": 1.5703763104749868,
+      "agent": 1.6037217098665064
+    }
+  },
+  {
+    "benchmark": "io.netty.microbench.channel.epoll.EpollSocketChannelBenchmark.executeSingle",
+    "params": {},
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 307944.5916113269,
+      "developer": 298692.3327526568,
+      "agent": 330272.1834771105
+    },
+    "speedup_vs_original": {
+      "developer": 0.9699547934572986,
+      "agent": 1.072505224881379
+    }
+  },
+  {
+    "benchmark": "io.netty.microbench.channel.epoll.EpollSocketChannelBenchmark.pingPong",
+    "params": {},
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 95302.13810067429,
+      "developer": 97435.43061328618,
+      "agent": 96279.03404337347
+    },
+    "speedup_vs_original": {
+      "developer": 1.0223845189114051,
+      "agent": 1.0102505144393215
+    }
+  }
+]

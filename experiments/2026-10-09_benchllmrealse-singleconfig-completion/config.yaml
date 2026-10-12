@@ -1,0 +1,36 @@
+status: complete_with_failures
+protocol_frozen_date: '2026-10-09'
+batch_id: roaring-singleconfig-20261009-nextbatch
+repository: RoaringBitmap
+tasks: [abdd6ff, 1de6825]
+prompts: [4]
+model: deepseek-v4-pro
+agent: codex_cli
+max_agent_runs: 2
+agent_timeout_seconds: 900
+outer_optimization_loop: false
+public_performance_prompts: [4]
+metric_origin: supplemental-production
+code_versions: [original, developer, agent]
+jmh:
+  warmup_iterations: 5
+  measurement_iterations: 10
+  forks: 2
+  seconds_per_iteration: 1
+budget:
+  initial_balance_cny: 112.38
+  reserve_cny: 92.38
+  max_spend_cny: 20
+  check_between_agent_runs: true
+  hard_in_flight_spending_cap: false
+  stop_on_balance_unavailable: true
+launch:
+  pid: 1335034
+  started_utc: '2026-10-09T11:51:47.745346+00:00'
+  runner: scripts/run_roaringbitmap_batch.py
+observed_completion:
+  ended_beijing: '2026-10-09T20:06:26'
+  agent_tasks_started: 1
+  abdd6ff: developer_reference_benchmark_failed_before_agent
+  1de6825: prompt4_succeeded_selected_junit_and_jmh
+  checked_balance_cny: 111.67

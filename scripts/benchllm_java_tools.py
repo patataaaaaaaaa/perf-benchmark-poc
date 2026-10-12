@@ -11,6 +11,18 @@ import subprocess
 import tempfile
 
 
+def jmh_command(classpath, spec, result_path, *, quick=False):
+    # JMH forks communicate over a loopback socket. The agent sandbox forbids
+    # sockets, so quick feedback runs in-process. Final evaluation still forks.
+    return [
+        "java", "-cp", classpath, "org.openjdk.jmh.Main", spec["pattern"],
+        "-wi", "1" if quick else "5", "-i", "2" if quick else "10",
+        "-f", "0" if quick else "2", "-w", "1s", "-r", "1s",
+        "-foe", "true", "-rf", "json", "-rff", str(result_path),
+        *spec.get("args", []),
+    ]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("mode", choices=("verify", "benchmark", "quick"))
@@ -46,15 +58,18 @@ def main() -> int:
         output.mkdir(parents=True, exist_ok=True)
         all_rows = []
         quick = args.mode == "quick"
+        if quick:
+            print("Quick feedback: in-process JMH (-f 0); exploratory only, not final performance evidence.",
+                  flush=True)
+        (output / "measurement_protocol.json").write_text(json.dumps(dict(
+            mode=args.mode, forks=0 if quick else 2,
+            warmup=1 if quick else 5, measurement=2 if quick else 10,
+            seconds=1, authoritative=not quick,
+            quick_tool_revision="socket-free-v2" if quick else None,
+        ), indent=2) + "\n")
         for index, spec in enumerate(manifest["measurements"]):
             result_path = output / f"jmh-{index}.json"
-            command = [
-                "java", "-cp", effective_cp, "org.openjdk.jmh.Main", spec["pattern"],
-                "-wi", "1" if quick else "5", "-i", "2" if quick else "10",
-                "-f", "1" if quick else "2", "-w", "1s", "-r", "1s",
-                "-foe", "true", "-rf", "json", "-rff", str(result_path),
-                *spec.get("args", []),
-            ]
+            command = jmh_command(effective_cp, spec, result_path, quick=quick)
             subprocess.run(command, cwd=workspace, check=True)
             rows = json.loads(result_path.read_text())
             if len(rows) != spec["expected_rows"]:

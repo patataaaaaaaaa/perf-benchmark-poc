@@ -1,0 +1,450 @@
+{
+  "date": "2026-10-09",
+  "batch_id": "roaring-batch-20261009T085300Z",
+  "java_runtime": "OpenJDK 11.0.32.1 (11.0.32.1+1-post-1ubuntu1-22.04-Ubuntu)",
+  "seed": 20261009,
+  "kind": "independent_functional_diagnostics_not_jmh_not_full_test_suite",
+  "new_model_calls": 0,
+  "candidate_sources_modified": false,
+  "interpretation": {
+    "shift_invalid_input_exception_compatibility": "Behavior differs from original for invalid arguments; developer version also differs. Not automatically classified as an agent-only valid-input bug.",
+    "mappeable_shared_buffer": "Public constructors share a CharBuffer. After querying container A and extending the run via container B, A.contains(1) is true but cached A.getCardinality() remains 1 instead of 2 in P1/P3/P4."
+  },
+  "runs": [
+    {
+      "task": "34bce1b",
+      "version": "original",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "shift_valid_inputs",
+          "status": "PASS"
+        },
+        {
+          "name": "shift_invalid_input_exception_compatibility",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "task": "34bce1b",
+      "version": "developer",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "shift_valid_inputs",
+          "status": "PASS"
+        },
+        {
+          "name": "shift_invalid_input_exception_compatibility",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: pos=-1,count=0: expected=1, actual=0"
+        }
+      ]
+    },
+    {
+      "task": "34bce1b",
+      "version": "prompt1",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "shift_valid_inputs",
+          "status": "PASS"
+        },
+        {
+          "name": "shift_invalid_input_exception_compatibility",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: pos=-1,count=0: expected=1, actual=0"
+        }
+      ]
+    },
+    {
+      "task": "34bce1b",
+      "version": "prompt2",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "shift_valid_inputs",
+          "status": "PASS"
+        },
+        {
+          "name": "shift_invalid_input_exception_compatibility",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: pos=-1,count=0: expected=1, actual=0"
+        }
+      ]
+    },
+    {
+      "task": "34bce1b",
+      "version": "prompt3",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "shift_valid_inputs",
+          "status": "PASS"
+        },
+        {
+          "name": "shift_invalid_input_exception_compatibility",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: pos=-1,count=0: expected=1, actual=0"
+        }
+      ]
+    },
+    {
+      "task": "34bce1b",
+      "version": "prompt4",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "shift_valid_inputs",
+          "status": "PASS"
+        },
+        {
+          "name": "shift_invalid_input_exception_compatibility",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: pos=-1,count=0: expected=1, actual=0"
+        }
+      ]
+    },
+    {
+      "task": "b5b4af6",
+      "version": "original",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "mappeable_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "run_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_readExternal_after_cached_query",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_heap_buffer",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_direct_buffer",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "task": "b5b4af6",
+      "version": "developer",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "mappeable_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "run_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_readExternal_after_cached_query",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_heap_buffer",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_direct_buffer",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "task": "b5b4af6",
+      "version": "prompt1",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "mappeable_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "run_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_readExternal_after_cached_query",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_heap_buffer",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: count must match shared content: expected=2, actual=1"
+        },
+        {
+          "name": "mappeable_shared_direct_buffer",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: count must match shared content: expected=2, actual=1"
+        }
+      ]
+    },
+    {
+      "task": "b5b4af6",
+      "version": "prompt2",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "mappeable_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "run_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_readExternal_after_cached_query",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_heap_buffer",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_direct_buffer",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "task": "b5b4af6",
+      "version": "prompt3",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "mappeable_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "run_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_readExternal_after_cached_query",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_heap_buffer",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: count must match shared content: expected=2, actual=1"
+        },
+        {
+          "name": "mappeable_shared_direct_buffer",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: count must match shared content: expected=2, actual=1"
+        }
+      ]
+    },
+    {
+      "task": "b5b4af6",
+      "version": "prompt4",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "mappeable_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "run_warm_cache_mutation_sequence",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_readExternal_after_cached_query",
+          "status": "PASS"
+        },
+        {
+          "name": "mappeable_shared_heap_buffer",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: count must match shared content: expected=2, actual=1"
+        },
+        {
+          "name": "mappeable_shared_direct_buffer",
+          "status": "FAIL",
+          "detail": "java.lang.AssertionError: count must match shared content: expected=2, actual=1"
+        }
+      ]
+    },
+    {
+      "task": "53ba593",
+      "version": "original",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "roaring_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode3",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode3",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "task": "53ba593",
+      "version": "developer",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "roaring_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode3",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode3",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "task": "53ba593",
+      "version": "prompt1",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "roaring_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode3",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode3",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "task": "53ba593",
+      "version": "prompt2",
+      "compile_returncode": 0,
+      "java_returncode": 0,
+      "checks": [
+        {
+          "name": "roaring_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "roaring_checkedAdd_mode3",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode0",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode1",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode2",
+          "status": "PASS"
+        },
+        {
+          "name": "mutable_checkedAdd_mode3",
+          "status": "PASS"
+        }
+      ]
+    }
+  ]
+}

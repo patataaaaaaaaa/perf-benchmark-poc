@@ -1,0 +1,28 @@
+phase: failed51_retry
+ssh_entry: lab-server
+run_root: /downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z
+pid: 2834321
+historical_total: 64
+excluded_completed_agent_evaluations: 13
+unpaid_prepare_count: 48
+existing_patch_replay_count: 3
+existing_patches: [kafka/922a95a, kafka/b36e3c2, kafka/eb24ed8]
+new_model_call_max: 48
+model: deepseek-v4-pro
+prompt: official_P4
+agent_timeout_seconds: 900
+outer_agent_retry_loop: false
+paid_gate: all_48_preparations_accounted_and_current_original_developer_formal_evaluations_succeeded
+reserve_cny: 2
+spending_cap_cny: null
+auto_recharge: false
+timeouts_seconds: {build: 1800, selected_tests: 600, formal_jmh: 21600}
+jmh: {forks: 2, warmup: 5, measurement: 10, seconds: 1, parameter_policy: all_official_defaults}
+isolation: private_code_maven_gradle_tools_git_refs_and_workspaces
+shared_git_objects: read_only_alternates
+shared_code_cache_mutation: false
+new_test_exclusions: false
+operator_production_fixes: false
+sandbox_permissions: unchanged
+failure_policy: ordinary_task_failure_continues_global_billing_or_configuration_fault_stops_paid_phase
+baseline_scope: related_reactor_build_then_allowed_source_overlay_and_selected_tests_not_full_suite

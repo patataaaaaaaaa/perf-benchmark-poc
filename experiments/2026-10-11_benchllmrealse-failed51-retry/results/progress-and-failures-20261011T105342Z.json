@@ -1,0 +1,547 @@
+{
+  "checked_utc": "2026-10-11T10:53:42.048836+00:00",
+  "batch": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z",
+  "pid": 2834321,
+  "alive": true,
+  "status": "evaluation 4/27; netty/b2eaab0: P4 Agent",
+  "queue": [
+    {
+      "repository": "netty",
+      "task": "2791f0f",
+      "reuse_patch": false
+    },
+    {
+      "repository": "netty",
+      "task": "687308b",
+      "reuse_patch": false
+    },
+    {
+      "repository": "netty",
+      "task": "83a19d5",
+      "reuse_patch": false
+    },
+    {
+      "repository": "netty",
+      "task": "95b8db0",
+      "reuse_patch": false
+    },
+    {
+      "repository": "netty",
+      "task": "b2eaab0",
+      "reuse_patch": false
+    },
+    {
+      "repository": "netty",
+      "task": "b72fea3",
+      "reuse_patch": false
+    },
+    {
+      "repository": "netty",
+      "task": "feb804d",
+      "reuse_patch": false
+    },
+    {
+      "repository": "kafka",
+      "task": "922a95a",
+      "reuse_patch": true
+    },
+    {
+      "repository": "kafka",
+      "task": "b36e3c2",
+      "reuse_patch": true
+    },
+    {
+      "repository": "kafka",
+      "task": "eb24ed8",
+      "reuse_patch": true
+    },
+    {
+      "repository": "presto",
+      "task": "000fa29",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "20dcaed",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "239f726",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "290f5be",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "53aa7f6",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "60a5a5c",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "6908344",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "8abba9e",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "8d7f587",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "a26f440",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "b54d248",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "bfb18d6",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "c3cb7a9",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "ee74e4b",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "efd0834",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "fa655f6",
+      "reuse_patch": false
+    },
+    {
+      "repository": "presto",
+      "task": "fdb7611",
+      "reuse_patch": false
+    }
+  ],
+  "evaluated": [
+    {
+      "repository": "netty",
+      "task": "2791f0f",
+      "started": "2026-10-11T10:02:50.458063+00:00",
+      "stage": "paid_agent",
+      "agent_started": true,
+      "reuse_patch": false,
+      "references": {
+        "original": {
+          "code_version": "original",
+          "stage": "benchmark",
+          "outcome": "succeeded",
+          "jmh_rows": 1
+        },
+        "developer": {
+          "code_version": "developer",
+          "stage": "benchmark",
+          "outcome": "succeeded",
+          "jmh_rows": 1
+        }
+      },
+      "outcome": "succeeded",
+      "usage": {
+        "input_tokens": 522424,
+        "cached_input_tokens": 496512,
+        "output_tokens": 20589,
+        "reasoning_tokens": null,
+        "total_tokens": 543013
+      },
+      "ended": "2026-10-11T10:08:27.094549+00:00"
+    },
+    {
+      "repository": "netty",
+      "task": "687308b",
+      "started": "2026-10-11T10:08:27.094842+00:00",
+      "stage": "paid_agent",
+      "agent_started": true,
+      "reuse_patch": false,
+      "references": {
+        "original": {
+          "code_version": "original",
+          "stage": "benchmark",
+          "outcome": "succeeded",
+          "jmh_rows": 6
+        },
+        "developer": {
+          "code_version": "developer",
+          "stage": "benchmark",
+          "outcome": "succeeded",
+          "jmh_rows": 6
+        }
+      },
+      "outcome": "succeeded",
+      "usage": {
+        "input_tokens": 215516,
+        "cached_input_tokens": 199936,
+        "output_tokens": 7958,
+        "reasoning_tokens": null,
+        "total_tokens": 223474
+      },
+      "ended": "2026-10-11T10:20:09.817445+00:00"
+    },
+    {
+      "repository": "netty",
+      "task": "83a19d5",
+      "started": "2026-10-11T10:20:09.818390+00:00",
+      "stage": "paid_agent",
+      "agent_started": true,
+      "reuse_patch": false,
+      "references": {
+        "original": {
+          "code_version": "original",
+          "stage": "benchmark",
+          "outcome": "succeeded",
+          "jmh_rows": 10
+        },
+        "developer": {
+          "code_version": "developer",
+          "stage": "benchmark",
+          "outcome": "succeeded",
+          "jmh_rows": 10
+        }
+      },
+      "outcome": "succeeded",
+      "usage": {
+        "input_tokens": 1306470,
+        "cached_input_tokens": 1263104,
+        "output_tokens": 43870,
+        "reasoning_tokens": null,
+        "total_tokens": 1350340
+      },
+      "ended": "2026-10-11T10:43:39.597470+00:00"
+    },
+    {
+      "repository": "netty",
+      "task": "95b8db0",
+      "started": "2026-10-11T10:43:39.598406+00:00",
+      "stage": "reference_developer",
+      "agent_started": false,
+      "reuse_patch": false,
+      "references": {
+        "original": {
+          "code_version": "original",
+          "stage": "benchmark",
+          "outcome": "succeeded",
+          "jmh_rows": 4
+        },
+        "developer": {
+          "code_version": "developer",
+          "stage": "verification",
+          "outcome": "reference_evaluation_failed",
+          "error_type": "CalledProcessError",
+          "error": "Command '['/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/runner-snapshot/scripts/benchllm_project_tools.py', 'verify', '--support', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/support/netty/95b8db0', '--workspace', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/failed51-retry-20261011T090459Z/workspaces/netty-95b8db0-developer']' returned non-zero exit status 1."
+        }
+      },
+      "outcome": "reference_evaluation_failed_no_new_agent",
+      "ended": "2026-10-11T10:45:44.488755+00:00"
+    }
+  ],
+  "prepare_failures": [
+    {
+      "repository": "kafka",
+      "task": "39eb31f",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "kafka",
+      "task": "4fa5bdc",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "kafka",
+      "task": "59a75f4",
+      "failed_stage": "prepare",
+      "error_type": "RuntimeError"
+    },
+    {
+      "repository": "kafka",
+      "task": "8dff0b1",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "presto",
+      "task": "297b089",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "netty",
+      "task": "7b91edd",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "kafka",
+      "task": "9bb2f78",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "presto",
+      "task": "3a4f2e3",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "presto",
+      "task": "3f63ade",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "netty",
+      "task": "87ec2f8",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "presto",
+      "task": "46d219f",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "presto",
+      "task": "4e71bf3",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "netty",
+      "task": "9abeaf1",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "kafka",
+      "task": "c7bc8f7",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "netty",
+      "task": "ab8c4f2",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "kafka",
+      "task": "c8af740",
+      "failed_stage": "prepare",
+      "error_type": "URLError"
+    },
+    {
+      "repository": "presto",
+      "task": "659c3ee",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "kafka",
+      "task": "e2e2c62",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "netty",
+      "task": "dd69a81",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "kafka",
+      "task": "e3ccf20",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "netty",
+      "task": "deea51e",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "presto",
+      "task": "9e010a7",
+      "failed_stage": "prepare",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "netty",
+      "task": "e542a2c",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    },
+    {
+      "repository": "presto",
+      "task": "aed4c9a",
+      "failed_stage": "sandbox_selected_tests",
+      "error_type": "CalledProcessError"
+    }
+  ],
+  "queue_error": null,
+  "failure_categories": [
+    {
+      "category": "Netty 未重打包的 JCTools 依赖缺失",
+      "count": 6,
+      "repository": "netty",
+      "tasks": [
+        "87ec2f8",
+        "9abeaf1",
+        "ab8c4f2",
+        "dd69a81",
+        "deea51e",
+        "e542a2c"
+      ],
+      "evidence": "org/jctools/queues/SpscLinkedQueue 不存在。87ec2f8、9abeaf1 的 common JAR 只有 io/netty/util/internal/shaded/org/jctools/...；classpath 同时放入未经 shade 的 common/target/classes，且没有 jctools-core.jar。",
+      "proposed_fix": "按本题历史 common 模块的编译依赖导出完整 classpath，加入对应版本的未重打包 JCTools；统一三版本，不随意换最新版。先验证一例后覆盖同类。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "Presto TestNG 与跨模块监听器不兼容",
+      "count": 3,
+      "repository": "presto",
+      "tasks": [
+        "297b089",
+        "3a4f2e3",
+        "4e71bf3"
+      ],
+      "evidence": "NoClassDefFoundError: org/testng/IClassListener。三题使用 testng-6.9.6.jar（没有该接口），但全部 reactor target 目录被放入运行路径，presto-main/target/test-classes/META-INF/services/org.testng.ITestNGListener 加载 LogTestDurationListener。",
+      "proposed_fix": "限制测试运行路径为本题选定模块及必要依赖，不引入无关模块的测试目录和服务监听器；保留正确的历史测试版本。若仍不兼容，再核对历史模块实际 runner 配置。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "Kafka 沙箱拒绝创建 socket",
+      "count": 3,
+      "repository": "kafka",
+      "tasks": [
+        "4fa5bdc",
+        "e2e2c62",
+        "e3ccf20"
+      ],
+      "evidence": "AclAuthorizerTest 需要本机服务；出现 java.net.SocketException: Operation not permitted 及清理时连带 NullPointerException。",
+      "proposed_fix": "保持 Agent 原沙箱；考虑把既有测试放在独立外部评测容器的隔离网络中执行，仅容许本机测试服务。必须显式设计并验证，不直接给 Agent 全网络/全权限，也不删相关测试。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "旧 FindBugs 与 Maven 参数注入不兼容",
+      "count": 2,
+      "repository": "presto",
+      "tasks": [
+        "3f63ade",
+        "46d219f"
+      ],
+      "evidence": "findbugs-maven-plugin:2.5.2 配置 pluginArtifacts 失败，UnmodifiableRandomAccessList 不能赋给 ArrayList；skip 标志没有阻止插件初始化。",
+      "proposed_fix": "先验证兼容的历史 Maven；必要时仅在环境准备配置中禁用静态分析插件的执行，不能禁用功能测试，保留补丁与命令记录。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "历史插件仓库返回非 SHA1 内容",
+      "count": 2,
+      "repository": "kafka",
+      "tasks": [
+        "39eb31f",
+        "c7bc8f7"
+      ],
+      "evidence": "Gradle3.5 从 dl.bintray.com 取 grgit1.9.2 / versions0.14.0 / shadow1.2.4，SHA1 下载解析报 For input string: <ht。",
+      "proposed_fix": "配置可用的依赖镜像或离线缓存，保持原插件坐标/版本，校验文件与校验和，不把插件升级当作等价修复。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "Git 获取缺失对象",
+      "count": 2,
+      "repository": "presto",
+      "tasks": [
+        "659c3ee",
+        "9e010a7"
+      ],
+      "evidence": "fetch: fatal: bad object；remote did not send all necessary objects，同时有 Could not read 对象。尚未确定缺失位于本地缓存、shallow/alternates 还是远端。",
+      "proposed_fix": "使用独立干净 bare 仓库获取确切 fix 及 parent，检查对象完整性，避开已有不完整引用；不改共享仓库，不向 Agent 暴露未来修复历史。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "JMH 源码与原版 API 不兼容",
+      "count": 2,
+      "repository": "kafka/netty",
+      "tasks": [
+        "kafka/8dff0b1",
+        "netty/7b91edd"
+      ],
+      "evidence": "Kafka AclAuthorizerBenchmark 引用原版没有的 ResourceOrdering；Netty GetIpV6ByNameBenchmark 访问 private getIPv6ByName。",
+      "proposed_fix": "逐题做仅限 harness 的兼容适配，验证三版本操作/输入语义相同并明确披露；不能把开发者生产修复塞入原版。无法等价适配的保留为不可评测。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "Gradle 版本识别器不支持变量声明",
+      "count": 1,
+      "repository": "kafka",
+      "tasks": [
+        "59a75f4"
+      ],
+      "evidence": "识别器仅匹配 gradleVersion='数字'，历史 build.gradle 使用 $versions.gradle；gradle/dependencies.gradle 实际声明 gradle: 5.6.2。",
+      "proposed_fix": "扩展版本解析读取 dependencies.gradle 的明确数字值，验证后固定 Gradle5.6.2，不猜测或统一使用新 Gradle。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "Gradle 分发包下载超时",
+      "count": 1,
+      "repository": "kafka",
+      "tasks": [
+        "c8af740"
+      ],
+      "evidence": "URLError: urlopen error timed out，未进入项目构建；历史 wrapper 声明 Gradle8.7。",
+      "proposed_fix": "独立预下载对应分发包，有限重试/镜像，校验与 wrapper 一致后进入私有缓存。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "Kafka JMH 模块缺少 Connect 依赖",
+      "count": 1,
+      "repository": "kafka",
+      "tasks": [
+        "9bb2f78"
+      ],
+      "evidence": "ReplaceFieldBenchmark 编译找不到 org.apache.kafka.connect.source.SourceRecord 和 org.apache.kafka.connect.transforms.ReplaceField。",
+      "proposed_fix": "核对该历史版本 jmh-benchmarks 的依赖图，把 connect:api/transforms 的同版本输出加入 harness 的编译和运行路径；仅适配评测依赖，不改生产实现。",
+      "fix_verified_this_turn": false
+    },
+    {
+      "category": "Presto 选定测试失败，缺少断言详情",
+      "count": 1,
+      "repository": "presto",
+      "tasks": [
+        "aed4c9a"
+      ],
+      "evidence": "TestGeometrySerde 总计8项，1项失败，0跳过；当前日志只有汇总。TestNG XML 报告位于 TemporaryDirectory，退出后被删除。",
+      "proposed_fix": "先修复报告留存，将测试名称、断言、异常栈落盘，然后隔离复现；当前不能判断是原版行为问题、依赖差异或适配问题，不能跳过断言冒充通过。",
+      "fix_verified_this_turn": false
+    }
+  ]
+}

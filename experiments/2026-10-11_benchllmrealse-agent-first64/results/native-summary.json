@@ -1,0 +1,362 @@
+[
+  {
+    "repository": "kafka",
+    "task": "39eb31f",
+    "started": "2026-10-11T17:01:34.634854+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-39eb31f', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/39eb31f/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T17:01:57.401833+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "000fa29",
+    "started": "2026-10-11T17:01:57.498194+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-000fa29', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/000fa29/native-plan.json']' timed out after 899.9999890653417 seconds",
+    "ended": "2026-10-11T17:17:46.635082+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "4fa5bdc",
+    "started": "2026-10-11T17:17:46.713751+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-4fa5bdc', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/4fa5bdc/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T17:19:28.165156+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "20dcaed",
+    "started": "2026-10-11T17:19:28.171818+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T17:21:55.406867+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "59a75f4",
+    "started": "2026-10-11T17:21:55.493102+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-59a75f4', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/59a75f4/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T17:22:32.501750+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "239f726",
+    "started": "2026-10-11T17:22:32.532317+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T17:31:01.388535+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "8dff0b1",
+    "started": "2026-10-11T17:31:01.451282+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-8dff0b1', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/8dff0b1/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T17:32:27.152112+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "290f5be",
+    "started": "2026-10-11T17:32:27.232008+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T17:37:46.948337+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "297b089",
+    "started": "2026-10-11T17:37:47.008092+00:00",
+    "verify": "TimeoutExpired",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-297b089', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/297b089/native-plan.json']' timed out after 179.99997565336525 seconds",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T17:40:47.012594+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "7b91edd",
+    "started": "2026-10-11T17:40:47.134356+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T17:48:34.447963+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "9bb2f78",
+    "started": "2026-10-11T17:48:34.685092+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-9bb2f78', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/9bb2f78/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T17:49:09.562155+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "3a4f2e3",
+    "started": "2026-10-11T17:49:09.603650+00:00",
+    "verify": "TimeoutExpired",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-3a4f2e3', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/3a4f2e3/native-plan.json']' timed out after 179.999986063689 seconds",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T17:52:09.607946+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "3f63ade",
+    "started": "2026-10-11T17:52:09.680449+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T17:54:38.599463+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "87ec2f8",
+    "started": "2026-10-11T17:54:38.689774+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-87ec2f8', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/87ec2f8/native-plan.json']' timed out after 899.9999777441844 seconds",
+    "ended": "2026-10-11T18:09:48.980117+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "46d219f",
+    "started": "2026-10-11T18:09:49.144664+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T18:14:37.944724+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "4e71bf3",
+    "started": "2026-10-11T18:14:38.021053+00:00",
+    "verify": "TimeoutExpired",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-4e71bf3', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/4e71bf3/native-plan.json']' timed out after 179.99997983686626 seconds",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T18:17:38.025477+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "95b8db0",
+    "started": "2026-10-11T18:17:38.055195+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-95b8db0', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/95b8db0/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T18:18:25.508553+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "53aa7f6",
+    "started": "2026-10-11T18:18:25.576437+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T18:19:57.642468+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "9abeaf1",
+    "started": "2026-10-11T18:19:57.687470+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T18:23:58.434937+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "c7bc8f7",
+    "started": "2026-10-11T18:23:58.510812+00:00",
+    "verify": "CalledProcessError",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-c7bc8f7', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/c7bc8f7/native-plan.json']' returned non-zero exit status 1.",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T18:24:05.340536+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "60a5a5c",
+    "started": "2026-10-11T18:24:05.380725+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T18:28:02.752670+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "ab8c4f2",
+    "started": "2026-10-11T18:28:02.849123+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T18:34:10.238405+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "c8af740",
+    "started": "2026-10-11T18:34:10.366945+00:00",
+    "verify": "CalledProcessError",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-c8af740', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/c8af740/native-plan.json']' returned non-zero exit status 1.",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T18:34:27.078108+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "659c3ee",
+    "started": "2026-10-11T18:34:27.107299+00:00",
+    "verify": "TimeoutExpired",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-659c3ee', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/659c3ee/native-plan.json']' timed out after 179.99998944625258 seconds",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T18:37:27.117540+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "6908344",
+    "started": "2026-10-11T18:37:27.174583+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-6908344', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/6908344/native-plan.json']' timed out after 899.9999713487923 seconds",
+    "ended": "2026-10-11T18:52:35.481247+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "b72fea3",
+    "started": "2026-10-11T18:52:35.616521+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-b72fea3', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/b72fea3/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T18:55:10.126095+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "e2e2c62",
+    "started": "2026-10-11T18:55:10.229335+00:00",
+    "verify": "CalledProcessError",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-e2e2c62', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/e2e2c62/native-plan.json']' returned non-zero exit status 1.",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T18:55:51.650615+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "8abba9e",
+    "started": "2026-10-11T18:55:51.720445+00:00",
+    "verify": "CalledProcessError",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-8abba9e', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/8abba9e/native-plan.json']' returned non-zero exit status 1.",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-11T18:56:16.622150+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "dd69a81",
+    "started": "2026-10-11T18:56:16.623163+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T18:58:56.876502+00:00"
+  },
+  {
+    "repository": "kafka",
+    "task": "e3ccf20",
+    "started": "2026-10-11T18:58:56.972833+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-e3ccf20', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/e3ccf20/native-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-11T19:00:43.610385+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "8d7f587",
+    "started": "2026-10-11T19:00:43.689385+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T19:03:10.111577+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "deea51e",
+    "started": "2026-10-11T19:03:10.165012+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-deea51e', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/deea51e/native-plan.json']' timed out after 899.9999830210581 seconds",
+    "ended": "2026-10-11T19:18:37.350616+00:00"
+  },
+  {
+    "repository": "netty",
+    "task": "e542a2c",
+    "started": "2026-10-11T19:18:37.471276+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T19:23:08.074796+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "a26f440",
+    "started": "2026-10-11T19:23:08.176972+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T19:34:44.759909+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "aed4c9a",
+    "started": "2026-10-11T19:34:44.850591+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-aed4c9a', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/aed4c9a/native-plan.json']' timed out after 899.999960240908 seconds",
+    "ended": "2026-10-11T19:49:50.784278+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "b54d248",
+    "started": "2026-10-11T19:49:50.958566+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-b54d248', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/b54d248/native-plan.json']' timed out after 899.9999759057537 seconds",
+    "ended": "2026-10-11T20:05:06.971272+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "bfb18d6",
+    "started": "2026-10-11T20:05:07.032464+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T20:12:46.229486+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "c3cb7a9",
+    "started": "2026-10-11T20:12:46.327285+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-c3cb7a9', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/c3cb7a9/native-plan.json']' timed out after 899.9999609198421 seconds",
+    "ended": "2026-10-11T20:28:11.466530+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "ee74e4b",
+    "started": "2026-10-11T20:28:11.516186+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T20:34:51.988634+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "efd0834",
+    "started": "2026-10-11T20:34:52.033605+00:00",
+    "verify": "passed",
+    "benchmark": "TimeoutExpired",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-efd0834', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/efd0834/native-plan.json']' timed out after 899.9999770242721 seconds",
+    "ended": "2026-10-11T20:50:06.236418+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "fa655f6",
+    "started": "2026-10-11T20:50:06.274054+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T20:56:36.295815+00:00"
+  },
+  {
+    "repository": "presto",
+    "task": "fdb7611",
+    "started": "2026-10-11T20:56:36.480239+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-11T20:58:13.279945+00:00"
+  }
+]

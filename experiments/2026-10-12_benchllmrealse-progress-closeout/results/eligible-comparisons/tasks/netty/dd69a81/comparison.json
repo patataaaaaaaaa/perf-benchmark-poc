@@ -1,0 +1,32 @@
+[
+  {
+    "benchmark": "io.netty.handler.codec.http.HttpRequestEncoderInsertBenchmark.newEncoder",
+    "params": {},
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 4303258.774202112,
+      "developer": 7209693.534371062,
+      "agent": 4311890.769157705
+    },
+    "speedup_vs_original": {
+      "developer": 1.6754032031707984,
+      "agent": 1.002005920491545
+    }
+  },
+  {
+    "benchmark": "io.netty.handler.codec.http.HttpRequestEncoderInsertBenchmark.oldEncoder",
+    "params": {},
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 4401307.592109372,
+      "developer": 4385991.3293873565,
+      "agent": 4353473.970617727
+    },
+    "speedup_vs_original": {
+      "developer": 0.9965200653666028,
+      "agent": 0.9891319521549914
+    }
+  }
+]

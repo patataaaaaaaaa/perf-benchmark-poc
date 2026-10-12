@@ -1,0 +1,25 @@
+[
+  {
+    "version": "original",
+    "started": "2026-10-12T05:46:02.344587+00:00",
+    "verify": "CalledProcessError",
+    "verify_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c/workspaces/original', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/runner-snapshot/scripts/benchllm_native.py', 'verify', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c/versions/original-plan.json']' returned non-zero exit status 1.",
+    "benchmark": "not_run_test_failed",
+    "ended": "2026-10-12T05:46:13.252009+00:00"
+  },
+  {
+    "version": "developer",
+    "started": "2026-10-12T05:46:13.252313+00:00",
+    "verify": "passed",
+    "benchmark": "CalledProcessError",
+    "benchmark_error": "Command '['/downloads/patataWJY/.local/bin/codex', 'sandbox', '--permission-profile', 'agent_eval', '--cd', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c/workspaces/developer', '--', '/usr/bin/python3', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/runner-snapshot/scripts/benchllm_native.py', 'benchmark', '--plan', '/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c/versions/developer-plan.json']' returned non-zero exit status 1.",
+    "ended": "2026-10-12T05:47:24.559273+00:00"
+  },
+  {
+    "version": "agent",
+    "started": "2026-10-12T05:47:24.559496+00:00",
+    "verify": "passed",
+    "benchmark": "passed",
+    "ended": "2026-10-12T05:52:42.140515+00:00"
+  }
+]

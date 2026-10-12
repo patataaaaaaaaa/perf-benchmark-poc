@@ -1,0 +1,31 @@
+{
+  "started": "2026-10-12T03:20:30.867651+00:00",
+  "total": 14,
+  "carried_prior_attempts": 0,
+  "new_tasks": 14,
+  "agent_seconds": 600,
+  "no_build_or_reference_gate": true,
+  "retry_timeouts_from": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z",
+  "attempt_index": 2,
+  "restart": "fresh original fixture; no overwritten first results",
+  "cache_policy": "private copy of completed prior cache",
+  "native_evaluation_after_all_agents": true,
+  "model": "deepseek-v4-pro",
+  "prompt": 4,
+  "task_fixture": "official selective source rollback; synthetic Git history",
+  "permission_profile": "workspace write plus dependency network/local test sockets; no full access",
+  "reserve_cny": 2,
+  "spending_cap_cny": null,
+  "auto_recharge": false,
+  "benchmark_seconds": 900,
+  "jmh": {
+    "warmup": 10,
+    "measurement": 50,
+    "forks": 1,
+    "seconds": 1
+  },
+  "prior_protocol_results_not_regraded": true,
+  "reference_comparison": "not automatic in deadline-first pass",
+  "native_verify_seconds": 180,
+  "failure_policy": "ordinary task failure continues; billing failure stops"
+}

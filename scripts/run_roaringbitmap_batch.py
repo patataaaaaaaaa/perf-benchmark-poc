@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Detached, sequential five-task pilot with prepared offline agent tools."""
+"""Detached, sequential pilot with selectable prompts and offline agent tools."""
 from __future__ import annotations
 
 import argparse
@@ -146,6 +146,22 @@ def tool(mode, support, workspace, output=None):
     return result
 
 
+def evaluate_reference(support, workspace, output, label):
+    """Record a reference failure without rewriting its code or hiding cases."""
+    stage = "verification"
+    record = dict(code_version=label)
+    try:
+        run(tool("verify", support, workspace), log=output / "verification.log", timeout=180)
+        stage = "benchmark"
+        run(tool("benchmark", support, workspace, output), log=output / "benchmark.log", timeout=900)
+        record["outcome"] = "succeeded"
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
+        record.update(outcome="reference_evaluation_failed", failed_stage=stage,
+                      error_type=type(exc).__name__, error=str(exc))
+    write_json(output / "result.json", record)
+    return record
+
+
 def balance_cny(root):
     """Use provider balance when supported; never emit credentials or response errors."""
     try:
@@ -171,20 +187,40 @@ def main():
     parser.add_argument("--eval-root", type=Path, required=True)
     parser.add_argument("--batch-dir", type=Path, required=True)
     parser.add_argument("--tasks", nargs="+", choices=TASKS, default=list(TASKS))
+    parser.add_argument("--prompts", nargs="+", type=int, choices=(1, 2, 3, 4), default=[1, 2, 3, 4])
     parser.add_argument("--prepare-only", action="store_true")
     parser.add_argument("--max-agent-runs", type=int, default=20)
     parser.add_argument("--reserve-cny", type=float, default=15)
+    parser.add_argument("--max-spend-cny", type=float,
+                        help="Stop before another call when the batch balance decrease reaches this amount.")
+    parser.add_argument("--agent-timeout-seconds", type=int, default=900)
+    parser.add_argument("--continue-on-developer-failure", action="store_true",
+                        help="Record a failing developer reference, then evaluate the agent against the unchanged baseline/tests.")
     args = parser.parse_args()
+    if len(set(args.prompts)) != len(args.prompts):
+        parser.error("--prompts must not contain duplicates")
+    if args.max_spend_cny is not None and args.max_spend_cny <= 0:
+        parser.error("--max-spend-cny must be positive")
+    if args.agent_timeout_seconds <= 0:
+        parser.error("--agent-timeout-seconds must be positive")
     root, batch = args.eval_root.resolve(), args.batch_dir.resolve()
     batch.mkdir(parents=True, exist_ok=True)
     (batch / "workspaces").mkdir(exist_ok=True)
     (batch / "support").mkdir(exist_ok=True)
     console = root / "junit-platform-console-standalone-1.9.3.jar"
     shutil.copyfile(console, batch / console.name)
-    write_json(batch / "protocol.json", dict(tasks=args.tasks, prompts=[1, 2, 3, 4],
+    initial_balance = balance_cny(root) if args.max_spend_cny is not None else None
+    if args.max_spend_cny is not None and initial_balance is None and not args.prepare_only:
+        (batch / "status.txt").write_text("blocked: initial balance unavailable; no model calls\n")
+        return 2
+    write_json(batch / "protocol.json", dict(tasks=args.tasks, prompts=args.prompts,
                max_agent_runs=args.max_agent_runs, reserve_cny=args.reserve_cny,
-               model="deepseek-v4-pro", agent_timeout_seconds=900, outer_optimization_loop=False,
-               public_performance_prompts=[3, 4], started=datetime.now(timezone.utc).isoformat()))
+               max_spend_cny=args.max_spend_cny, initial_balance_cny=initial_balance,
+               model="deepseek-v4-pro", agent_timeout_seconds=args.agent_timeout_seconds,
+               outer_optimization_loop=False,
+               continue_on_developer_failure=args.continue_on_developer_failure,
+               public_performance_prompts=[p for p in args.prompts if p in (3, 4)],
+               started=datetime.now(timezone.utc).isoformat()))
     summary = []
     count = 0
     for task in args.tasks:
@@ -208,17 +244,32 @@ def main():
                 output = task_output / label
                 output.mkdir(exist_ok=True)
                 (batch / "status.txt").write_text(task + ": " + label + " evaluation\n")
-                run(tool("verify", support, workspace), log=output / "verification.log", timeout=180)
-                run(tool("benchmark", support, workspace, output), log=output / "benchmark.log", timeout=900)
-                write_json(output / "result.json", dict(outcome="succeeded", code_version=label))
-            for prompt in (1, 2, 3, 4):
+                reference = evaluate_reference(support, workspace, output, label)
+                if reference["outcome"] != "succeeded":
+                    summary.append(dict(task=task, code_version=label,
+                                        outcome=reference["outcome"],
+                                        failed_stage=reference["failed_stage"],
+                                        artifacts=str(output)))
+                    write_json(batch / "summary.json", summary)
+                    if label != "developer" or not args.continue_on_developer_failure:
+                        raise RuntimeError(f"{label} reference failed at {reference['failed_stage']}")
+                    print("DEVELOPER_REFERENCE_FAILED_CONTINUING_AGENT", task, flush=True)
+            for prompt in args.prompts:
                 if count >= args.max_agent_runs:
                     (batch / "status.txt").write_text("stopped: max agent runs\n")
                     return 0
                 balance = balance_cny(root)
                 write_json(batch / "budget.json", dict(observed_balance_cny=balance,
                            reserve_cny=args.reserve_cny, agent_runs_started=count,
+                           initial_balance_cny=initial_balance, max_spend_cny=args.max_spend_cny,
                            note="Balance guard only enforced when provider returns CNY balance."))
+                if args.max_spend_cny is not None and balance is None:
+                    (batch / "status.txt").write_text("stopped: balance unavailable\n")
+                    return 2
+                if initial_balance is not None and balance is not None and args.max_spend_cny is not None:
+                    if initial_balance - balance >= args.max_spend_cny:
+                        (batch / "status.txt").write_text("stopped: batch spending threshold reached\n")
+                        return 0
                 if balance is not None and balance <= args.reserve_cny:
                     (batch / "status.txt").write_text("stopped: balance reserve reached\n")
                     return 0
@@ -231,13 +282,19 @@ def main():
                            "--benchmark-root", str(root / "BenchLLMRealSE"), "--workspace", str(workspace),
                            "--repo-name", "RoaringBitmap", "--commit-id", task, "--prompt-number", str(prompt),
                            "--expected-baseline", manifest["parent"], "--model", "deepseek-v4-pro",
-                           "--codex", sandbox_cmd[0], "--timeout-seconds", "900", "--command-timeout-seconds", "900",
+                           "--codex", sandbox_cmd[0], "--timeout-seconds", str(args.agent_timeout_seconds),
+                           "--command-timeout-seconds", "900",
                            "--artifacts-dir", str(output), "--agent-test-command", test,
                            "--verification-command", test, "--benchmark-command", bench]
                 if prompt in (3, 4):
                     command += ["--agent-benchmark-command", shlex.join(tool("quick", support, workspace))]
                 (batch / "status.txt").write_text(f"{task}: prompt{prompt} agent/evaluation\n")
                 count += 1
+                write_json(batch / "budget.json", dict(observed_balance_cny=balance,
+                           reserve_cny=args.reserve_cny, agent_runs_started=count,
+                           initial_balance_cny=initial_balance, max_spend_cny=args.max_spend_cny,
+                           balance_sample_phase="before_current_agent",
+                           note="Count includes the agent task being launched; balance is not a final billing snapshot."))
                 try:
                     run(command, log=task_output / f"prompt{prompt}.runner.log", timeout=2100)
                     outcome = "succeeded"

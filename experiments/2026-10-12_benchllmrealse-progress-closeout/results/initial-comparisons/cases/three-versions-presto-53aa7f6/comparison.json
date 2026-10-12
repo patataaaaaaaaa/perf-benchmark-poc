@@ -1,0 +1,17 @@
+[
+  {
+    "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.compiled",
+    "params": {},
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 14219.699900644917,
+      "developer": 14899.7709185594,
+      "agent": 15363.826584490034
+    },
+    "speedup_vs_original": {
+      "developer": 1.047825975419048,
+      "agent": 1.0804606772181757
+    }
+  }
+]

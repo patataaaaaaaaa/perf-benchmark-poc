@@ -1,0 +1,721 @@
+[
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "39eb31f",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-39eb31f/.benchllm-results/benchmark-1791738117360680285/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "000fa29",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-000fa29/.benchllm-results/benchmark-1791738166726365918/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "4fa5bdc",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-4fa5bdc/.benchllm-results/benchmark-1791739168109775645/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "59a75f4",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-59a75f4/.benchllm-results/benchmark-1791739352435236867/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "8dff0b1",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-8dff0b1/.benchllm-results/benchmark-1791739947120488026/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "297b089",
+    "stage": "verify",
+    "status": "TimeoutExpired",
+    "reason": "测试时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-297b089/.benchllm-results/verify-1791740267141202365/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "9bb2f78",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-9bb2f78/.benchllm-results/benchmark-1791740949496081702/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "3a4f2e3",
+    "stage": "verify",
+    "status": "TimeoutExpired",
+    "reason": "测试时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-3a4f2e3/.benchllm-results/verify-1791740949747055360/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "netty",
+    "task": "87ec2f8",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-87ec2f8/.benchllm-results/benchmark-1791741289087791665/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "4e71bf3",
+    "stage": "verify",
+    "status": "TimeoutExpired",
+    "reason": "测试时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-4e71bf3/.benchllm-results/verify-1791742478169384873/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "netty",
+    "task": "95b8db0",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-95b8db0/.benchllm-results/benchmark-1791742688273681715/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "c7bc8f7",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-c7bc8f7/.benchllm-results/verify-1791743038664860742/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "c8af740",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-c8af740/.benchllm-results/verify-1791743650560574649/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "659c3ee",
+    "stage": "verify",
+    "status": "TimeoutExpired",
+    "reason": "测试时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-659c3ee/.benchllm-results/verify-1791743667289348392/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "6908344",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-6908344/.benchllm-results/benchmark-1791743855636666957/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "netty",
+    "task": "b72fea3",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-b72fea3/.benchllm-results/benchmark-1791744768602898198/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "e2e2c62",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-e2e2c62/.benchllm-results/verify-1791744910433572907/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "8abba9e",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "现有功能测试失败，详见断言/异常",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-8abba9e/.benchllm-results/verify-1791744951917336073/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "e3ccf20",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/kafka-e3ccf20/.benchllm-results/benchmark-1791745243555288833/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "netty",
+    "task": "deea51e",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/netty-deea51e/.benchllm-results/benchmark-1791745417449944604/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "aed4c9a",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-aed4c9a/.benchllm-results/benchmark-1791747290917222198/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "b54d248",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-b54d248/.benchllm-results/benchmark-1791748207099171487/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "c3cb7a9",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-c3cb7a9/.benchllm-results/benchmark-1791749591603444331/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "efd0834",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/workspaces/presto-efd0834/.benchllm-results/benchmark-1791750906384506364/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "kafka",
+    "task": "4fa5bdc",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/kafka-4fa5bdc/.benchllm-results/benchmark-1791782470892339468/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "kafka",
+    "task": "59a75f4",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/kafka-59a75f4/.benchllm-results/benchmark-1791782523375717687/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "kafka",
+    "task": "8dff0b1",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/kafka-8dff0b1/.benchllm-results/benchmark-1791782613540900611/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "presto",
+    "task": "297b089",
+    "stage": "verify",
+    "status": "TimeoutExpired",
+    "reason": "测试时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/presto-297b089/.benchllm-results/verify-1791782613823034298/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "presto",
+    "task": "3a4f2e3",
+    "stage": "verify",
+    "status": "TimeoutExpired",
+    "reason": "测试时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/presto-3a4f2e3/.benchllm-results/verify-1791782794052197949/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "presto",
+    "task": "4e71bf3",
+    "stage": "verify",
+    "status": "TimeoutExpired",
+    "reason": "测试时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/presto-4e71bf3/.benchllm-results/verify-1791782973977267904/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "kafka",
+    "task": "c7bc8f7",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/kafka-c7bc8f7/.benchllm-results/verify-1791783154163724661/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "presto",
+    "task": "6908344",
+    "stage": "benchmark",
+    "status": "TimeoutExpired",
+    "reason": "JMH测量时间上限",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/presto-6908344/.benchllm-results/benchmark-1791783213060250416/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "kafka",
+    "task": "e2e2c62",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/kafka-e2e2c62/.benchllm-results/benchmark-1791784241929917489/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "presto",
+    "task": "8abba9e",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "现有功能测试失败，详见断言/异常",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/presto-8abba9e/.benchllm-results/verify-1791784242286488155/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "netty",
+    "task": "dd69a81",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "JMH共享全局锁冲突：调度/隔离问题，非性能失败",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/netty-dd69a81/.benchllm-results/benchmark-1791784287669680928/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "kafka",
+    "task": "e3ccf20",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "Kafka JMH入口/工作目录或wrapper条件不满足",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/kafka-e3ccf20/.benchllm-results/benchmark-1791784394740393762/commands.log"
+  },
+  {
+    "cohort": "Agent补跑后验收",
+    "repository": "presto",
+    "task": "fdb7611",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "类初始化异常，源码/环境根因尚未确定",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/workspaces/presto-fdb7611/.benchllm-results/verify-1791784395585510350/commands.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "4fa5bdc",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/4fa5bdc/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "59a75f4",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/59a75f4/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "8dff0b1",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/8dff0b1/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "297b089",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/297b089/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "3a4f2e3",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/3a4f2e3/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "4e71bf3",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/4e71bf3/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "c7bc8f7",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/c7bc8f7/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "659c3ee",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/659c3ee/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "6908344",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/6908344/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "e2e2c62",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/e2e2c62/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "8abba9e",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/8abba9e/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "netty",
+    "task": "dd69a81",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/netty/dd69a81/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "kafka",
+    "task": "e3ccf20",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/kafka/e3ccf20/result.json"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "9e010a7",
+    "stage": "source",
+    "status": "task_error",
+    "reason": "源码下载120秒超时，未调用模型",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/9e010a7/fetch.log"
+  },
+  {
+    "cohort": "首轮",
+    "repository": "presto",
+    "task": "fdb7611",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-20261011T113000Z/tasks/presto/fdb7611/result.json"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "kafka",
+    "task": "59a75f4",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/kafka/59a75f4/result.json"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "kafka",
+    "task": "8dff0b1",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/kafka/8dff0b1/result.json"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "presto",
+    "task": "4e71bf3",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/presto/4e71bf3/result.json"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "presto",
+    "task": "659c3ee",
+    "stage": "source",
+    "status": "task_error",
+    "reason": "Git源码下载TLS连接异常",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/presto/659c3ee/fetch.log"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "kafka",
+    "task": "e2e2c62",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/kafka/e2e2c62/result.json"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "presto",
+    "task": "8abba9e",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/presto/8abba9e/result.json"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "netty",
+    "task": "dd69a81",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/netty/dd69a81/result.json"
+  },
+  {
+    "cohort": "第二次Agent尝试",
+    "repository": "kafka",
+    "task": "e3ccf20",
+    "stage": "agent",
+    "status": "timeout",
+    "reason": "Agent会话600秒上限；有无补丁与后续验收单独统计",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/agent-first64-timeout-retry-20261012T032000Z/tasks/kafka/e3ccf20/result.json"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "presto",
+    "task": "20dcaed",
+    "version": "original",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "功能断言失败：期望null，实际NaN；不修改断言迁就原版",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-20dcaed/workspaces/original/.benchllm-results/verify-1791776436895515474/commands.log"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "presto",
+    "task": "290f5be",
+    "version": "original",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/original/.benchllm-results/benchmark-1791791170461204283/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "presto",
+    "task": "290f5be",
+    "version": "developer",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/developer/.benchllm-results/benchmark-1791791496887962799/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "presto",
+    "task": "290f5be",
+    "version": "agent",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/agent/.benchllm-results/benchmark-1791791822466591143/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "7b91edd",
+    "version": "original",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原版生产API与共用benchmark访问要求不兼容",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-7b91edd/workspaces/original/.benchllm-results/benchmark-1791778680757396482/commands.log"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "7b91edd",
+    "version": "agent",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "JMH共享全局锁冲突：调度/隔离问题，非性能失败",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-7b91edd/workspaces/agent/.benchllm-results/benchmark-1791779331474627625/commands.log"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "ab8c4f2",
+    "version": "original",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/original/.benchllm-results/benchmark-1791792181530113736/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "ab8c4f2",
+    "version": "developer",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/developer/.benchllm-results/benchmark-1791792563141874715/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "ab8c4f2",
+    "version": "agent",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/agent/.benchllm-results/benchmark-1791792940310661026/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "dd69a81",
+    "version": "original",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/original/.benchllm-results/benchmark-1791793320787590593/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "dd69a81",
+    "version": "developer",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/developer/.benchllm-results/benchmark-1791793493323489286/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "dd69a81",
+    "version": "agent",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "原生命令失败；具体根因未确认，保留日志，不继续盲目尝试",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/agent/.benchllm-results/benchmark-1791793662988809147/commands.log",
+    "resolution": "首次失败保留；后续合格无模型补测已取得完整三版本数据"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "presto",
+    "task": "8d7f587",
+    "version": "original",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "功能测试空指针异常；是否由共用修复版fixture引起尚未确定",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-8d7f587/workspaces/original/.benchllm-results/verify-1791783829891541321/commands.log"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "presto",
+    "task": "8d7f587",
+    "version": "developer",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "JMH共享全局锁冲突：调度/隔离问题，非性能失败",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-8d7f587/workspaces/developer/.benchllm-results/benchmark-1791783900574591832/commands.log"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "presto",
+    "task": "8d7f587",
+    "version": "agent",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "JMH共享全局锁冲突：调度/隔离问题，非性能失败",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-8d7f587/workspaces/agent/.benchllm-results/benchmark-1791783946266055200/commands.log"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "e542a2c",
+    "version": "original",
+    "stage": "verify",
+    "status": "CalledProcessError",
+    "reason": "部分源码回退后API不兼容：internalRefCnt缺失",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c/workspaces/original/.benchllm-results/verify-1791783962444197806/commands.log"
+  },
+  {
+    "cohort": "三版本对照",
+    "repository": "netty",
+    "task": "e542a2c",
+    "version": "developer",
+    "stage": "benchmark",
+    "status": "CalledProcessError",
+    "reason": "JMH共享全局锁冲突：调度/隔离问题，非性能失败",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-e542a2c/workspaces/developer/.benchllm-results/benchmark-1791783991416441026/commands.log"
+  }
+]

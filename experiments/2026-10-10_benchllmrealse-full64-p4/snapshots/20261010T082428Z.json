@@ -1,0 +1,92 @@
+{
+  "observed_at_beijing": "2026-10-10 16:24 CST",
+  "observed_at_utc": "2026-10-10T08:24:28Z",
+  "batch_dir": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z",
+  "batch_started_utc": "2026-10-10T04:15:00Z",
+  "local_git": {
+    "repository": "/Users/aha-yue/Documents/ChatGPT/New project/perf-benchmark-poc",
+    "branch": "codex/benchllmrealse-agent",
+    "head": "d4aa1901405fd91f1721b0cfe2444ac9b7ac87f9",
+    "ahead_of_origin": 1,
+    "worktree": "dirty; not reset, committed, or pushed"
+  },
+  "config_files_unchanged": [
+    "experiments/2026-10-10_benchllmrealse-full64-p4/config.yaml",
+    "experiments/2026-10-10_benchllmrealse-full64-p4/retry_config.yaml"
+  ],
+  "inspect": {
+    "status": "24/64 complete; kafka/aecd47b: original evaluation",
+    "queue_pid": 1664573,
+    "queue_alive": true,
+    "cmdline_contains_this_batch": true,
+    "cmdline_head": "python3 -u scripts/run_benchllm_full_batch.py --eval-root /downloads/patataWJY/benchllm-agent-eval --batch-dir /downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-retry-20261010T041500Z --reuse-prepared-batch /downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/full64-p4-20261010T021000Z --reserve-cny 2 --agent-timeout-seconds 900",
+    "processed_tasks": 24,
+    "outcomes": {
+      "succeeded": 7,
+      "infrastructure_failed": 17
+    },
+    "agent_runs_started": 7,
+    "confirmed_successes": 7,
+    "other_agent_results": [],
+    "agents_in_progress": []
+  },
+  "handoff_snapshot_compared": {
+    "processed_tasks": 21,
+    "infrastructure_failed": 14,
+    "confirmed_successes": 7,
+    "then_current": "kafka/9bb2f78 preparing, Gradle 8.1.1 download"
+  },
+  "new_infrastructure_failures": [
+    {
+      "repository": "kafka",
+      "task": "9bb2f78",
+      "agent_started": false,
+      "started_utc": "2026-10-10T07:13:55.936771+00:00",
+      "ended_utc": "2026-10-10T08:18:01.109503+00:00",
+      "error_type": "BadZipFile",
+      "stage": "gradle distribution download, before agent",
+      "evidence": "tasks/kafka/9bb2f78/infrastructure-error.log",
+      "observation": "tools/gradle-8.1.1-bin.zip is 62914560 bytes, local header PK, no EOCD; tools/gradle-8.1.1/bin/gradle absent. Official HEAD Content-Length is 124643981."
+    },
+    {
+      "repository": "presto",
+      "task": "3a4f2e3",
+      "agent_started": false,
+      "started_utc": "2026-10-10T08:18:01.110110+00:00",
+      "ended_utc": "2026-10-10T08:19:05.751937+00:00",
+      "error_type": "CalledProcessError",
+      "stage": "maven prepare, before agent",
+      "evidence": "support/presto/3a4f2e3/prepare.log",
+      "observation": "git-commit-id-plugin 2.1.13 on presto-spi: Missing commit b2a5e7031212d876518b214617f5e7ff75e5d7d6"
+    },
+    {
+      "repository": "netty",
+      "task": "83a19d5",
+      "agent_started": false,
+      "started_utc": "2026-10-10T08:19:05.752789+00:00",
+      "ended_utc": "2026-10-10T08:19:36.198934+00:00",
+      "error_type": "CalledProcessError",
+      "stage": "maven testCompile, before agent",
+      "evidence": "support/netty/83a19d5/prepare.log",
+      "observation": "transport PendingWriteQueueTest assertEquals(long,long) vs assertEquals(Object,Object) ambiguous"
+    }
+  ],
+  "current_task_sample": {
+    "task": "kafka/aecd47b",
+    "phase": "original evaluation, formal JMH, unpaid",
+    "evidence": "tasks/kafka/aecd47b/original/benchmark.log",
+    "observation": "Java JMH process alive. Log grew 14656 to 14740 bytes in 3 seconds. Sample showed fork 2 of 2, measurement iteration 4, ETA about 2 minutes. This sample is not a later completion check."
+  },
+  "gradle_tools_observed": [
+    {"name": "gradle-5.6.2-bin.zip", "bytes": 41943040, "extracted_gradle_bin": false},
+    {"name": "gradle-6.3", "extracted_gradle_bin": true},
+    {"name": "gradle-6.6-bin.zip", "bytes": 11337728, "extracted_gradle_bin": false},
+    {"name": "gradle-6.9.4", "extracted_gradle_bin": true},
+    {"name": "gradle-7.5.1", "extracted_gradle_bin": true},
+    {"name": "gradle-7.5.1-bin.zip", "bytes": 120635534, "extracted_gradle_bin": true},
+    {"name": "gradle-8.1.1-bin.zip", "bytes": 62914560, "extracted_gradle_bin": false},
+    {"name": "gradle-8.5", "extracted_gradle_bin": true},
+    {"name": "gradle-8.5-bin.zip", "bytes": 132519731, "extracted_gradle_bin": true}
+  ],
+  "inference": "The 40 MiB and 60 MiB Gradle archives are exact mebibyte lengths and were not extracted. urllib completed and then ZipFile rejected 8.1.1, so the body Python received ended early relative to the official 124643981-byte object. The mechanism that closed the body is not identified in this check."
+}

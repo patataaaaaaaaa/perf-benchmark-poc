@@ -1,0 +1,148 @@
+{
+  "checked": "2026-10-12T10:32:14.523822+00:00",
+  "unique_tasks": 64,
+  "actual_agent_tasks": 63,
+  "legacy_reused": 21,
+  "first_new_outcomes": {
+    "agent_completed_with_environment_changes": 3,
+    "agent_completed": 25,
+    "timeout": 14,
+    "task_error": 1
+  },
+  "first_source_patches": 41,
+  "first_native": {
+    "tested": 42,
+    "test_passed": 34,
+    "jmh_passed": 18
+  },
+  "retry_outcomes": {
+    "agent_completed_with_environment_changes": 1,
+    "timeout": 7,
+    "agent_completed": 5,
+    "task_error": 1
+  },
+  "retry_native": {
+    "tested": 13,
+    "test_passed": 7,
+    "jmh_passed": 0
+  },
+  "comparison": {
+    "processed": 18,
+    "matched": 11,
+    "effective_matched": 14,
+    "status": "complete; 18 comparison cases processed"
+  },
+  "remeasure": [
+    {
+      "repository": "presto",
+      "task": "290f5be",
+      "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be",
+      "started": "2026-10-12T07:45:32.127776+00:00",
+      "attempt_kind": "unpaid measurement retry",
+      "versions": [
+        {
+          "version": "original",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/original/.benchllm-results/isolated-java-temp-1791791135042399586",
+          "started": "2026-10-12T07:45:35.042519+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T07:51:18.145968+00:00"
+        },
+        {
+          "version": "developer",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/developer/.benchllm-results/isolated-java-temp-1791791480211802687",
+          "started": "2026-10-12T07:51:20.211885+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T07:56:44.455604+00:00"
+        },
+        {
+          "version": "agent",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-290f5be/workspaces/agent/.benchllm-results/isolated-java-temp-1791791806359042168",
+          "started": "2026-10-12T07:56:46.359149+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T08:02:10.105198+00:00"
+        }
+      ],
+      "outcome": "succeeded",
+      "ended": "2026-10-12T08:02:10.105552+00:00"
+    },
+    {
+      "repository": "netty",
+      "task": "ab8c4f2",
+      "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2",
+      "started": "2026-10-12T08:02:10.105767+00:00",
+      "attempt_kind": "unpaid measurement retry",
+      "versions": [
+        {
+          "version": "original",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/original/.benchllm-results/isolated-java-temp-1791792131002722454",
+          "started": "2026-10-12T08:02:11.009026+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T08:08:55.901602+00:00"
+        },
+        {
+          "version": "developer",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/developer/.benchllm-results/isolated-java-temp-1791792536327151102",
+          "started": "2026-10-12T08:08:56.327401+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T08:15:13.133911+00:00"
+        },
+        {
+          "version": "agent",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-ab8c4f2/workspaces/agent/.benchllm-results/isolated-java-temp-1791792913684517520",
+          "started": "2026-10-12T08:15:13.684734+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T08:21:30.822669+00:00"
+        }
+      ],
+      "outcome": "succeeded",
+      "ended": "2026-10-12T08:21:30.822883+00:00"
+    },
+    {
+      "repository": "netty",
+      "task": "dd69a81",
+      "prior_case": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81",
+      "started": "2026-10-12T08:21:30.823176+00:00",
+      "attempt_kind": "unpaid measurement retry",
+      "versions": [
+        {
+          "version": "original",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/original/.benchllm-results/isolated-java-temp-1791793290970059219",
+          "started": "2026-10-12T08:21:30.970156+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T08:24:32.395003+00:00"
+        },
+        {
+          "version": "developer",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/developer/.benchllm-results/isolated-java-temp-1791793472465745116",
+          "started": "2026-10-12T08:24:32.466003+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T08:27:22.551580+00:00"
+        },
+        {
+          "version": "agent",
+          "private_java_temp": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-dd69a81/workspaces/agent/.benchllm-results/isolated-java-temp-1791793642641608979",
+          "started": "2026-10-12T08:27:22.641692+00:00",
+          "verify": "passed",
+          "benchmark": "passed",
+          "ended": "2026-10-12T08:30:12.654554+00:00"
+        }
+      ],
+      "outcome": "succeeded",
+      "ended": "2026-10-12T08:30:12.654841+00:00"
+    }
+  ],
+  "limitations": [
+    "历史与新协议不混合为同协议成绩",
+    "首次与重试分开，不把重复调用当新任务",
+    "命令/环境失败不自动计为模型错误",
+    "一次JMH对照不是稳定加速或显著性结论"
+  ]
+}

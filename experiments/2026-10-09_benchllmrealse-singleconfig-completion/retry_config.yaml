@@ -1,0 +1,39 @@
+status: complete_with_failures
+batch_id: roaring-abdd6ff-retry-20261009T130643Z
+retry_of: roaring-singleconfig-20261009-nextbatch
+repository: RoaringBitmap
+tasks: [abdd6ff]
+prompts: [4]
+model: deepseek-v4-pro
+agent: codex_cli
+max_agent_runs: 1
+agent_timeout_seconds: 900
+outer_optimization_loop: false
+continue_on_developer_failure: true
+continue_on_original_failure: false
+developer_source_modified: false
+evaluation_cases_removed: false
+metric_origin: supplemental-production
+reuse_frozen_harness_and_dependencies: true
+budget:
+  initial_balance_cny: 111.67
+  reserve_cny: 92.38
+  max_spend_cny: 19.29
+  check_between_agent_runs: true
+  hard_in_flight_spending_cap: false
+launch:
+  pid: 1364410
+  started_utc: '2026-10-09T13:07:28.751259+00:00'
+  runner: scripts/run_roaringbitmap_batch.py
+observed_completion:
+  ended_beijing: '2026-10-09T21:20:05'
+  agent_outcome: succeeded_selected_junit_and_four_jmh_cases
+  developer_reference_outcome: reference_evaluation_failed
+  agent_finished_before_quick_tool_fix: true
+post_run_quick_tool_fix:
+  revision: socket-free-v2
+  quick_forks: 0
+  final_forks: 2
+  expands_network_permissions: false
+  sandbox_smoke_cases: 4
+  sandbox_smoke_exit_code: 0

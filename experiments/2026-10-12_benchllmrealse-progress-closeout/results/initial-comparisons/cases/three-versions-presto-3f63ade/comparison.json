@@ -1,0 +1,36 @@
+[
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkArrayDistinct.arrayDistinct",
+    "params": {
+      "name": "array_distinct"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 375.57426753571434,
+      "developer": 43.668218629932596,
+      "agent": 61.63161571848734
+    },
+    "speedup_vs_original": {
+      "developer": 8.600631748194902,
+      "agent": 6.093857237999606
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkArrayDistinct.arrayDistinct",
+    "params": {
+      "name": "old_array_distinct"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 381.4334265736263,
+      "developer": 390.82555500357165,
+      "agent": 383.18100619450547
+    },
+    "speedup_vs_original": {
+      "developer": 0.9759684894969074,
+      "agent": 0.9954392843261337
+    }
+  }
+]

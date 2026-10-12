@@ -1,0 +1,70 @@
+[
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+    "params": {
+      "mapConfig": "both_empty"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 184.3730431323795,
+      "developer": 19.854422726863692,
+      "agent": 19.9220309225395
+    },
+    "speedup_vs_original": {
+      "developer": 9.286245471288202,
+      "agent": 9.25473129969809
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+    "params": {
+      "mapConfig": "left_empty"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 642.6215540134885,
+      "developer": 170.32493636915117,
+      "agent": 165.22886279339167
+    },
+    "speedup_vs_original": {
+      "developer": 3.7729152742538674,
+      "agent": 3.8892814678331744
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+    "params": {
+      "mapConfig": "non_empty"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 840.9357281736536,
+      "developer": 884.3966113807431,
+      "agent": 941.3167928593317
+    },
+    "speedup_vs_original": {
+      "developer": 0.9508581527248988,
+      "agent": 0.8933610178346422
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+    "params": {
+      "mapConfig": "right_empty"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 501.5341950699894,
+      "developer": 161.1460431264266,
+      "agent": 162.04603548556568
+    },
+    "speedup_vs_original": {
+      "developer": 3.1122960597705296,
+      "agent": 3.0950105849066807
+    }
+  }
+]

@@ -2,6 +2,15 @@
 
 本项目验证一条最小但完整的技术路线：让大模型为真实 Python 代码生成性能测试，依据测试与性能证据修改源码，再由确定性的工具完成正确性验证、性能测量、接受或拒绝，并将真实结果反馈给下一轮。
 
+## 本周组会汇报：Java Agent Pipeline（2026-10-12）
+
+Java benchmark的补丁生成已接入Codex CLI，模型仍配置为DeepSeek。BenchLLMRealSE的64题均完成处理，63题进入过Agent；最终14题取得同配置三版本对照，共63组函数—参数组合（43组平均耗时、20组吞吐量）。
+
+- [汇报正文：最终结果、配置、流程调整与数据查看指南](experiments/2026-10-12_benchllmrealse-progress-closeout/MEETING_REPORT_ZH.md)
+- [详细数据：64题状态、六种排序、三版本原始分数与失败记录](experiments/2026-10-12_benchllmrealse-progress-closeout/MEETING_DETAILS_ZH.md)
+
+这些是当前已完成的实验记录；“进入Agent”不等于补丁验收通过，性能排序来自本轮测量分数，尚未验证差异的统计显著性。以下章节保留早期Python闭环的架构与结果。
+
 
 ## 当前已经完成什么
 
@@ -18,7 +27,8 @@
 
 ## 当前支持的两个入口
 
-Java Agent 评测的独立入口正在 `scripts/run_benchllm_codex.py` 中接入：它读取
+Java Agent 评测通过 `scripts/run_benchllm_codex.py` 的CLI封装接入，全量Agent优先队列使用
+`scripts/run_benchllm_agent_first.py`：它读取
 BenchLLMRealSE PerfOpt 任务，通过 Codex CLI 调用 DeepSeek，让 Agent 在隔离工作区中
 直接修改 Java 源码，再由外部测试与 JMH 命令评分。使用说明见
 [`docs/BENCHLLM_CODEX_ZH.md`](docs/BENCHLLM_CODEX_ZH.md)。该入口不复用下文的 Python

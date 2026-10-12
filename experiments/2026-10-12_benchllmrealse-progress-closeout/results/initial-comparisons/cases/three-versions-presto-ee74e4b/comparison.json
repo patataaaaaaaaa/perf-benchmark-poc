@@ -1,0 +1,110 @@
+[
+  {
+    "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+    "params": {
+      "filterFails": "always",
+      "projectionDataType": "BIGINT"
+    },
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 11914362.021781502,
+      "developer": 11365022.001941713,
+      "agent": 11634965.686574746
+    },
+    "speedup_vs_original": {
+      "developer": 0.9538926197780878,
+      "agent": 0.9765496184608147
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+    "params": {
+      "filterFails": "always",
+      "projectionDataType": "DOUBLE"
+    },
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 11985799.622696588,
+      "developer": 10779693.458388828,
+      "agent": 11925840.534277054
+    },
+    "speedup_vs_original": {
+      "developer": 0.8993720734306413,
+      "agent": 0.9949974895036627
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+    "params": {
+      "filterFails": "never",
+      "projectionDataType": "BIGINT"
+    },
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 1796272.6441416668,
+      "developer": 1737658.0811354972,
+      "agent": 1733392.7400583199
+    },
+    "speedup_vs_original": {
+      "developer": 0.9673687826860058,
+      "agent": 0.9649942316449441
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+    "params": {
+      "filterFails": "never",
+      "projectionDataType": "DOUBLE"
+    },
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 1803068.5675470028,
+      "developer": 1800654.3335449481,
+      "agent": 1835424.4723228503
+    },
+    "speedup_vs_original": {
+      "developer": 0.9986610414903194,
+      "agent": 1.0179449108914733
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+    "params": {
+      "filterFails": "partial",
+      "projectionDataType": "BIGINT"
+    },
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 74883.90980310134,
+      "developer": 5147094.174831375,
+      "agent": 5140169.319669998
+    },
+    "speedup_vs_original": {
+      "developer": 68.73431406513187,
+      "agent": 68.64183952447841
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+    "params": {
+      "filterFails": "partial",
+      "projectionDataType": "DOUBLE"
+    },
+    "mode": "thrpt",
+    "unit": "ops/s",
+    "scores": {
+      "original": 74929.85330409202,
+      "developer": 5097224.395416033,
+      "agent": 5145204.323329988
+    },
+    "speedup_vs_original": {
+      "developer": 68.02661650396782,
+      "agent": 68.6669477711229
+    }
+  }
+]

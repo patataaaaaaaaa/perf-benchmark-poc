@@ -1,0 +1,110 @@
+[
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+    "params": {
+      "mapSize": "1",
+      "name": "dictionary"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 42.61214878487691,
+      "developer": 39.70694727791838,
+      "agent": 38.98564239448737
+    },
+    "speedup_vs_original": {
+      "developer": 1.073166075614535,
+      "agent": 1.0930215886580423
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+    "params": {
+      "mapSize": "1",
+      "name": "fix-width"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 20.936057268679107,
+      "developer": 21.90563995841628,
+      "agent": 20.722475998519993
+    },
+    "speedup_vs_original": {
+      "developer": 0.9557382166612004,
+      "agent": 1.0103067447236695
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+    "params": {
+      "mapSize": "1",
+      "name": "var-width"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 40.27920784293848,
+      "developer": 37.31975470874781,
+      "agent": 34.84802928679919
+    },
+    "speedup_vs_original": {
+      "developer": 1.079299908514591,
+      "agent": 1.1558532481547439
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+    "params": {
+      "mapSize": "13",
+      "name": "dictionary"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 700.7730344080516,
+      "developer": 622.1592027705505,
+      "agent": 662.2016530834437
+    },
+    "speedup_vs_original": {
+      "developer": 1.1263564555300705,
+      "agent": 1.0582471836864284
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+    "params": {
+      "mapSize": "13",
+      "name": "fix-width"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 283.16973167440256,
+      "developer": 274.3450637651343,
+      "agent": 274.6220632557074
+    },
+    "speedup_vs_original": {
+      "developer": 1.03216630832776,
+      "agent": 1.0311252064650618
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+    "params": {
+      "mapSize": "13",
+      "name": "var-width"
+    },
+    "mode": "avgt",
+    "unit": "ns/op",
+    "scores": {
+      "original": 621.0622503164061,
+      "developer": 533.5673692485892,
+      "agent": 624.726302628265
+    },
+    "speedup_vs_original": {
+      "developer": 1.1639809443201783,
+      "agent": 0.9941349479020749
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "benchmark": "com.facebook.presto.operator.BenchmarkPartitionedOutputOperator.addPage",
+    "params": {
+      "enableCompression": "false"
+    },
+    "mode": "avgt",
+    "unit": "ms/op",
+    "scores": {
+      "original": 2064.8007880000005,
+      "developer": 2308.7856473,
+      "agent": 2296.08013782
+    },
+    "speedup_vs_original": {
+      "developer": 0.8943232951983539,
+      "agent": 0.8992720915918961
+    }
+  },
+  {
+    "benchmark": "com.facebook.presto.operator.BenchmarkPartitionedOutputOperator.addPage",
+    "params": {
+      "enableCompression": "true"
+    },
+    "mode": "avgt",
+    "unit": "ms/op",
+    "scores": {
+      "original": 1953.71141428,
+      "developer": 1945.1664720200001,
+      "agent": 2001.9855209399998
+    },
+    "speedup_vs_original": {
+      "developer": 1.004392910520983,
+      "agent": 0.9758868852171652
+    }
+  }
+]

@@ -1,0 +1,34 @@
+status: launched_observing_first_three_successes
+task_count: 64
+model: deepseek-v4-pro
+prompt: 4
+background_pid: 1664573
+artifact_batch_name: full64-p4-retry-20261010T041500Z
+previous_batch_name: full64-p4-20261010T021000Z
+previous_processed_tasks: 30
+previous_agent_runs_started: 0
+previous_queue_stopped: true
+explicit_experiment_configuration_home: true
+batch_configuration_preflight: sandbox_command_no_model
+modify_user_global_configuration: false
+reuse_valid_baseline_build_products: true
+reuse_agent_patches: false
+priority_tasks:
+  - 34bce1b
+  - 53ba593
+  - 1de6825
+agent_timeout_seconds: 900
+outer_optimization_loop: false
+reserve_cny: 2
+batch_spending_cap_cny: null
+unit_tests_passed: 21
+temporary_monitor:
+  automation_id: benchllm-3
+  interval_minutes: 5
+  stop_after_complete_successes: 3
+  success_requires:
+    - positive_model_token_usage
+    - agent_patch
+    - verification_passed
+    - complete_final_jmh_passed
+  stop_server_experiment_when_threshold_reached: false

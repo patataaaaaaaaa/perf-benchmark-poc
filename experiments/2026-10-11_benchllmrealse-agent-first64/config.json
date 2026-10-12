@@ -1,0 +1,27 @@
+{
+  "started": "2026-10-11T11:39:12.788785+00:00",
+  "total": 64,
+  "carried_prior_attempts": 21,
+  "new_tasks": 43,
+  "agent_seconds": 600,
+  "no_build_or_reference_gate": true,
+  "native_evaluation_after_all_agents": true,
+  "model": "deepseek-v4-pro",
+  "prompt": 4,
+  "task_fixture": "official selective source rollback; synthetic Git history",
+  "permission_profile": "workspace write plus dependency network/local test sockets; no full access",
+  "reserve_cny": 2,
+  "spending_cap_cny": null,
+  "auto_recharge": false,
+  "benchmark_seconds": 900,
+  "jmh": {
+    "warmup": 10,
+    "measurement": 50,
+    "forks": 1,
+    "seconds": 1
+  },
+  "prior_protocol_results_not_regraded": true,
+  "reference_comparison": "not automatic in deadline-first pass",
+  "native_verify_seconds": 180,
+  "failure_policy": "ordinary task failure continues; billing failure stops"
+}

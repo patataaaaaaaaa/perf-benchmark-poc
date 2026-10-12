@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-11T09:08:44.390551+00:00",
+  "pid": 2834321,
+  "alive": true,
+  "status": "unpaid_prepare 2/48; presto/000fa29",
+  "unpaid_checked": 2,
+  "unpaid_total": 48,
+  "unpaid_outcomes": {"preparable": 1, "infrastructure_failed": 1},
+  "positive_usage_agent_results": 0,
+  "evaluation_results": 0,
+  "first_failure": {
+    "repository": "kafka",
+    "task": "39eb31f",
+    "stage": "prepare",
+    "reason": "Gradle3.5 historical Bintray plugin URLs returned non-SHA1 content for grgit/versions/shadow artifacts",
+    "workspace_clean": true,
+    "agent_started": false,
+    "next_task_started": "presto/000fa29"
+  }
+}

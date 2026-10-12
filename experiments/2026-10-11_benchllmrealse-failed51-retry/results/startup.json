@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-10-11T09:07:26.339525+00:00",
+  "batch": "failed51-retry-20261011T090459Z",
+  "pid": 2834321,
+  "alive": true,
+  "status": "unpaid_prepare 0/48; netty/2791f0f",
+  "private_setup_and_sandbox_configuration_preflight_passed": true,
+  "unpaid_checked": 0,
+  "unpaid_total": 48,
+  "new_agent_results": 0,
+  "positive_usage_agent_results": 0,
+  "excluded_completed_agent_evaluations": 13,
+  "existing_patch_replay_tasks": 3,
+  "queue_error": null
+}

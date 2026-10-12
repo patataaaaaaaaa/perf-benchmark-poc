@@ -1,0 +1,25 @@
+phase: typical_presto_original_environment_validation
+attempt: 3
+attempt_status: ended_original_jmh_timeout_after_selected_tests_passed
+ssh_entry: lab-server
+run_root: /downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/coverage-typical-unpaid-20261011T080738Z
+pid: 2809454
+tasks: [presto/000fa29]
+netty_previous_validated_run: coverage-typical-unpaid-20261011T080300Z
+model_calls: 0
+production_edits: false
+test_exclusions: false
+candidate_changes:
+  inherited_git_plugin: detect_parent_pom_and_tag_only_original_head
+  classpath_export: air.check.skip-dependency=false_and_mdep.skip=false_only_for_dependency_build_classpath
+isolation:
+  runner: private_copied_scripts_and_src
+  maven: fresh_full_copy_of_previous_isolated_cache_no_hardlinks
+  maven_cache_seed: /downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/coverage-typical-unpaid-20261011T080300Z/batch-maven-home
+  git: private_refs_read_only_object_alternates_shallow_parent_workspace
+  sandbox_permissions: unchanged
+stages: [prepare_build_and_jmh_registration, sandbox_selected_tests, original_formal_jmh]
+timeouts_seconds: {build: 1800, tests: 600, benchmark: 1800}
+jmh: {forks: 2, warmup: 5, measurement: 10, seconds: 1, parameters: all_defaults}
+failure_policy: retain_all_failed_attempts_no_silent_exclusions
+interpretation: original_environment_coverage_not_agent_optimization

@@ -1,0 +1,20 @@
+batch: preparable7-p4-20261011T023531Z
+batch_dir: /downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/preparable7-p4-20261011T023531Z
+pid: 2622703
+started_utc: 2026-10-11T02:35:31Z
+prompt: 4
+model: deepseek-v4-pro
+reserve_cny: 2
+agent_timeout_seconds: 900
+reuse_prepared_batch: failed55-prepare-20261010T123140Z
+tasks:
+  - netty/5a9b28a
+  - kafka/922a95a
+  - kafka/b25c96a
+  - kafka/b36e3c2
+  - kafka/c05403f
+  - kafka/cfc34ca
+  - kafka/eb24ed8
+paid_agent_calls: true
+excludes_previous_successes: true
+excludes_unprepared_failures: true

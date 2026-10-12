@@ -1,0 +1,1109 @@
+[
+  {
+    "repository": "netty",
+    "task": "9abeaf1",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-netty-9abeaf1/comparison.json",
+    "rows": [
+      {
+        "benchmark": "io.netty.microbench.channel.epoll.EpollSocketChannelBenchmark.executeMulti",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 438437.2576628041,
+          "developer": 688511.4830632855,
+          "agent": 703131.3485281742
+        },
+        "speedup_vs_original": {
+          "developer": 1.5703763104749868,
+          "agent": 1.6037217098665064
+        }
+      },
+      {
+        "benchmark": "io.netty.microbench.channel.epoll.EpollSocketChannelBenchmark.executeSingle",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 307944.5916113269,
+          "developer": 298692.3327526568,
+          "agent": 330272.1834771105
+        },
+        "speedup_vs_original": {
+          "developer": 0.9699547934572986,
+          "agent": 1.072505224881379
+        }
+      },
+      {
+        "benchmark": "io.netty.microbench.channel.epoll.EpollSocketChannelBenchmark.pingPong",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 95302.13810067429,
+          "developer": 97435.43061328618,
+          "agent": 96279.03404337347
+        },
+        "speedup_vs_original": {
+          "developer": 1.0223845189114051,
+          "agent": 1.0102505144393215
+        }
+      }
+    ]
+  },
+  {
+    "repository": "netty",
+    "task": "ab8c4f2",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-eligible-20261012T061300Z/tasks/netty/ab8c4f2/comparison.json",
+    "rows": [
+      {
+        "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameAndValueMatchFirst",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 10.11675601867212,
+          "developer": 8.179872095490994,
+          "agent": 9.935162630541319
+        },
+        "speedup_vs_original": {
+          "developer": 1.2367865781481837,
+          "agent": 1.018277847568652
+        }
+      },
+      {
+        "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameAndValueMatchLast",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 44.76078433144391,
+          "developer": 35.59239224359855,
+          "agent": 45.2916368197958
+        },
+        "speedup_vs_original": {
+          "developer": 1.2575941517247784,
+          "agent": 0.9882792381634601
+        }
+      },
+      {
+        "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameOnlyMatchBeginTable",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 62.051741546757036,
+          "developer": 6.389043466618322,
+          "agent": 12.09120645142012
+        },
+        "speedup_vs_original": {
+          "developer": 9.712211518197826,
+          "agent": 5.131972710586628
+        }
+      },
+      {
+        "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNameOnlyMatchEndTable",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 10.025930331830505,
+          "developer": 7.536697431078149,
+          "agent": 8.672677414758859
+        },
+        "speedup_vs_original": {
+          "developer": 1.3302816549975607,
+          "agent": 1.1560363486792127
+        }
+      },
+      {
+        "benchmark": "io.netty.handler.codec.http2.HpackStaticTableBenchmark.lookupNoNameMatch",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 1.3920833357603908,
+          "developer": 1.3898806040336424,
+          "agent": 1.3982619573133435
+        },
+        "speedup_vs_original": {
+          "developer": 1.0015848352155974,
+          "agent": 0.9955812131477678
+        }
+      }
+    ]
+  },
+  {
+    "repository": "netty",
+    "task": "dd69a81",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-eligible-20261012T061300Z/tasks/netty/dd69a81/comparison.json",
+    "rows": [
+      {
+        "benchmark": "io.netty.handler.codec.http.HttpRequestEncoderInsertBenchmark.newEncoder",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 4303258.774202112,
+          "developer": 7209693.534371062,
+          "agent": 4311890.769157705
+        },
+        "speedup_vs_original": {
+          "developer": 1.6754032031707984,
+          "agent": 1.002005920491545
+        }
+      },
+      {
+        "benchmark": "io.netty.handler.codec.http.HttpRequestEncoderInsertBenchmark.oldEncoder",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 4401307.592109372,
+          "developer": 4385991.3293873565,
+          "agent": 4353473.970617727
+        },
+        "speedup_vs_original": {
+          "developer": 0.9965200653666028,
+          "agent": 0.9891319521549914
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "239f726",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-239f726/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsCrossingLine",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 6833.761215036084,
+          "developer": 8841.385845966186,
+          "agent": 8294.38796242067
+        },
+        "speedup_vs_original": {
+          "developer": 1.2937803308832034,
+          "agent": 1.2137368721884545
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsCrossingLineSimpleGeometry",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 1099385.160243759,
+          "developer": 972213.5387416912,
+          "agent": 1082374.29744394
+        },
+        "speedup_vs_original": {
+          "developer": 0.8843247788847078,
+          "agent": 0.9845269306745534
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsInnerLine",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 5910.9541758138685,
+          "developer": 6544.998608398828,
+          "agent": 7164.058280931581
+        },
+        "speedup_vs_original": {
+          "developer": 1.107266003715493,
+          "agent": 1.211996924328241
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsInnerLineSimpleGeometry",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 909734.2929179297,
+          "developer": 929669.9057865783,
+          "agent": 1009034.8470144921
+        },
+        "speedup_vs_original": {
+          "developer": 1.0219136653678362,
+          "agent": 1.109153359249612
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsOuterLineInEnvelope",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 6144.122644194298,
+          "developer": 6335.573840290721,
+          "agent": 6699.849596651405
+        },
+        "speedup_vs_original": {
+          "developer": 1.0311600544428143,
+          "agent": 1.090448544835319
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsOuterLineInEnvelopeSimpleGeometry",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 1048609.007689987,
+          "developer": 954773.961245244,
+          "agent": 854955.4569868457
+        },
+        "speedup_vs_original": {
+          "developer": 0.9105147430962326,
+          "agent": 0.815323395771941
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsOuterLineNotInEnvelope",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 13203.586830566985,
+          "developer": 18409575.83860697,
+          "agent": 14368242.50566055
+        },
+        "speedup_vs_original": {
+          "developer": 1394.2859675060304,
+          "agent": 1088.207521943759
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersects.stIntersectsOuterLineNotInEnvelopeSimpleGeometry",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 2210490.2087789276,
+          "developer": 15214489.406177396,
+          "agent": 18762567.479151636
+        },
+        "speedup_vs_original": {
+          "developer": 6.882857633005243,
+          "agent": 8.487966788830999
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "290f5be",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-eligible-20261012T061300Z/tasks/presto/290f5be/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithBitShifting",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 1.3732550172365248,
+          "developer": 1.3503268449445647,
+          "agent": 1.3457546715682112
+        },
+        "speedup_vs_original": {
+          "developer": 1.0169797204119877,
+          "agent": 1.020434887761725
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithDivision",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 1.3637074461413028,
+          "developer": 1.3483219550109258,
+          "agent": 1.355238308936812
+        },
+        "speedup_vs_original": {
+          "developer": 1.011410843732981,
+          "agent": 1.0062491866918482
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithFloorMod",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 1.8462237320139026,
+          "developer": 1.8429231321205484,
+          "agent": 1.8436153617270907
+        },
+        "speedup_vs_original": {
+          "developer": 1.0017909590670537,
+          "agent": 1.0014148126235878
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithMask",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 1.3925902617392756,
+          "developer": 1.4149132826118094,
+          "agent": 1.3953149179209319
+        },
+        "speedup_vs_original": {
+          "developer": 0.9842230466369448,
+          "agent": 0.9980472822682093
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.spi.block.BenchmarkComputePosition.computePositionWithMod",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 1.4724872337823942,
+          "developer": 1.4703509407463609,
+          "agent": 1.4789966439667186
+        },
+        "speedup_vs_original": {
+          "developer": 1.0014529137070833,
+          "agent": 0.9955987660885653
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "3f63ade",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-3f63ade/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkArrayDistinct.arrayDistinct",
+        "params": {
+          "name": "array_distinct"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 375.57426753571434,
+          "developer": 43.668218629932596,
+          "agent": 61.63161571848734
+        },
+        "speedup_vs_original": {
+          "developer": 8.600631748194902,
+          "agent": 6.093857237999606
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkArrayDistinct.arrayDistinct",
+        "params": {
+          "name": "old_array_distinct"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 381.4334265736263,
+          "developer": 390.82555500357165,
+          "agent": 383.18100619450547
+        },
+        "speedup_vs_original": {
+          "developer": 0.9759684894969074,
+          "agent": 0.9954392843261337
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "46d219f",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-46d219f/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+        "params": {
+          "mapConfig": "both_empty"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 184.3730431323795,
+          "developer": 19.854422726863692,
+          "agent": 19.9220309225395
+        },
+        "speedup_vs_original": {
+          "developer": 9.286245471288202,
+          "agent": 9.25473129969809
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+        "params": {
+          "mapConfig": "left_empty"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 642.6215540134885,
+          "developer": 170.32493636915117,
+          "agent": 165.22886279339167
+        },
+        "speedup_vs_original": {
+          "developer": 3.7729152742538674,
+          "agent": 3.8892814678331744
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+        "params": {
+          "mapConfig": "non_empty"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 840.9357281736536,
+          "developer": 884.3966113807431,
+          "agent": 941.3167928593317
+        },
+        "speedup_vs_original": {
+          "developer": 0.9508581527248988,
+          "agent": 0.8933610178346422
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapConcat.mapConcat",
+        "params": {
+          "mapConfig": "right_empty"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 501.5341950699894,
+          "developer": 161.1460431264266,
+          "agent": 162.04603548556568
+        },
+        "speedup_vs_original": {
+          "developer": 3.1122960597705296,
+          "agent": 3.0950105849066807
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "53aa7f6",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-53aa7f6/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.compiled",
+        "params": {},
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 14219.699900644917,
+          "developer": 14899.7709185594,
+          "agent": 15363.826584490034
+        },
+        "speedup_vs_original": {
+          "developer": 1.047825975419048,
+          "agent": 1.0804606772181757
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "60a5a5c",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-60a5a5c/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.operator.BenchmarkPartitionedOutputOperator.addPage",
+        "params": {
+          "enableCompression": "false"
+        },
+        "mode": "avgt",
+        "unit": "ms/op",
+        "scores": {
+          "original": 2064.8007880000005,
+          "developer": 2308.7856473,
+          "agent": 2296.08013782
+        },
+        "speedup_vs_original": {
+          "developer": 0.8943232951983539,
+          "agent": 0.8992720915918961
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.BenchmarkPartitionedOutputOperator.addPage",
+        "params": {
+          "enableCompression": "true"
+        },
+        "mode": "avgt",
+        "unit": "ms/op",
+        "scores": {
+          "original": 1953.71141428,
+          "developer": 1945.1664720200001,
+          "agent": 2001.9855209399998
+        },
+        "speedup_vs_original": {
+          "developer": 1.004392910520983,
+          "agent": 0.9758868852171652
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "a26f440",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-a26f440/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkCopyT",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 2548.925616705165,
+          "developer": 1824.764649249418,
+          "agent": 1098.184788941182
+        },
+        "speedup_vs_original": {
+          "developer": 1.396851707837291,
+          "agent": 2.3210352596148405
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkDeserializeT",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 1151.279522677395,
+          "developer": 103.24382405982469,
+          "agent": 136.8878718482731
+        },
+        "speedup_vs_original": {
+          "developer": 11.151074005262393,
+          "agent": 8.410383674847955
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkInsertsT",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 48.475992671939395,
+          "developer": 57.064456790577914,
+          "agent": 49.575596879501255
+        },
+        "speedup_vs_original": {
+          "developer": 0.8494953846637406,
+          "agent": 0.9778196476336015
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkMergeT",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 2692.5207896205097,
+          "developer": 1964.8847499654748,
+          "agent": 1253.7667582228476
+        },
+        "speedup_vs_original": {
+          "developer": 1.3703199588005455,
+          "agent": 2.1475452048489663
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+        "params": {
+          "quantile": "0.0001"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 11.068525251335284,
+          "developer": 10.891796988716429,
+          "agent": 11.753539993900276
+        },
+        "speedup_vs_original": {
+          "developer": 1.0162258131327586,
+          "agent": 0.941718431815394
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+        "params": {
+          "quantile": "0.01"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 16.213154040825952,
+          "developer": 15.654883717617437,
+          "agent": 15.41226355735845
+        },
+        "speedup_vs_original": {
+          "developer": 1.0356610967720097,
+          "agent": 1.051964494409721
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+        "params": {
+          "quantile": "0.2500"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 18.473320065605716,
+          "developer": 18.583484841101946,
+          "agent": 18.554273453860517
+        },
+        "speedup_vs_original": {
+          "developer": 0.9940718989770652,
+          "agent": 0.9956369410822735
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+        "params": {
+          "quantile": "0.5000"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 19.075065696402643,
+          "developer": 19.6709491978683,
+          "agent": 19.16061575387284
+        },
+        "speedup_vs_original": {
+          "developer": 0.9697074352909095,
+          "agent": 0.9955351091755543
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+        "params": {
+          "quantile": "0.7500"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 20.586868849080084,
+          "developer": 20.444541741494955,
+          "agent": 20.697991844710238
+        },
+        "speedup_vs_original": {
+          "developer": 1.006961618870442,
+          "agent": 0.994631218503521
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkQuantilesT",
+        "params": {
+          "quantile": "0.9999"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 27.885697059461986,
+          "developer": 28.01517298454506,
+          "agent": 28.068900343332658
+        },
+        "speedup_vs_original": {
+          "developer": 0.9953783642473134,
+          "agent": 0.9934730865253085
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.tdigest.BenchmarkTDigest.benchmarkSerializeT",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 103.31810422071639,
+          "developer": 104.72150739993504,
+          "agent": 104.92462255224493
+        },
+        "speedup_vs_original": {
+          "developer": 0.9865987110569465,
+          "agent": 0.9846888338270781
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "bfb18d6",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-bfb18d6/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionComplexPolygonLargeEnvelope",
+        "params": {},
+        "mode": "avgt",
+        "unit": "us/op",
+        "scores": {
+          "original": 9123.35537583049,
+          "developer": 0.04150602340385743,
+          "agent": 88.0738230943919
+        },
+        "speedup_vs_original": {
+          "developer": 219807.98514614138,
+          "agent": 103.58759339937657
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionComplexPolygonSmallEnvelope",
+        "params": {},
+        "mode": "avgt",
+        "unit": "us/op",
+        "scores": {
+          "original": 1049.4188151968926,
+          "developer": 1056.2547943965465,
+          "agent": 574.8011650417044
+        },
+        "speedup_vs_original": {
+          "developer": 0.9935280964063606,
+          "agent": 1.825707529873835
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionComplexPolygons",
+        "params": {},
+        "mode": "avgt",
+        "unit": "us/op",
+        "scores": {
+          "original": 13894.758721388893,
+          "developer": 14045.52542960485,
+          "agent": 0.008827203049443911
+        },
+        "speedup_vs_original": {
+          "developer": 0.9892658548822835,
+          "agent": 1574083.9588213873
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimpleComplexPolygons",
+        "params": {},
+        "mode": "avgt",
+        "unit": "us/op",
+        "scores": {
+          "original": 2845.6998724526666,
+          "developer": 2751.247528706365,
+          "agent": 2953.0236898161947
+        },
+        "speedup_vs_original": {
+          "developer": 1.0343307327896858,
+          "agent": 0.9636562965161284
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimplePolygonLargeEnvelope",
+        "params": {},
+        "mode": "avgt",
+        "unit": "us/op",
+        "scores": {
+          "original": 13.182229045917712,
+          "developer": 0.041432815448388116,
+          "agent": 0.3528080988793758
+        },
+        "speedup_vs_original": {
+          "developer": 318.1591427775046,
+          "agent": 37.363737079132875
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimplePolygonSmallEnvelope",
+        "params": {},
+        "mode": "avgt",
+        "unit": "us/op",
+        "scores": {
+          "original": 27.67022713707789,
+          "developer": 26.672593537272704,
+          "agent": 2.6625948927481495
+        },
+        "speedup_vs_original": {
+          "developer": 1.037402946901698,
+          "agent": 10.392203189617991
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.plugin.geospatial.BenchmarkSTIntersection.stIntersectionSimplePolygons",
+        "params": {},
+        "mode": "avgt",
+        "unit": "us/op",
+        "scores": {
+          "original": 10.287067960260504,
+          "developer": 9.993932822988596,
+          "agent": 0.008024466470503918
+        },
+        "speedup_vs_original": {
+          "developer": 1.0293313095518937,
+          "agent": 1281.9628567299005
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "ee74e4b",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-ee74e4b/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+        "params": {
+          "filterFails": "always",
+          "projectionDataType": "BIGINT"
+        },
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 11914362.021781502,
+          "developer": 11365022.001941713,
+          "agent": 11634965.686574746
+        },
+        "speedup_vs_original": {
+          "developer": 0.9538926197780878,
+          "agent": 0.9765496184608147
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+        "params": {
+          "filterFails": "always",
+          "projectionDataType": "DOUBLE"
+        },
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 11985799.622696588,
+          "developer": 10779693.458388828,
+          "agent": 11925840.534277054
+        },
+        "speedup_vs_original": {
+          "developer": 0.8993720734306413,
+          "agent": 0.9949974895036627
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+        "params": {
+          "filterFails": "never",
+          "projectionDataType": "BIGINT"
+        },
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 1796272.6441416668,
+          "developer": 1737658.0811354972,
+          "agent": 1733392.7400583199
+        },
+        "speedup_vs_original": {
+          "developer": 0.9673687826860058,
+          "agent": 0.9649942316449441
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+        "params": {
+          "filterFails": "never",
+          "projectionDataType": "DOUBLE"
+        },
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 1803068.5675470028,
+          "developer": 1800654.3335449481,
+          "agent": 1835424.4723228503
+        },
+        "speedup_vs_original": {
+          "developer": 0.9986610414903194,
+          "agent": 1.0179449108914733
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+        "params": {
+          "filterFails": "partial",
+          "projectionDataType": "BIGINT"
+        },
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 74883.90980310134,
+          "developer": 5147094.174831375,
+          "agent": 5140169.319669998
+        },
+        "speedup_vs_original": {
+          "developer": 68.73431406513187,
+          "agent": 68.64183952447841
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.sql.gen.BenchmarkPageProcessor.identityProjection",
+        "params": {
+          "filterFails": "partial",
+          "projectionDataType": "DOUBLE"
+        },
+        "mode": "thrpt",
+        "unit": "ops/s",
+        "scores": {
+          "original": 74929.85330409202,
+          "developer": 5097224.395416033,
+          "agent": 5145204.323329988
+        },
+        "speedup_vs_original": {
+          "developer": 68.02661650396782,
+          "agent": 68.6669477711229
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "fa655f6",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-fa655f6/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+        "params": {
+          "mapSize": "1",
+          "name": "dictionary"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 42.61214878487691,
+          "developer": 39.70694727791838,
+          "agent": 38.98564239448737
+        },
+        "speedup_vs_original": {
+          "developer": 1.073166075614535,
+          "agent": 1.0930215886580423
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+        "params": {
+          "mapSize": "1",
+          "name": "fix-width"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 20.936057268679107,
+          "developer": 21.90563995841628,
+          "agent": 20.722475998519993
+        },
+        "speedup_vs_original": {
+          "developer": 0.9557382166612004,
+          "agent": 1.0103067447236695
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+        "params": {
+          "mapSize": "1",
+          "name": "var-width"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 40.27920784293848,
+          "developer": 37.31975470874781,
+          "agent": 34.84802928679919
+        },
+        "speedup_vs_original": {
+          "developer": 1.079299908514591,
+          "agent": 1.1558532481547439
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+        "params": {
+          "mapSize": "13",
+          "name": "dictionary"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 700.7730344080516,
+          "developer": 622.1592027705505,
+          "agent": 662.2016530834437
+        },
+        "speedup_vs_original": {
+          "developer": 1.1263564555300705,
+          "agent": 1.0582471836864284
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+        "params": {
+          "mapSize": "13",
+          "name": "fix-width"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 283.16973167440256,
+          "developer": 274.3450637651343,
+          "agent": 274.6220632557074
+        },
+        "speedup_vs_original": {
+          "developer": 1.03216630832776,
+          "agent": 1.0311252064650618
+        }
+      },
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkMapSubscript.mapSubscript",
+        "params": {
+          "mapSize": "13",
+          "name": "var-width"
+        },
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 621.0622503164061,
+          "developer": 533.5673692485892,
+          "agent": 624.726302628265
+        },
+        "speedup_vs_original": {
+          "developer": 1.1639809443201783,
+          "agent": 0.9941349479020749
+        }
+      }
+    ]
+  },
+  {
+    "repository": "presto",
+    "task": "fdb7611",
+    "evidence": "/downloads/patataWJY/benchllm-agent-eval/artifacts/benchllmrealse/three-versions-batch18-20261012T033600Z/cases/three-versions-presto-fdb7611/comparison.json",
+    "rows": [
+      {
+        "benchmark": "com.facebook.presto.operator.scalar.BenchmarkArrayJoin.benchmark",
+        "params": {},
+        "mode": "avgt",
+        "unit": "ns/op",
+        "scores": {
+          "original": 99.50223959818182,
+          "developer": 91.13690663181818,
+          "agent": 96.04901084585858
+        },
+        "speedup_vs_original": {
+          "developer": 1.091788642774091,
+          "agent": 1.0359527778777968
+        }
+      }
+    ]
+  }
+]
