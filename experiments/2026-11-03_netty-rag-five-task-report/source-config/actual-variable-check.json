@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "common_prompts": [
+    {
+      "condition": "A",
+      "normalized_common_prompt_sha256": "3f2f86874ff487c0ccbc0ff4729d7753f51c058428d5b407489cbe38578bb125"
+    },
+    {
+      "condition": "B",
+      "normalized_common_prompt_sha256": "3f2f86874ff487c0ccbc0ff4729d7753f51c058428d5b407489cbe38578bb125"
+    },
+    {
+      "condition": "C",
+      "normalized_common_prompt_sha256": "3f2f86874ff487c0ccbc0ff4729d7753f51c058428d5b407489cbe38578bb125"
+    }
+  ],
+  "actual_models": [
+    "deepseek-v4-pro",
+    "deepseek-v4-pro",
+    "deepseek-v4-pro"
+  ],
+  "actual_reasoning": [
+    {
+      "effort": "high",
+      "summary": "auto"
+    },
+    {
+      "effort": "high",
+      "summary": "auto"
+    },
+    {
+      "effort": "high",
+      "summary": "auto"
+    }
+  ],
+  "identical_tool_schemas": true,
+  "intentional_difference": "only reference content plus unavoidable per-session workspace paths",
+  "limitations": [
+    "A generated earlier; provider alias has no immutable weight snapshot",
+    "CLI persisted new sessions for safe resume, old A was ephemeral"
+  ]
+}

@@ -389,3 +389,17 @@ FindBugs/Maven2、历史插件源2、Git缺失对象2、harness/API不兼容2、
 - 更细的规则分类校准、attrs workload验证、callback调试和历史任务筛选属于过程证据，见
   [`../EXPERIMENT_EVOLUTION_ZH.md`](../EXPERIMENT_EVOLUTION_ZH.md)。
 - 完整模型响应、临时仓库、原始pyperf数据和调试日志保存在忽略提交的`artifacts/`中。
+
+## 2026-11-03_netty-rag-five-task-report
+
+### 实验问题
+
+历史性能优化材料的检索参考能否改善 Agent 在 Netty 任务中的代码优化效果？
+
+### 阶段结果
+
+五题、11 个原生场景完成三组对照的前五次独立 JVM 测量；三组各 25 次生成中，功能通过且有可测补丁分别为 20、21、23 份。4,835 个归档文件指纹复核通过。速度和资源效果因题而异，尚无有 RAG 一致优于无 RAG 的结论。
+
+### 归档
+
+[实验报告、知识库构建与复核数据](2026-11-03_netty-rag-five-task-report/README.md)。

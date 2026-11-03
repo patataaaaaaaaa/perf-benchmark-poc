@@ -1,0 +1,16 @@
+{
+  "outer_blocks": 5,
+  "warmup": 10,
+  "iterations": 50,
+  "CPU_pair": [
+    20,
+    21
+  ],
+  "parallel": false,
+  "reason": "parallel diagnostic failed; legacy JMH collector incompatibility isolated by task",
+  "blocked_tasks": [
+    "67d3a78"
+  ],
+  "all_old_raw_preserved": true,
+  "API_calls": 0
+}

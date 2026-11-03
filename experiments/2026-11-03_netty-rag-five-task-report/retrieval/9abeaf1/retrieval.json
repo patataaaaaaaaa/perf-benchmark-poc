@@ -1,0 +1,5272 @@
+{
+  "task": "9abeaf1",
+  "query": "The wakeup logic in EpollEventLoop is overly complex and can be simplified for better performance. EpollEventLoop",
+  "query_terms": [
+    "wakeup",
+    "logic",
+    "epolleventloop",
+    "epoll",
+    "event",
+    "loop",
+    "overly",
+    "complex",
+    "simplified"
+  ],
+  "expression": "\"wakeup\" OR \"logic\" OR \"epolleventloop\" OR \"epoll\" OR \"event\" OR \"loop\" OR \"overly\" OR \"complex\" OR \"simplified\"",
+  "allowed_card_count": 2836,
+  "allowed_family_count": 215,
+  "quarantined_cards": [
+    {
+      "card": "ad85f55793891a6473cb2f4f459c6c6e17d23c40:7e8a66e04ee9822d",
+      "commit": "ad85f55793891a6473cb2f4f459c6c6e17d23c40",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "ad85f55793891a6473cb2f4f459c6c6e17d23c40:dc9442559fb763ea",
+      "commit": "ad85f55793891a6473cb2f4f459c6c6e17d23c40",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "ad85f55793891a6473cb2f4f459c6c6e17d23c40:7902481e6e32ee71",
+      "commit": "ad85f55793891a6473cb2f4f459c6c6e17d23c40",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "ad85f55793891a6473cb2f4f459c6c6e17d23c40:72c5fd24d675bad9",
+      "commit": "ad85f55793891a6473cb2f4f459c6c6e17d23c40",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "ad85f55793891a6473cb2f4f459c6c6e17d23c40:5d380200e0d5d303",
+      "commit": "ad85f55793891a6473cb2f4f459c6c6e17d23c40",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "ad85f55793891a6473cb2f4f459c6c6e17d23c40:978222e8ea9adfc4",
+      "commit": "ad85f55793891a6473cb2f4f459c6c6e17d23c40",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "ad85f55793891a6473cb2f4f459c6c6e17d23c40:29e71b84c8d85a45",
+      "commit": "ad85f55793891a6473cb2f4f459c6c6e17d23c40",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:cb9c7628300a4952",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:3a2b00272c03d3a3",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:564a46d2a0ffc418",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:092b2642726067b0",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:4f73da8f6d3a1862",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:0532fc0272d465f6",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:47e354294202e3c0",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:cd762a355a03a55c",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:6ce577b5c20e1755",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:9a8e8c51482264ad",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:ad4f07494f8fde71",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:e51b3dcc7d2a4703",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:4ff59616af067d0e",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:d30e4b21056f0c0c",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:60b178e4b572499f",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:3d7ea80d69c8f72a",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:3db49e85ff44a43c",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:5d2476909afd0cc6",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:a008a16e1df847bf",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:99f31c2b1dd63a08",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:e251fa91e7c3c412",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:7c988365e0960fbe",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:a9957380c77effe5",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:adf460f4a15713de",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:1b0eca9863df8ce4",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:a45dbe9bfb96f5d6",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:23c467eed8988f67",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:f58ca83cb6618e59",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    },
+    {
+      "card": "d36a3d11af1fc5625663ed299c5401289855fa8b:a833747f91b8745b",
+      "commit": "d36a3d11af1fc5625663ed299c5401289855fa8b",
+      "reason": "same_target_production_file_conservative_quarantine",
+      "files": [
+        "io/netty/channel/epoll/EpollEventLoop.java"
+      ]
+    }
+  ],
+  "query_rejected_cards": [
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:54316dea95aefb77",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:7008a986df5aac2e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:cce33cdaaf4bc26b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:37c0d6194a4aa199",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:9e71c49f80a3aa2a",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:c456edfbadbaaf0e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:c456edfbadbaaf0e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:aa56613877431537",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:9fd29c079105aefb",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:0cefe9f7ceb02d73",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:70d587930b301f95",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:b263cf5ec7d169a6",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:2cef1a0d42d049cd",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:4d990abf1bdf3581",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:d3a23e754f71dfc5",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:d3a23e754f71dfc5",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:3bb63b2962ab7579",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:b687e410d63b6605",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:b4fbfbe10f4b7ae4",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "71af4423b4a40f884c284bc6efaaa25660f3d27c:9ae1ba0c7bebd077",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "simplified"
+      ]
+    },
+    {
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:d2a1610cf07c17c1",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:feaad2dcdec4fba2",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:39143850f90b1281",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "537b9f3e718f65fc97f001f214f00c7f6b6039c0:0eef349a9a875a02",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:58c3f4af57b7e931",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "50ffe5bd6dcd3eb4da902b49c1b3c4b47f4ff258:bd4ead4362f23bd0",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "52090cce91cc82433599ac3879a142dcb0d752f5:45d4f76faa5fdc01",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "52090cce91cc82433599ac3879a142dcb0d752f5:c29db6344e813d92",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "52090cce91cc82433599ac3879a142dcb0d752f5:73082db8ff5cacbf",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:43d85790ef23057e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:43d85790ef23057e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:61d71577f76faa9f",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:61d71577f76faa9f",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "52090cce91cc82433599ac3879a142dcb0d752f5:0f4a2866ca1f22a2",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:d3df911ed288bdbf",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:3c7c9bac760e0c96",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:3c7c9bac760e0c96",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:d98eb21e9b52e446",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:d98eb21e9b52e446",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:b26ec3b4a282638a",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:b26ec3b4a282638a",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:832faf84f1b51381",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:832faf84f1b51381",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "52090cce91cc82433599ac3879a142dcb0d752f5:18021db4e56dd2be",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:b30cd484dd89f060",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:b30cd484dd89f060",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:97942af7e801becd",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:97942af7e801becd",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:d8ff999a3a93bfbe",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:d8ff999a3a93bfbe",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:293b3652083f8f6b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:2145e945f4082640",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:293b3652083f8f6b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:2145e945f4082640",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:3a8565ba9818ca47",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:3a8565ba9818ca47",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:2e1afc0210f7af85",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:2e1afc0210f7af85",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:ebf9a2a4123d9250",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:ebf9a2a4123d9250",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:4dbbbd6156e634e6",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:4dbbbd6156e634e6",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:da752992519ea065",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:da752992519ea065",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:af9989dab602c15f",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:af9989dab602c15f",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:c4c6555f95721d0b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:facfbc4fffa1cb50",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:facfbc4fffa1cb50",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:e25822eda7e1074c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:e25822eda7e1074c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "52090cce91cc82433599ac3879a142dcb0d752f5:e84929aa7dd3e6fa",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:10906d11c9b78575",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "50ffe5bd6dcd3eb4da902b49c1b3c4b47f4ff258:c29db6344e813d92",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:f2560b9d604da0ea",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:f2560b9d604da0ea",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:52f5d7bb13a52241",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "50ffe5bd6dcd3eb4da902b49c1b3c4b47f4ff258:73082db8ff5cacbf",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:3671ae6037add325",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:3671ae6037add325",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "50ffe5bd6dcd3eb4da902b49c1b3c4b47f4ff258:45d4f76faa5fdc01",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:fcd2cc9cd694cd15",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:893ec6c5d62cf094",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:893ec6c5d62cf094",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:c9c59f6da298f53e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:b69f775e036f4008",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:c944627d41f47826",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:05e59593cdddb92c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:9b27ee6de1e9cd08",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:eee5dc5715501c6b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:6921b72ddb2b67c5",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:1590af3abacedc0a",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:a39a0ca9770d0391",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:2e8236d1e8f4e3aa",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:1c2d30e1365e8b47",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:87c86832a851f287",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:14f190b3f35f66d0",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:dc48fff97e2ba034",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:63b4d40d560b2efd",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:5aa8a2c48c0f206f",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:3e0308974389ad33",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:474e964631826bed",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:f23fdaa0990833cf",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "50ffe5bd6dcd3eb4da902b49c1b3c4b47f4ff258:0f4a2866ca1f22a2",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:a832ee05171a4fda",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:8ca5ce429c9ccd0c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "1bdec65a2dbb905eafd28768f063595ffd6a44f1:e36976ed0da63ab3",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:93edd6dde5cfe513",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:ec4cfcc466a07036",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:092dced3aafe18d3",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "50ffe5bd6dcd3eb4da902b49c1b3c4b47f4ff258:18021db4e56dd2be",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:533fc5cd255aa5cf",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:60180999f3d41fa3",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "50ffe5bd6dcd3eb4da902b49c1b3c4b47f4ff258:e84929aa7dd3e6fa",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:9ea097c6c5b0f486",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:1a108c0f317ed1e8",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:da3e7569c940218e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "aad5d3cd6e9e5cce4d7f92ac27c1d3213524bbb7:ebe196ddcf56ede0",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:d218f8644a952dca",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:895c2bb7291f99fa",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:02c7b494248ab459",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "bea398d459a766c976ea37f906a6c7dc37d6edfc:01549a40ae57e148",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "bea398d459a766c976ea37f906a6c7dc37d6edfc:5c71f4930efb3c96",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "bea398d459a766c976ea37f906a6c7dc37d6edfc:3a8e4dfc12e64c8c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:628295fde0684760",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:a15465fbfecffe49",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "bea398d459a766c976ea37f906a6c7dc37d6edfc:4177a78bfa9f2e01",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:7475fb42e6650d02",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:08980c1e88e46420",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:431b63ff86e893f0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:9e073c4ccf351b6e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:5dd1d7ef23aa260e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:8519669ee3891c6a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:1fa2ab80d3a1f0c5",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "f989e3c7c55532ef03b34de48f6fe3f3b1652ad1:5a5976fba4871829",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:7eaf089eb203e63c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f989e3c7c55532ef03b34de48f6fe3f3b1652ad1:f6594d1fe3a73855",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:4b8c1ccfc1698c85",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:91e3277ba39fa0af",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:654d4ceaba6d6d3b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:a40e9dbb55c31d84",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:8a03c666475fb7e4",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:eb2dd78c0c63ae30",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:ec32d272a1630c40",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:340b7394ba0ada37",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f989e3c7c55532ef03b34de48f6fe3f3b1652ad1:47db2c8895f19b09",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:cd114b20a2820aed",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:f19f60ea0e62ae41",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:5288817536c33b91",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:a77c95cff51edebb",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:0542a2271a21d7c1",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:69d84f8c960e8994",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:8b7a60daace2f3ab",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:76d7cf3ba4219a36",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:7b68ecd7a40e7b4f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:088f5798bcb4d31b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "537b9f3e718f65fc97f001f214f00c7f6b6039c0:3df0d260364f6ec3",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:98d7f348ad7dbb79",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:3eed3c2a89c04134",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:494313d40c229e47",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:c50c117ede56d325",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:6e5894fb47049830",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:9d0baeefb44925bd",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "39a6f63d73bdaec2fbd76d96d79b52dddec19701:c79b0ae283971e2d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:ef6c7e64a71be0d8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:06b4713f0ce46a40",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:631effb1a8b816f7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:b6e69328b4d40c17",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f989e3c7c55532ef03b34de48f6fe3f3b1652ad1:b87097a551ac8573",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:5241a3e0dcc1d660",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:f588b71c7b39d637",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f989e3c7c55532ef03b34de48f6fe3f3b1652ad1:28706d999a7f1bbd",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:1993683813fdf280",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "23a891e120fcfed1dd8f3a570150e4465a74c5a4:9802cdd7a8f5d840",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:a70319ed4796c7a5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:9318bcc40a9849c7",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:e6093c59888ff2c1",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "52a6707d4d6a704b3459c9ecbdebc30674bc71f1:ae0e26c20752cc65",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:2185c609fe5655a1",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ed560ca64bd04469",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:61e71c923a804d8d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:8a613b62a6f1fc63",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:ac135c6ce2c41f75",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:328bf4b4c6eff00a",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0c6d1c4c0b1fd99e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "f989e3c7c55532ef03b34de48f6fe3f3b1652ad1:8375a36408d2240f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "a9bbb67c1d806f9bfc575d5feff3d5fd3a9a8fd3:b6687a0828dead44",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:f7b2706e9a9baf4a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:0bbbd727b484650f",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "bea398d459a766c976ea37f906a6c7dc37d6edfc:413b17cb6d68fda8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "accd981104dfe23dbe6208a16d197b7b3f5b8c94:47c84ab8bd264db4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": []
+    },
+    {
+      "id": "bea398d459a766c976ea37f906a6c7dc37d6edfc:c3c9acf5ee6d6cf9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:dc1428cccf4e17d0",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:fe4afab694c49f75",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "23a891e120fcfed1dd8f3a570150e4465a74c5a4:07c9ff0daa4dda8b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:8ab5a2f4013876fb",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:2d46957f92d0b2de",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "23a891e120fcfed1dd8f3a570150e4465a74c5a4:f14190bc27f0b84c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:ced544a7b47f55c8",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:5bf95d22a62c5209",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:96c000fab868f68f",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:ae1b2139236cd036",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:ecd5eb61ad0158c1",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:82976e4b43619409",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:3ec4ebba8ca96e80",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:b879d90fe1dd8f34",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:daaa7e1798b9756d",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:e56bce6645ad9c9b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:3113763f9ada2b25",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:1d853dfcbb032e4c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:fa89bd8e36178651",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:997cbeeda4448c61",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:701846c8dc162cf0",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:63a201952760bb25",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:2941b1e4b1ed9cc9",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:b288be3433ff4099",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:d931488fb21f10d7",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:5e29c9b54ceea520",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:94aa073ade09048b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:b43e7bc1805cecac",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:3f3d7a1ee2688032",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ee5183f1ca850257",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:4d5412ee97b042c2",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:bb7a0109bab90cb2",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:86f5f3385fe6fb33",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:b3d1529ccaefc90c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:ee8036f330a182ef",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:e0d92123a8cf433d",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "4797b88d89304763fd92eeff73d077effa53685e:ed7e9740c754fcab",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:32c2a3609c172b33",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:67c5cc27da6a441b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "accd981104dfe23dbe6208a16d197b7b3f5b8c94:3213ed1ef140930e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": []
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:0ff3ec889686ef32",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:78f4d1d6d4c3c928",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:4f6c89db7f8bc1bd",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:b544897908eb04bb",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:82976e4b43619409",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:3ec4ebba8ca96e80",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:d31c4f80ca129aae",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:26fdb1fe2484d88b",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:daaa7e1798b9756d",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:c210647ba83cc21c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:1d853dfcbb032e4c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:c581b113b2c08d4c",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:997cbeeda4448c61",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:701846c8dc162cf0",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:92c24f6c9c39da63",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:add0d064c7b28e57",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:6304f5bbc06c3d54",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:2941b1e4b1ed9cc9",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:b1f87199f9148e63",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "1ac654717f134d9fadfcb608543a236ec93965a7:9d9f64cf6e4e4156",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": []
+    },
+    {
+      "id": "645b43c29a068d8a8f35b322c134872379e7eaab:c9089def2cbdeecc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:c79c7c1b31dd087b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:47f9dadad7516bd1",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:b43e7bc1805cecac",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "46d4f76c6006a79067be65ad5f69244ff63e2fdb:fe54b65a9f1dc819",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:4aa7a0e27228005e",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "645b43c29a068d8a8f35b322c134872379e7eaab:9d8e00abb921051f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:fd87a173beb44414",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "645b43c29a068d8a8f35b322c134872379e7eaab:3e9f3cda0d8b5b05",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "ff5aefb725398ebecf6d28f1a74d843c851d85de:0e6d9970a8965df7",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "645b43c29a068d8a8f35b322c134872379e7eaab:9a9af5d3cfe7c2a3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "645b43c29a068d8a8f35b322c134872379e7eaab:66427d4f4a9e6d88",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "6d938eba286752160f0afbfa835c5a4b4a456e68:be442f2da0acce05",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:8d7eb62e346f21db",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:e3baa5d31f43c8e7",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "901d1c5ef8f921c7a4dfd873a873a7b1cdf477bb:4d3f037dae71b706",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "901d1c5ef8f921c7a4dfd873a873a7b1cdf477bb:3eae290bf3e1222c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:906f860199ffd521",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:12fd2b0b607c8730",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "9ae2f663b9302c76b337eac59e87adbcbfd19823:2828500b7ebc6dca",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:868af0be0ccaa5f0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:44b3db8958beb267",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:a22613a71499694f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:7b546f97a65b7ce4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:42b3a6267dab4ce9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:9e7678c676035c83",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:38879b807543763d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:e26dd7c6336b5f31",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:4048441d44ec5587",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:9f9cef8ddeef22d4",
+      "reason": "related_version_or_identical_hunk_duplicate"
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:544cf5716a0dee3c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:453a5d4285ab55e4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "df4b9af9ebc21b09658c11566d8d2dd0166d76d9:2704182a6797af65",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:e1b7974f9936daf7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:79c946b00947463d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "df4b9af9ebc21b09658c11566d8d2dd0166d76d9:33c91d2e83886d14",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:24bb56015709d879",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:f547f52ce82001ff",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "2b21c63f2b52dea42df14e8ef5020ca6c39a7f4f:caf5798821fbfc5d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:f09f8bec054d71f1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:5a100a3d23876cdc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:07e1b348aee014a6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0f961caec5e4e6dcf5876e86399e70d6c18d5af8:4f65847fffc74602",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:f97c37cf3a3a0c24",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:61a4a5b47e00e426",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:e9c689de100385b3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:f3f6a66be5b9d2ce",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:a721d25c19465ef1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:343505bb84e2d95c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:5f1f4de153de3062",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:487c8d9c74b4830f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0f961caec5e4e6dcf5876e86399e70d6c18d5af8:cdd7a5578eecc9d0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:79c96d5a2de80be0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "c06b68575659f738bb0f40b5d7dfc6bd9bd3fb13:3341255d21890b8c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:4904dca78619078f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:a9e822afd124cef9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:13c7f281d436c21a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:528034b460ea6854",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0b43f0e522821f1b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:9b19a45a5acd7e13",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:5470573ad177d287",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:55038cac4be11aa8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:17fec9aa63e0c3dd",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:61a4a5b47e00e426",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:de6d427d20653ff8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:15e9863dd05aa2ea",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:7a72afe103089ab3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:075ddcb24ef399a5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:07d52b3a34289659",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0b20cad4774144b5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4bec10fa9038a301",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:e14e5337a7e601fe",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:522121b1bd48f114",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:23ee197dac5ea7a8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:b9357759701c7258",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:fd3bc69fd93ebd09",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:343505bb84e2d95c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:a35698b9bc096be3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:cf1d8e18968edc9b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ceac971c6dca8ff6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:96eb8cd53a3b1f35",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:abbcb79e48a9af16",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0f961caec5e4e6dcf5876e86399e70d6c18d5af8:1551fefa79d0bbe2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:fcd89049a7f1e0fb",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4d024454c9487122",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4e262c6144fec951",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:46ae42b2602f8275",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:f82ee5b0c3645e4e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:2dbc16ae585f402e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0a7c0a20f3287246",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:7de6a57e48a3bf45",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:f079b451200f6859",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:f16eab34b775e45c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:629f89d417ba86b7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:327e88622030fb17",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:9b5aee71188d4811",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:386e7a27def0228e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:56540181fea2bd80",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:a8edb93cb8cfcc0e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4176fae526a906be",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:39f56949acfbae21",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:d374089d697f22ae",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:010fb60f27d21a4b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ede5022578058d7b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:606a0c016a86b905",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:ea6df5663227f01d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:ac1fce9567404d72",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:a79f7c4025c5be31",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:a851a1d973372f09",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:b94ac93880ace6d0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:7e0d030dda0a4964",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:1de6742291a3eb3f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:902f6ffd3ff326ac",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:e9be9fa25d3b7e21",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:2a9515715e245fbd",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:b1a049410035fe24",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4b951dafe7296922",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:215e671c3be5dba0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:afd560fbc04afe6f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:bea8c094993705db",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:a096dd7c83634bd6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:c9c1828101f3cbd6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:a3cdfee1b854695e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:c2a9858b9196e952",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:55c6eaec18bd73ff",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:aa8bb0d2aa9f3447",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:d25cb051021b15ee",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:7f2057b2d323ea7f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:3968e296bd089bfc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:04c4032e1a20eab1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4c5d528d095fdc3e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:0022e17fde70f572",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:3cb969f99d06e698",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:6031217574dec1c0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:8d35b1d98cdab2db",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:c170a94c96264c33",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:297ea91071a18e34",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:151f79f5919ff580",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:32bf1b14e9ceaa8f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:405bc1537fdef870",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:998baccf395a09c2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0f961caec5e4e6dcf5876e86399e70d6c18d5af8:1cf1a4116fc006e0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:9985103c117da553",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:b5528d0940a0f36d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:7239832d2a1ec024",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ef9c709831c89ffe",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ecbccab7ddef0ae1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:e9b0f9b7a0ad3fc1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:763a0df532c6d1e8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:5cddd0f7b2409a99",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:72894ec59a11d7ee",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:08630bb1343b98da",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:b09cd687431997e8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:6375125b412d9861",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:9c3bd6650b5ee0ae",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:76e67f3d591bab7c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:43fce7ea33531df8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:2d614956c059894b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:4b0eed59f2d0a447",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:20bc567a181599b5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4e522feed583708b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:9b20dc98c22d4eb4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:425241146bcf663d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0e9b9ab559c178e3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:97008dc06f9c3d62",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:12e21c8824b5db19",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:2522ebfcb56ba592",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:b5ae5e12bdc8fcd1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:996234f2bc6ce0bb",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:12301ed096df7cdc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:a0815530d70597ac",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:9ffc899da836a91a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:9dd1f373c79f7fc8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:c0a5f1585a55902b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:16b8e7d9f2f5705f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:4e96937e09f0b319",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:997a946f7eb1b3e5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0844152b07b44925",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:abe62754eef58f24",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:0022e17fde70f572",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:bdbba849792d76c7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:b8fcb52f261662f0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:bb90f738dd62981b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:449591c4bdd0b771",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:6ebb766798ff66ce",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:807eba2b5f3f176a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:3ae87a980ec9cdc3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:55ff6ecd271d84f4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:9428d0b7364576a3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:8a3790402f582013",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:1d22669576a80862",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:dec94031fe479b56",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0e8b9f15cf5950bc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ae2788176ac03629",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:048877db51f02ab1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:9a6c922464281426",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:5d3e684d8ba44fb9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:2b7eee3a7511593c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:5e7bbd61a22fa10b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ce4cff9baeb10908",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ac61ce1ed5a22f82",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:ccc62885809c7ef6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:b42da0c8f1f77ed6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:82a73d8535c8382c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:162bd4b5b1998661",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:39fb2ee22ac92d9b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:41bb206ee013b0c2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:5e0a572071e49496",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:578dac2eba7e6689",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:0c29bb28bbb89d27",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:41c699c0da8ce855",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:83737919fa2192e9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:1302f6e753e6d5bc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:6744f016a5d58782",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:629b8ed7a2662c45",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:17f843cd37398d60",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:bd34f13c44f156c9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:93e2bfc0942eccb3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:5ee24abe559f0cd6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:717239d186257e2c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:019db45e73e0864c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ec65252ed8702178",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:bff1c887eae5eb55",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:ccfc68fe8e386af5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:9963dcfa0b1225c4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:e25926aba1426f0f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:d738fc10d9b31d78",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "537b9f3e718f65fc97f001f214f00c7f6b6039c0:1ba36ce6fedf085f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:7c4094a8311a418d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:5a2ea6f920290bf0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:6cb3b6f2d607d5b3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:b2b8fd2c2d1ba15c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:4f1cbb1795e68c94",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:81db399796c4d707",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:26b0399f299e92fb",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:bc2452cd15594c16",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:53161d406582cafb",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:0fa7d1c8142ef48f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:2a7e95fb59d0ba06",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:588d61b6e4f1f1fd",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:4d182a95a6c5a029",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:4e01bcc5cec56da6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:13470e06539b393e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:89c4bfd9b2cb394d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:28f921c30ec87a0b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "537b9f3e718f65fc97f001f214f00c7f6b6039c0:8db552ef1cdeb0b0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:ef8a846f9377711d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:493679196c0138e9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "10539f4dc738c48e8d63c46b72ca32906d7f40ec:4b088d62cd817d3a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "logic"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:57ee88730beabc0f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:885007d4da0131ff",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:e76a97177ec9d465",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:4e767432c55e2e7b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:7d65b4213053ddc5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:22db8d64886f7a1c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:aea485a20c07cb0e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:7dfe832531c64b0c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:58045c202d9b46d3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:676fa980845f3363",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "3abf18d26ae76763840c9a4e50b32a365cf9c6a3:15bd77bb8a443b72",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:d3cc73d2e7e28d4a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:e88169fe1551a018",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:8143873a7ec814c2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:779bb3bc8ba47317",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:400bd43a6ea2252c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:6ad509ad03f21356",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "60b5523dbb888f136dc222b10fa8e7dfe5957d3c:1a9685f2f097aab0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:3fa413ec6a239b98",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:3e93191d7f84972b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:baf448c74f03d15f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:5cf283b28a9f1e4c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:fa2394eceafcde21",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:493679196c0138e9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:e577ee692396f0ae",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:b244803fb21ec5b8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:e76a97177ec9d465",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:aea485a20c07cb0e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:57ee88730beabc0f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:885007d4da0131ff",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:70cab1be63447222",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:7d65b4213053ddc5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:a63fd17f61fb693f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:676fa980845f3363",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:5812408cf1911085",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:e88169fe1551a018",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0daaec3ac2715bf09dd385a0515b0031d5af486a:15bd77bb8a443b72",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:8e737137a3f7b74b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:d3cc73d2e7e28d4a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:6b0d9e72dade2691",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:6ad509ad03f21356",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:7871bb4d1e5296f9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:d1b69eb4afdd6004",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:8cfafce7e6898622",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "2bd48625b38b79ea53a6270271b033f880ceb3a6:ccc0cf6c54c72cef",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:baf448c74f03d15f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:9b9118ec43ba918c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:c3f5357707954765",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:2455628307f1177a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "60b5523dbb888f136dc222b10fa8e7dfe5957d3c:e5621bff22d4d8c5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "1ac654717f134d9fadfcb608543a236ec93965a7:d8240e59fb38606c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:b4ad03772ae0d637",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:c78d89cd4cde4a6c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:b53df3389f4881ff",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:04f341490ee9d433",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:42dbf19a920af6e8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:226d52b7bfad13fa",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "1ac654717f134d9fadfcb608543a236ec93965a7:c329ddf99e4db55d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:27edf151b03a48b6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:10868f7d20b9c270",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "2080c9916ecd9de22f27dc15827891689eeb723c:7d9b39064b78aa1f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:69fa70d7f796ac55",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:7f1e63a517ff432d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:d76b05655132ae00",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:f199b997f90fd677",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:f5d4a2bd6a26d97d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:3958f873710ad8a2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "ec68df49169cb0fdd4d7b783e531105bf45f743e:0ce04ecdaee9c1d7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "2080c9916ecd9de22f27dc15827891689eeb723c:e4b5109428c7fe66",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:4caaa65940fede8b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:fbd7c5abac0a401d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f724ee644647f4a1d4649dbc2d454964cf02483d:2f668423b16fee84",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:acba79f11fd83e51",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:2a4bff07377c1c9b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:66e215e06e1e35f6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:5d66401bf5cf32be",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:4093e7ce42c59c1e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f724ee644647f4a1d4649dbc2d454964cf02483d:4a03dea0e30cd09a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:1bfbca399c57e414",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:3c103ef4911d95d6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:1f245510ba78c713",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:ffbb07983180e3f6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:6c85d74f761e823c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:dacd25d1925238a8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:3385514a9802b0a8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:00e9392150a5f8f9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "97b826e0650ee54e14dcdb3b6af55e05fcb9428c:878362911ec5a0a1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:6b865e5de323817f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:e7686257ed35a14f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:157005fe503aac1a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:9a322a7f11b51c6e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:6325035a6a432f10",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:ea9e2a3798b93a3c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "c96ee7c67af83632c8294ee19b047c099d905f45:5d34236f1f65d590",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:51e7e46d00332f49",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:66e215e06e1e35f6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:d5b8c2e342d1fad9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:97d43e9d331e7781",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:acba79f11fd83e51",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:6577f891e9d5e703",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:96bedb40226185dc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "ef39319da6c3792fe057d93cf6b338b2c4f5e0f4:46962ebb9013a5ad",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:00e9392150a5f8f9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:e9d0857ed920cd16",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:a40f3fe953b652ad",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:68a5ae72b7f4e3ef",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:32205823722505bc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "db7157092eebf577b2c536a267d79cf1a3f82e0c:99e71a31237047f1",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:d57ff70415d76ff2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:68a5ae72b7f4e3ef",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:ec1bc2654b2acf5a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:6577f891e9d5e703",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "2080c9916ecd9de22f27dc15827891689eeb723c:2e8236d1e8f4e3aa",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:f109fde9ab8b1d31",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:135c330ef57cdbc3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:ec1bc2654b2acf5a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:27830654d508e501",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:d57ff70415d76ff2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f20364eb76de2904e4b6753268be6c21c12c185a:3b6b716513f4622e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:ba25ff9fca5868b5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:97a823f0b3701694",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:917d06bbbddd7b72",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:ae7b26960ce447df",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:299f74c6504f7edc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:e4b48e3df5b66052",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:58aeaf987df47805",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "c96ee7c67af83632c8294ee19b047c099d905f45:5f17a3b71a34e078",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "f724ee644647f4a1d4649dbc2d454964cf02483d:cbd6549b4ac26adb",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:ccadf02210ecf206",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "5c2b972ce90462653425146605c6dfa697eac741:477939f521ca58ab",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:e6c28c1c2093dfe2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "epoll"
+      ]
+    },
+    {
+      "id": "f724ee644647f4a1d4649dbc2d454964cf02483d:ba32b18e38c0c3cc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "loop"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:82d7308c3131e11e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:fdbe316a5b03211a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:c21031a7da1b2735",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:cf8aa8456a419a45",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:0454153f22278a28",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:ee7fb48aede0ef93",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:b443a643ba50e64e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:00eb7d4f464c1bc3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:14670da85711b5af",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:18bfb7ef95f8ca5c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:b70fd541d6dd2d4e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:c00ab680ff107591",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:ea577030a965dfa0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:2a50bab21d9710c2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:115d67305f2d1938",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:df22d98ed492655b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:f547db54141f62e7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:b10f634cbf9d2c1d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:4ce63d076da8586d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:2640c920190b0490",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:775c3986a52fc339",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:81b420624bb1df44",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:137bba655ed7672c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:f9f7aa18ea28915b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:8ecaecb08f139a28",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:b7b86924165165b7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:ddcdd21de6fc7503",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:caea6153c1c3b340",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:8f9b683c69536b99",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:ff55a18224d4c6f0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:812e3976816fba46",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:17e38a62ef7b682e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:65a2516b987c317b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:f83d191d2f0916b9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:49aeefdfbfa446ae",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:9bdd3bcae857e35f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:06a34423cf0a9991",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:d03190f8e4a0fe72",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:dec43b18eeb3b356",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:7a7f47364346668a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:bf60a26c77870bc6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:82d7308c3131e11e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:fdbe316a5b03211a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:c21031a7da1b2735",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:cf8aa8456a419a45",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:0454153f22278a28",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:ee7fb48aede0ef93",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:b443a643ba50e64e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:00eb7d4f464c1bc3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:14670da85711b5af",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:e7ac3c88357424b8",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:6d57b2b9b3eb704a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:76494b672cd538e2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:ff66aea0571f95e4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:2c3ec43471da55ea",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:18bfb7ef95f8ca5c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:b70fd541d6dd2d4e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:c00ab680ff107591",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:24a1a88d1a90b87b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:ea577030a965dfa0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:2a50bab21d9710c2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:115d67305f2d1938",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:df22d98ed492655b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:f547db54141f62e7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:b10f634cbf9d2c1d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:4ce63d076da8586d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:cfef4d7bb3ef7542",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:469f3d9f52819ef4",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:bd9aa58dc7fb03fd",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:20434d65a0e12b8e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:8892a5c652ad23ff",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:2640c920190b0490",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:775c3986a52fc339",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:81b420624bb1df44",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:137bba655ed7672c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:f9f7aa18ea28915b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:d19006e7f0dd1805",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:622c2191b989726f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:8ecaecb08f139a28",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:b7b86924165165b7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:ddcdd21de6fc7503",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:4b9388bd0617c481",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:00410f75ad2df5fe",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:e2088f00ad0a160c",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:ed547195fc577fa5",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:47b9f690bf02a3fa",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:a8b76cd05750f7cc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:9f3ba892842300fd",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:8f843a694973c7e0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:8e32c9eb0b4dbee2",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:302d24d88cd6b676",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:64d4fabdf6af72d3",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:caea6153c1c3b340",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:8f9b683c69536b99",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:ff55a18224d4c6f0",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:812e3976816fba46",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:17e38a62ef7b682e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:9042a7e4c23c4e21",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:088f03b89192823f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:70009a7f3f48121d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:945e53983179a95e",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:9528b877e1047f7a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:31729a5361b7d400",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:14095292fd64a19a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:380e28394cc94e0d",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:65a2516b987c317b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:f83d191d2f0916b9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:d57450f81bb21247",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:49aeefdfbfa446ae",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:9bdd3bcae857e35f",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:06a34423cf0a9991",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:d03190f8e4a0fe72",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:dec43b18eeb3b356",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:7a7f47364346668a",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:a79b1f187fe91fef",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:9bb74aecfc60dccc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:7a3285aed9f254d7",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:48408f19052f0390",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:1f904c47e6c52ad9",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "3c06bc1bf19a9cb7adf3118b3e457d9259f60dbe:75cb95834a87b333",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:bf60a26c77870bc6",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:d5b6f7d491c74a30",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "0a5f1b9c9ec3400d2dfc80de42f148ab32d1d97d:a8b76cd05750f7cc",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    },
+    {
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:4599b3003734cb6b",
+      "reason": "fewer_than_two_informative_terms_and_no_exact_target_class",
+      "matched_terms": [
+        "event"
+      ]
+    }
+  ],
+  "candidate_count": 24,
+  "candidates": [
+    {
+      "rank": 1,
+      "id": "c18fc2bc68c08805b2553336a3bf02f0c8c50972:9d6891ed63d61da2",
+      "commit": "c18fc2bc68c08805b2553336a3bf02f0c8c50972",
+      "score": -20.30790132791676,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "a80b1e04ed016cdadfd2877984b6539011625a061afd2333f8f3bd3c75d8c5fc"
+    },
+    {
+      "rank": 2,
+      "id": "18f0b59bf8807e67980f010381caaf8a4be37a81:54316dea95aefb77",
+      "commit": "18f0b59bf8807e67980f010381caaf8a4be37a81",
+      "score": -17.30248691617845,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "f4b731621fc8cb1af1467d2ebccc1c5e02fdfb7dbbd1dccbf685bf7ea436c5d0"
+    },
+    {
+      "rank": 3,
+      "id": "c2942ba891144fba5e44e394fdcde208ab805a5c:6144aca19bd5dc43",
+      "commit": "c2942ba891144fba5e44e394fdcde208ab805a5c",
+      "score": -15.421014885022755,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "logic",
+        "loop"
+      ],
+      "text_sha256": "c5fc66a36fc2ff08770239ed20571d4c79a2ed8090846c69e5e37bf6a75d342e"
+    },
+    {
+      "rank": 4,
+      "id": "537b9f3e718f65fc97f001f214f00c7f6b6039c0:60b33d63c977a44a",
+      "commit": "537b9f3e718f65fc97f001f214f00c7f6b6039c0",
+      "score": -12.466216639561083,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "f7d3555f195ec8c33f2bff5241bab275a01ed4671643bb5908a51767ac2707e3"
+    },
+    {
+      "rank": 5,
+      "id": "1bdec65a2dbb905eafd28768f063595ffd6a44f1:f200e491fdf38fe6",
+      "commit": "1bdec65a2dbb905eafd28768f063595ffd6a44f1",
+      "score": -12.319471976110187,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "19cc5a6af8738dbc5ccdb22db6ab74e0288811052d7e78aa2f7066fdaabec54a"
+    },
+    {
+      "rank": 6,
+      "id": "11c39e9ce8574788522551304295bc5e75bdb7ef:ad46ef1b9ba61187",
+      "commit": "11c39e9ce8574788522551304295bc5e75bdb7ef",
+      "score": -12.116865373676951,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "0e78007edbb1be7c7eaa2f765dcc395c48e22d2e2a95ffe212ce1b48e3bde1e9"
+    },
+    {
+      "rank": 7,
+      "id": "f570201f1c9d6836de4b415c145440574b264cc3:efbedce147462945",
+      "commit": "f570201f1c9d6836de4b415c145440574b264cc3",
+      "score": -11.940857407969382,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "1ee1702120976abff484b392ba71f25c390f9985117e34e07755f0ac4bf317df"
+    },
+    {
+      "rank": 8,
+      "id": "9cf0063449e832685ec3f77fbbb2164fd427675e:37e1c618faddd047",
+      "commit": "9cf0063449e832685ec3f77fbbb2164fd427675e",
+      "score": -11.54830141941595,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "37a7aabe1409f36ee1cf3bfff2f5c645adc9091e3263b66bd815abd53cb2c39c"
+    },
+    {
+      "rank": 9,
+      "id": "abdaa769dec37976dfac1d570045db56914d2dca:1476f01035d00b27",
+      "commit": "abdaa769dec37976dfac1d570045db56914d2dca",
+      "score": -9.835885557627964,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "2dd17b28ae8cc6e81680242a112ccd32083f55260acd5a6642a9dcfc39116019"
+    },
+    {
+      "rank": 10,
+      "id": "82df7ee94c077d3034b8e7141cdfcda116b95ff5:d111788ce25c2f7d",
+      "commit": "82df7ee94c077d3034b8e7141cdfcda116b95ff5",
+      "score": -9.66967482723506,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "2debb05166eb14e1b132ef9f6243497ec267e5c2bdd6d00c94d32dedbb10f7c8"
+    },
+    {
+      "rank": 11,
+      "id": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7:ad4582f94478754b",
+      "commit": "d2f1ba09ab7715dc0fb836b7096d98a39de369a7",
+      "score": -9.55466100953097,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "bfd1cd1a0f5c4bd3ebd5a26668f47bbeb27be62264c18bc84f40f7ab4da7c5aa"
+    },
+    {
+      "rank": 12,
+      "id": "0f961caec5e4e6dcf5876e86399e70d6c18d5af8:74b662cc731ed815",
+      "commit": "0f961caec5e4e6dcf5876e86399e70d6c18d5af8",
+      "score": -8.959865777592738,
+      "matched_terms": [
+        "epoll",
+        "event",
+        "loop"
+      ],
+      "text_sha256": "e166a770766ef45fed1be49e7c6beb7d3c0a4be93b6b2b871ca31e5a7df61ef5"
+    },
+    {
+      "rank": 13,
+      "id": "52090cce91cc82433599ac3879a142dcb0d752f5:bd4ead4362f23bd0",
+      "commit": "52090cce91cc82433599ac3879a142dcb0d752f5",
+      "score": -8.28505558786417,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "3a3f304b3008a559f0610a6326b4a4297ae01634692c3228e09d4fbeb0b11ec7"
+    },
+    {
+      "rank": 14,
+      "id": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5:a0d9dd2d94019c03",
+      "commit": "0d7320ca4c87bec34db9e2020712e2b93cc3bbf5",
+      "score": -7.6393244001609375,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "c53e10fad0859bc66dceb99a0feec15c7a2bf33690590699e85a6d923492dccd"
+    },
+    {
+      "rank": 15,
+      "id": "ff5aefb725398ebecf6d28f1a74d843c851d85de:67c97835d7e26471",
+      "commit": "ff5aefb725398ebecf6d28f1a74d843c851d85de",
+      "score": -7.496772925259985,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "5c5ea755643d9af6f82b3eddf89d6f64dc8efccfcc5134aa6425925f5de73f11"
+    },
+    {
+      "rank": 16,
+      "id": "52a6707d4d6a704b3459c9ecbdebc30674bc71f1:41acc728daae3ad6",
+      "commit": "52a6707d4d6a704b3459c9ecbdebc30674bc71f1",
+      "score": -7.317272729261556,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "102bec69ff9b70c8ed09d53478857d926f302e3c4712430dce48641919539aa6"
+    },
+    {
+      "rank": 17,
+      "id": "292d6ad503360bea6c1f36aa6ca1258096dd686c:8b332f7f890ea434",
+      "commit": "292d6ad503360bea6c1f36aa6ca1258096dd686c",
+      "score": -7.2017636619892835,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "939d17cfcd29e2643e85e34a561ca316a9340a93d2983dd986bc1e96101299db"
+    },
+    {
+      "rank": 18,
+      "id": "60b5523dbb888f136dc222b10fa8e7dfe5957d3c:5d94b0ee72b33886",
+      "commit": "60b5523dbb888f136dc222b10fa8e7dfe5957d3c",
+      "score": -6.9172249864207185,
+      "matched_terms": [
+        "epoll",
+        "loop"
+      ],
+      "text_sha256": "75b48cee1fc18996e8e3d0f79183a0a74a2f85aeafa928c530eb6dce770521cf"
+    },
+    {
+      "rank": 19,
+      "id": "b33be587d90041a008279c9236eb4404cc70334f:99cc3c28400add0b",
+      "commit": "b33be587d90041a008279c9236eb4404cc70334f",
+      "score": -6.911504142232628,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "a25750537ce546c4499cc8c10e648ad1132b9f97f251e24a2eacdf825b4c1934"
+    },
+    {
+      "rank": 20,
+      "id": "5349b7cbadc263a5e5bdf6b3313b1df11973d247:de8b61e1d1a4281b",
+      "commit": "5349b7cbadc263a5e5bdf6b3313b1df11973d247",
+      "score": -6.649591620158674,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "9001d38bdc1a464373a0a850ae661c617c21dddc42ff9c4f9609f7727978d141"
+    },
+    {
+      "rank": 21,
+      "id": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf:b544897908eb04bb",
+      "commit": "8fdf373557622aa74a9bdf513ac9a92c28ec83cf",
+      "score": -6.589090424044969,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "65419ffaff45af1709752694bfccf1e5fae8dce4020c4fbc86745299a6c46d84"
+    },
+    {
+      "rank": 22,
+      "id": "cbac543160af7cb006db3277f8d6b24718ea17b1:ed7e9740c754fcab",
+      "commit": "cbac543160af7cb006db3277f8d6b24718ea17b1",
+      "score": -6.30985812483784,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "a527384f1235d31355bfe23c6b099d6225393b4c9e565a763565c25f235f37d8"
+    },
+    {
+      "rank": 23,
+      "id": "ae7b90be35768a1a38ba5524c0b2fc6c3d9c8353:93bd31f32c58d684",
+      "commit": "ae7b90be35768a1a38ba5524c0b2fc6c3d9c8353",
+      "score": -6.1949318383232,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "3dd367fdce4a616afd215c9fdd39cb9b02e45f9b29117fc4557d464874d76d13"
+    },
+    {
+      "rank": 24,
+      "id": "720348e3915c36de8eecca40ebab9aa4afe4fb63:dc6861fc042400a8",
+      "commit": "720348e3915c36de8eecca40ebab9aa4afe4fb63",
+      "score": -6.073288833102125,
+      "matched_terms": [
+        "event",
+        "loop"
+      ],
+      "text_sha256": "520f119c9da1bd071a2c85ee29338e6b2fc7b0a7520a59eb4e82f9bdd551a9ed"
+    }
+  ],
+  "C": [
+    "c18fc2bc68c08805b2553336a3bf02f0c8c50972:9d6891ed63d61da2",
+    "18f0b59bf8807e67980f010381caaf8a4be37a81:54316dea95aefb77",
+    "c2942ba891144fba5e44e394fdcde208ab805a5c:6144aca19bd5dc43"
+  ],
+  "B": [
+    "02722b50f37ae8f55f6739b63b4d86daf86ea1b4:d01669bd7579c326",
+    "f570201f1c9d6836de4b415c145440574b264cc3:e9c689de100385b3",
+    "c2b68fa4d26bca2bf3fffb704609b51baef7ca08:d43ddcb90b51f54d"
+  ],
+  "C_bytes": 10276,
+  "B_bytes": 9569,
+  "C_context_bytes": 10316,
+  "B_context_bytes": 9609,
+  "budget_prefix_reduction": 0,
+  "random_seed": 182522846,
+  "random_match_attempts": 1,
+  "random_match_passed": true,
+  "empty_reason": null,
+  "source_load_relevance_labels": "not independently judged",
+  "precision_at_k": null,
+  "recall_at_k": null,
+  "semantic_leakage_fully_proven_absent": false,
+  "manual_rank_overrides": false
+}

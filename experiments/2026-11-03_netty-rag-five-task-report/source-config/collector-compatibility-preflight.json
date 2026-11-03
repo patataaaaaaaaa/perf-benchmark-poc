@@ -1,0 +1,66 @@
+[
+  {
+    "task": "9abeaf1",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "task": "ab8c4f2",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "task": "dd69a81",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "task": "2791f0f",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "task": "2ed95c9",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "task": "67d3a78",
+    "passed": false,
+    "errors": [
+      "/experiment/ResourceProfiler.java:93: error: cannot find symbol",
+      "  symbol:   class ScalarResult",
+      "/experiment/ResourceProfiler.java:93: error: cannot find symbol",
+      "  symbol:   class ScalarResult",
+      "/experiment/ResourceProfiler.java:99: error: cannot find symbol",
+      "  symbol:   class ScalarResult",
+      "/experiment/ResourceProfiler.java:99: error: cannot find symbol",
+      "  symbol:   variable MIN",
+      "/experiment/ResourceProfiler.java:103: error: cannot find symbol",
+      "  symbol:   class ScalarResult",
+      "/experiment/ResourceProfiler.java:107: error: cannot find symbol",
+      "  symbol:   class ScalarResult",
+      "/experiment/ResourceProfiler.java:108: error: cannot find symbol",
+      "  symbol:   class ScalarResult",
+      "/experiment/ResourceProfiler.java:113: error: cannot find symbol",
+      "  symbol:   class ScalarResult",
+      "/experiment/ResourceProfiler.java:117: error: cannot find symbol",
+      "  symbol:   class ScalarResult"
+    ]
+  },
+  {
+    "task": "b2eaab0",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "task": "b72fea3",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "task": "feb804d",
+    "passed": true,
+    "errors": []
+  }
+]
