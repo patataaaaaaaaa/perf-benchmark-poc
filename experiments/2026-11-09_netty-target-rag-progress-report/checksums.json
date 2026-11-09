@@ -1,8 +1,8 @@
 {
-  "task-status.csv": "a310b915a1678d73522e348b974dc896a352b693673f0989e1ef01bb90a8d0e3",
+  "task-status.csv": "07a2cf72abf1a38bfff62583a64c174f9ecd813f5969937c76e82873185bf3c2",
   "retrieval-and-evaluation-config.json": "9ed14fee1e9d694252fd34f6a3c71247bb7b5bd1dd2edf60d329f2c2634a9307",
-  "scenario-results.csv": "05fb1b20de705dc45899ed5d7d7dd9fa3abebd6d791652277ebd55a0f8986467",
+  "scenario-results.csv": "5f46602879cc86e96606d7db3523ae4d10c180617914b346bba39783196fc21c",
   "snapshot.json": "a0e4394a56c767bc77de20bb8519373bddd948b52896263e3efa5afa9e889021",
   "README.md": "08ddf88b35edd39cc13cb896be3a5b38d17cbe08a5139aab6d56fe8ea43deb95",
-  "chat-baseline-scenarios.csv": "79c64092b6ad80a9f5542fec87f4574252ffedc0e8aba9ce7bbaa237a903bb39"
+  "chat-baseline-scenarios.csv": "2c5de92cd29bfde8a31936221bb7dd0505b22c42286cc28b5af6019da213bdee"
 }
