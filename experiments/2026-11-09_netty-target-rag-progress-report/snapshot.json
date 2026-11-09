@@ -1,0 +1,565 @@
+{
+  "snapshot": "2026-11-09T17:50:34+08:00",
+  "total_tasks": 18,
+  "attempted_tasks": 15,
+  "planned_objectives": 45,
+  "finalized_tasks": 13,
+  "tasks_with_at_least_one_complete_target": 12,
+  "tasks_with_all_three_complete_targets": 5,
+  "ongoing": {
+    "time": "2026-11-09T09:35:02.844029+00:00",
+    "stage": "performance_measurement",
+    "task": "87ec2f8",
+    "version": "R-cpu-r0",
+    "block": 4,
+    "phase": "rag-only-cpu"
+  },
+  "rows": [
+    {
+      "task": "2791f0f",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "2791f0f",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "2791f0f",
+      "target": "memory",
+      "status": "功能失败",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "生成了补丁，独立功能检查未通过",
+      "note": ""
+    },
+    {
+      "task": "2ed95c9",
+      "target": "time",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "2ed95c9",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": "复用此前固定补丁与5区组结果"
+    },
+    {
+      "task": "2ed95c9",
+      "target": "memory",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "5a9b28a",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "5a9b28a",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "5a9b28a",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "67d3a78",
+      "target": "time",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "转发器拒绝上下文整理请求，未生成补丁",
+      "note": ""
+    },
+    {
+      "task": "67d3a78",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "67d3a78",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "687308b",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "687308b",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "687308b",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "7b91edd",
+      "target": "time",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "7b91edd",
+      "target": "cpu",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "7b91edd",
+      "target": "memory",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "83a19d5",
+      "target": "time",
+      "status": "待功能检查",
+      "accepted_blocks": 0,
+      "delivery": "direct",
+      "chat_has_formal_result": false,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "83a19d5",
+      "target": "cpu",
+      "status": "待功能检查",
+      "accepted_blocks": 0,
+      "delivery": "direct",
+      "chat_has_formal_result": false,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "83a19d5",
+      "target": "memory",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": false,
+      "failure_reason": "达到20次请求上限，未修改生产代码",
+      "note": ""
+    },
+    {
+      "task": "87ec2f8",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "87ec2f8",
+      "target": "cpu",
+      "status": "测量中",
+      "accepted_blocks": 4,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "87ec2f8",
+      "target": "memory",
+      "status": "待功能检查",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "8a8337e",
+      "target": "time",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "8a8337e",
+      "target": "cpu",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "8a8337e",
+      "target": "memory",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "95b8db0",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": "追加预算后复用原会话，第1次请求保留计数"
+    },
+    {
+      "task": "95b8db0",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": "1200秒超时后保留补丁；独立功能检查通过"
+    },
+    {
+      "task": "95b8db0",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "9abeaf1",
+      "target": "time",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "9abeaf1",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "9abeaf1",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "ab8c4f2",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "ab8c4f2",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "ab8c4f2",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "b2eaab0",
+      "target": "time",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "direct",
+      "chat_has_formal_result": false,
+      "failure_reason": "转发器拒绝上下文整理请求，未生成补丁",
+      "note": ""
+    },
+    {
+      "task": "b2eaab0",
+      "target": "cpu",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "direct",
+      "chat_has_formal_result": false,
+      "failure_reason": "转发器拒绝上下文整理请求，未生成补丁",
+      "note": ""
+    },
+    {
+      "task": "b2eaab0",
+      "target": "memory",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": false,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "b72fea3",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": "复用此前固定补丁与5区组结果"
+    },
+    {
+      "task": "b72fea3",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "b72fea3",
+      "target": "memory",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "file",
+      "chat_has_formal_result": true,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "dd69a81",
+      "target": "time",
+      "status": "空补丁",
+      "accepted_blocks": 0,
+      "delivery": "direct",
+      "chat_has_formal_result": false,
+      "failure_reason": "达到20次请求上限，未生成可测补丁",
+      "note": ""
+    },
+    {
+      "task": "dd69a81",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": false,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "dd69a81",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": false,
+      "failure_reason": "",
+      "note": ""
+    },
+    {
+      "task": "deea51e",
+      "target": "time",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "deea51e",
+      "target": "cpu",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "deea51e",
+      "target": "memory",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "e542a2c",
+      "target": "time",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "e542a2c",
+      "target": "cpu",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "e542a2c",
+      "target": "memory",
+      "status": "环境阻塞",
+      "accepted_blocks": "",
+      "delivery": "",
+      "chat_has_formal_result": false,
+      "failure_reason": "官方 parent/fix 接口不匹配，原版评测未通过",
+      "note": ""
+    },
+    {
+      "task": "feb804d",
+      "target": "time",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": "修复转发器后复用原会话续跑"
+    },
+    {
+      "task": "feb804d",
+      "target": "cpu",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": "修复转发器后复用原会话续跑"
+    },
+    {
+      "task": "feb804d",
+      "target": "memory",
+      "status": "已测完",
+      "accepted_blocks": 5,
+      "delivery": "direct",
+      "chat_has_formal_result": true,
+      "failure_reason": "",
+      "note": "修复转发器后复用原会话续跑"
+    }
+  ],
+  "first_batch_cost_cny": "22.2620505",
+  "second_batch_cost_cny": "11.7725661",
+  "third_batch_cost_cny": "16.3569921",
+  "ongoing_batch_budget_cny": 15,
+  "ongoing_batch_ledger_upper_cny": 11.510586000000004,
+  "note": "正在测量的目标，最终数值留空；失败保留在全部尝试统计中。"
+}
