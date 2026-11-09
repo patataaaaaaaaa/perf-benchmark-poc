@@ -1,0 +1,80 @@
+{
+  "schema": "netty-target-rag-v1",
+  "condition": "semantic_target_max",
+  "tasks": [
+    "2791f0f",
+    "2ed95c9",
+    "5a9b28a",
+    "67d3a78",
+    "687308b",
+    "7b91edd",
+    "83a19d5",
+    "87ec2f8",
+    "8a8337e",
+    "95b8db0",
+    "9abeaf1",
+    "ab8c4f2",
+    "b2eaab0",
+    "b72fea3",
+    "dd69a81",
+    "deea51e",
+    "e542a2c",
+    "feb804d"
+  ],
+  "targets": [
+    "time",
+    "cpu",
+    "memory"
+  ],
+  "corpus": "experiments/2026-11-04_netty-distilled-knowledge-base/v3",
+  "raw_corpus": "experiments/2026-11-01_netty-large-knowledge-base/knowledge",
+  "embedding": {
+    "model": "BAAI/bge-base-en-v1.5",
+    "revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "input": "all_diff_chunks",
+    "max_tokens": 512,
+    "separate_text_code_weights": false,
+    "commit_aggregation": "max_chunk_cosine",
+    "context_selection": "full_selected_commit_records",
+    "diff_chunk_token_budget": 300
+  },
+  "retrieval": {
+    "recall_k": 40,
+    "keep_k": 3,
+    "semantic_weight": 0.2,
+    "performance_weight": 0.4,
+    "card_bytes": null,
+    "total_bytes": null,
+    "min_similarity": 0.45,
+    "recall_fraction": null
+  },
+  "generator": {
+    "model": "deepseek-v4-pro",
+    "cli_version": "0.161.0",
+    "reasoning": "high",
+    "seconds": 1200,
+    "max_requests": 20,
+    "max_output_tokens": 8192
+  },
+  "measurement": {
+    "blocks": 5,
+    "warmup": 10,
+    "iterations": 50,
+    "seconds_per_iteration": 1,
+    "parallel": false,
+    "reuse_existing_evaluator": true
+  },
+  "execution": {
+    "report_only": true
+  },
+  "injection": {
+    "mode": "complete_commit_record",
+    "include_original_source_document": true,
+    "include_curated_case_record": true,
+    "include_all_raw_measurements": true,
+    "include_computed_performance": true,
+    "include_ranking_evidence": true,
+    "truncate": false
+  },
+  "generation_repetitions_in_report": 1
+}
