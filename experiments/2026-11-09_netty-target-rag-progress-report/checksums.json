@@ -1,10 +1,10 @@
 {
-  "task-status.csv": "07a2cf72abf1a38bfff62583a64c174f9ecd813f5969937c76e82873185bf3c2",
+  "task-status.csv": "06e06fbf939a2d16ad6bca49ad1f1da54516d267040b41134ca6630256d5d30b",
   "retrieval-and-evaluation-config.json": "9ed14fee1e9d694252fd34f6a3c71247bb7b5bd1dd2edf60d329f2c2634a9307",
-  "scenario-results.csv": "5f46602879cc86e96606d7db3523ae4d10c180617914b346bba39783196fc21c",
-  "snapshot.json": "a0e4394a56c767bc77de20bb8519373bddd948b52896263e3efa5afa9e889021",
-  "README.md": "a5fe0510c52f13f373b0087c66ffddafae9c96ce9111109e0e7372cdd5bb068c",
+  "scenario-results.csv": "f1eb412e6196501de4875fe269a6aa94ad53e5ba8b204d9c1f36ef6f877b1cbf",
+  "snapshot.json": "cfbed7770b070df0d637b5ee45fa8c7fbee09094a47ce771d167781821bd48e9",
+  "README.md": "5cf19db76529477a42fbed6f211435262e230edbe2ec6733b51b6f1830f25f33",
   "chat-baseline-scenarios.csv": "2c5de92cd29bfde8a31936221bb7dd0505b22c42286cc28b5af6019da213bdee",
-  "four-way-comparison.md": "3711a1d34299714396b13b4430e83a5d909ad8186d776a37dbc3402aed30ce09",
-  "four-way-scenes.csv": "b574790e369f39ec3ccdb43d712f8dfca24b9706d393be49ea5aaefa1b8d2a1f"
+  "four-way-comparison.md": "97b7dce7cfdb06821770d8efbbeecc4ca73db088159c6fda2ee2037827860fc5",
+  "four-way-scenes.csv": "e60d4a1af6ce90bfc93f186edb1236de95f95be9c9fca435740a8a48dff03da4"
 }

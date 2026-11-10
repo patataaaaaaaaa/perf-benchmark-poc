@@ -17,12 +17,12 @@ task,target,status,accepted_blocks,delivery,chat_has_formal_result,failure_reaso
 7b91edd,time,环境阻塞,,,False,官方 parent/fix 接口不匹配，原版评测未通过,
 7b91edd,cpu,环境阻塞,,,False,官方 parent/fix 接口不匹配，原版评测未通过,
 7b91edd,memory,环境阻塞,,,False,官方 parent/fix 接口不匹配，原版评测未通过,
-83a19d5,time,待功能检查,0,direct,False,,
-83a19d5,cpu,待功能检查,0,direct,False,,
-83a19d5,memory,空补丁,0,file,False,达到20次请求上限，未修改生产代码,
-87ec2f8,time,已测完,5,file,True,,
-87ec2f8,cpu,测量中,4,file,True,,
-87ec2f8,memory,待功能检查,0,file,True,,
+83a19d5,time,已测完,5,direct,False,,首轮
+83a19d5,cpu,已测完,5,direct,False,,首轮
+83a19d5,memory,空补丁,0,file,False,达到20次请求上限，未修改生产代码,首轮
+87ec2f8,time,已测完,5,file,True,,首轮
+87ec2f8,cpu,已测完,5,file,True,,首轮
+87ec2f8,memory,已测完,5,file,True,,首轮
 8a8337e,time,空补丁,0,file,True,达到20次请求上限，未生成可测补丁,
 8a8337e,cpu,空补丁,0,direct,True,达到20次请求上限，未生成可测补丁,
 8a8337e,memory,空补丁,0,file,True,达到20次请求上限，未生成可测补丁,

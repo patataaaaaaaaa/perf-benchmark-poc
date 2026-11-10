@@ -1,19 +1,11 @@
 {
-  "snapshot": "2026-11-09T17:50:34+08:00",
+  "snapshot": "2026-11-10T10:48+08:00",
   "total_tasks": 18,
   "attempted_tasks": 15,
   "planned_objectives": 45,
-  "finalized_tasks": 13,
-  "tasks_with_at_least_one_complete_target": 12,
-  "tasks_with_all_three_complete_targets": 5,
-  "ongoing": {
-    "time": "2026-11-09T09:35:02.844029+00:00",
-    "stage": "performance_measurement",
-    "task": "87ec2f8",
-    "version": "R-cpu-r0",
-    "block": 4,
-    "phase": "rag-only-cpu"
-  },
+  "finalized_tasks": 15,
+  "tasks_with_at_least_one_complete_target": 13,
+  "tasks_with_all_three_complete_targets": 6,
   "rows": [
     {
       "task": "2791f0f",
@@ -198,22 +190,22 @@
     {
       "task": "83a19d5",
       "target": "time",
-      "status": "待功能检查",
-      "accepted_blocks": 0,
+      "status": "已测完",
+      "accepted_blocks": 5,
       "delivery": "direct",
       "chat_has_formal_result": false,
       "failure_reason": "",
-      "note": ""
+      "note": "首轮"
     },
     {
       "task": "83a19d5",
       "target": "cpu",
-      "status": "待功能检查",
-      "accepted_blocks": 0,
+      "status": "已测完",
+      "accepted_blocks": 5,
       "delivery": "direct",
       "chat_has_formal_result": false,
       "failure_reason": "",
-      "note": ""
+      "note": "首轮"
     },
     {
       "task": "83a19d5",
@@ -223,7 +215,7 @@
       "delivery": "file",
       "chat_has_formal_result": false,
       "failure_reason": "达到20次请求上限，未修改生产代码",
-      "note": ""
+      "note": "首轮"
     },
     {
       "task": "87ec2f8",
@@ -233,27 +225,27 @@
       "delivery": "file",
       "chat_has_formal_result": true,
       "failure_reason": "",
-      "note": ""
+      "note": "首轮"
     },
     {
       "task": "87ec2f8",
       "target": "cpu",
-      "status": "测量中",
-      "accepted_blocks": 4,
+      "status": "已测完",
+      "accepted_blocks": 5,
       "delivery": "file",
       "chat_has_formal_result": true,
       "failure_reason": "",
-      "note": ""
+      "note": "首轮"
     },
     {
       "task": "87ec2f8",
       "target": "memory",
-      "status": "待功能检查",
-      "accepted_blocks": 0,
+      "status": "已测完",
+      "accepted_blocks": 5,
       "delivery": "file",
       "chat_has_formal_result": true,
       "failure_reason": "",
-      "note": ""
+      "note": "首轮"
     },
     {
       "task": "8a8337e",
@@ -559,7 +551,11 @@
   "first_batch_cost_cny": "22.2620505",
   "second_batch_cost_cny": "11.7725661",
   "third_batch_cost_cny": "16.3569921",
-  "ongoing_batch_budget_cny": 15,
-  "ongoing_batch_ledger_upper_cny": 11.510586000000004,
-  "note": "正在测量的目标，最终数值留空；失败保留在全部尝试统计中。"
+  "note": "首轮生成全部结批，修复续跑另记状态。",
+  "measured_targets": 31,
+  "offline_two": {
+    "cost_cny": "5.7552930",
+    "cap": 15,
+    "upper": 11.510586000000004
+  }
 }
