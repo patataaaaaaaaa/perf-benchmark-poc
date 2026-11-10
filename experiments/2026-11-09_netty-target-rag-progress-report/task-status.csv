@@ -8,7 +8,7 @@ task,target,status,accepted_blocks,delivery,chat_has_formal_result,failure_reaso
 5a9b28a,time,已测完,5,direct,True,,
 5a9b28a,cpu,已测完,5,direct,True,,
 5a9b28a,memory,已测完,5,direct,True,,
-67d3a78,time,空补丁,0,direct,True,转发器拒绝上下文整理请求，未生成补丁,
+67d3a78,time,已测完,5,direct,True,转发器拒绝上下文整理请求，未生成补丁,修复后续跑，原会话
 67d3a78,cpu,已测完,5,file,True,,
 67d3a78,memory,已测完,5,file,True,,
 687308b,time,已测完,5,direct,True,,
@@ -35,8 +35,8 @@ task,target,status,accepted_blocks,delivery,chat_has_formal_result,failure_reaso
 ab8c4f2,time,已测完,5,direct,True,,
 ab8c4f2,cpu,已测完,5,direct,True,,
 ab8c4f2,memory,已测完,5,direct,True,,
-b2eaab0,time,空补丁,0,direct,False,转发器拒绝上下文整理请求，未生成补丁,
-b2eaab0,cpu,空补丁,0,direct,False,转发器拒绝上下文整理请求，未生成补丁,
+b2eaab0,time,预算暂停,0,direct,False,转发器拒绝上下文整理请求，未生成补丁,原会话新增 2 次，空补丁
+b2eaab0,cpu,预算暂停,0,direct,False,转发器拒绝上下文整理请求，未生成补丁,本次续跑未启动
 b2eaab0,memory,空补丁,0,file,False,达到20次请求上限，未生成可测补丁,
 b72fea3,time,已测完,5,direct,True,,复用此前固定补丁与5区组结果
 b72fea3,cpu,已测完,5,direct,True,,

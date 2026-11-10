@@ -1,11 +1,11 @@
 {
-  "snapshot": "2026-11-10T10:48+08:00",
+  "snapshot": "2026-11-10T10:49+08:00",
   "total_tasks": 18,
   "attempted_tasks": 15,
   "planned_objectives": 45,
   "finalized_tasks": 15,
   "tasks_with_at_least_one_complete_target": 13,
-  "tasks_with_all_three_complete_targets": 6,
+  "tasks_with_all_three_complete_targets": 7,
   "rows": [
     {
       "task": "2791f0f",
@@ -100,12 +100,12 @@
     {
       "task": "67d3a78",
       "target": "time",
-      "status": "空补丁",
-      "accepted_blocks": 0,
+      "status": "已测完",
+      "accepted_blocks": 5,
       "delivery": "direct",
       "chat_has_formal_result": true,
       "failure_reason": "转发器拒绝上下文整理请求，未生成补丁",
-      "note": ""
+      "note": "修复后续跑，原会话"
     },
     {
       "task": "67d3a78",
@@ -370,22 +370,22 @@
     {
       "task": "b2eaab0",
       "target": "time",
-      "status": "空补丁",
+      "status": "预算暂停",
       "accepted_blocks": 0,
       "delivery": "direct",
       "chat_has_formal_result": false,
       "failure_reason": "转发器拒绝上下文整理请求，未生成补丁",
-      "note": ""
+      "note": "原会话新增 2 次，空补丁"
     },
     {
       "task": "b2eaab0",
       "target": "cpu",
-      "status": "空补丁",
+      "status": "预算暂停",
       "accepted_blocks": 0,
       "delivery": "direct",
       "chat_has_formal_result": false,
       "failure_reason": "转发器拒绝上下文整理请求，未生成补丁",
-      "note": ""
+      "note": "本次续跑未启动"
     },
     {
       "task": "b2eaab0",
@@ -552,10 +552,27 @@
   "second_batch_cost_cny": "11.7725661",
   "third_batch_cost_cny": "16.3569921",
   "note": "首轮生成全部结批，修复续跑另记状态。",
-  "measured_targets": 31,
+  "measured_targets": 32,
   "offline_two": {
     "cost_cny": "5.7552930",
     "cap": 15,
     "upper": 11.510586000000004
-  }
+  },
+  "checkpoint_resume": {
+    "cost_cny": "2.9868660",
+    "status": {
+      "state": "budget_paused",
+      "details": {
+        "identity": "b2eaab0-R-time-r0",
+        "reason": "currency_budget_pause",
+        "pending": [
+          "b2eaab0-R-time-r0",
+          "b2eaab0-R-cpu-r0"
+        ]
+      }
+    },
+    "upper": 26.685214799999994,
+    "cap": 27.1663506
+  },
+  "cumulative_cost_cny": "59.1337677"
 }
