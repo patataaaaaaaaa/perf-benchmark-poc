@@ -21,15 +21,26 @@
 
 ## 绝对测量值
 
-以 `9abeaf1` 的历史 GPT Chat 批次为例，下面是 `executeMulti` 场景五个有效区组的算术平均。这个场景的主指标是吞吐量，单位为每秒完成的操作数。
+下表按题目和实验组列出全部测量。点击场景数即可查看该题所有场景的参数，以及**原版、开发者版、候选版**的吞吐量或平均耗时、每次操作 CPU 时间、每次操作堆分配、驻留内存和内存高水位。
 
-| 版本 | 吞吐量（ops/s） | CPU 时间（ns/op） | 堆分配（B/op） | 驻留内存（MiB） | 内存高水位采样（MiB） |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| 原版 | 315,007.53 | 6,328.59 | 56.0098 | 399.72 | 400.91 |
-| 开发者版 | 532,657.85 | 3,851.10 | 56.0059 | 297.16 | 298.48 |
-| 候选版 | 531,967.34 | 3,837.72 | 56.0061 | 305.69 | 307.51 |
+| 题目 | 历史 GPT Chat | GPT + Codex | 8K 无 RAG | 8K 有 RAG | 32K 无 RAG | 32K 有 RAG |
+| --- | --- | --- | --- | --- | --- | --- |
+| `2791f0f` | [1 个场景](absolute-measurements/chat.md#2791f0f) | [1 个场景](absolute-measurements/gpt-codex.md#2791f0f) | [1 个场景](absolute-measurements/8k-no-rag.md#2791f0f) | [1 个场景](absolute-measurements/8k-rag.md#2791f0f) | 未安排补测 | 未安排补测 |
+| `2ed95c9` | [7 个场景](absolute-measurements/chat.md#2ed95c9) | [7 个场景](absolute-measurements/gpt-codex.md#2ed95c9) | 空补丁 | 空补丁 | [7 个场景](absolute-measurements/32k-no-rag.md#2ed95c9) | [7 个场景](absolute-measurements/32k-rag.md#2ed95c9) |
+| `5a9b28a` | [6 个场景](absolute-measurements/chat.md#5a9b28a) | [6 个场景](absolute-measurements/gpt-codex.md#5a9b28a) | [6 个场景](absolute-measurements/8k-no-rag.md#5a9b28a) | [6 个场景](absolute-measurements/8k-rag.md#5a9b28a) | 未安排补测 | 未安排补测 |
+| `67d3a78` | [12 个场景](absolute-measurements/chat.md#67d3a78) | [12 个场景](absolute-measurements/gpt-codex.md#67d3a78) | [12 个场景](absolute-measurements/8k-no-rag.md#67d3a78) | [12 个场景](absolute-measurements/8k-rag.md#67d3a78) | 未安排补测 | 未安排补测 |
+| `687308b` | [6 个场景](absolute-measurements/chat.md#687308b) | [6 个场景](absolute-measurements/gpt-codex.md#687308b) | [6 个场景](absolute-measurements/8k-no-rag.md#687308b) | [6 个场景](absolute-measurements/8k-rag.md#687308b) | 未安排补测 | 未安排补测 |
+| `87ec2f8` | [40 个场景](absolute-measurements/chat.md#87ec2f8) | [40 个场景](absolute-measurements/gpt-codex.md#87ec2f8) | [40 个场景](absolute-measurements/8k-no-rag.md#87ec2f8) | [40 个场景](absolute-measurements/8k-rag.md#87ec2f8) | 未安排补测 | 未安排补测 |
+| `8a8337e` | [4 个场景](absolute-measurements/chat.md#8a8337e) | [4 个场景](absolute-measurements/gpt-codex.md#8a8337e) | 空补丁 | 空补丁 | [4 个场景](absolute-measurements/32k-no-rag.md#8a8337e) | [4 个场景](absolute-measurements/32k-rag.md#8a8337e) |
+| `95b8db0` | [4 个场景](absolute-measurements/chat.md#95b8db0) | [4 个场景](absolute-measurements/gpt-codex.md#95b8db0) | [4 个场景](absolute-measurements/8k-no-rag.md#95b8db0) | [4 个场景](absolute-measurements/8k-rag.md#95b8db0) | 未安排补测 | 未安排补测 |
+| `9abeaf1` | [3 个场景](absolute-measurements/chat.md#9abeaf1) | [3 个场景](absolute-measurements/gpt-codex.md#9abeaf1) | 空补丁 | 空补丁 | [3 个场景](absolute-measurements/32k-no-rag.md#9abeaf1) | [3 个场景](absolute-measurements/32k-rag.md#9abeaf1) |
+| `ab8c4f2` | [5 个场景](absolute-measurements/chat.md#ab8c4f2) | [5 个场景](absolute-measurements/gpt-codex.md#ab8c4f2) | [5 个场景](absolute-measurements/8k-no-rag.md#ab8c4f2) | [5 个场景](absolute-measurements/8k-rag.md#ab8c4f2) | 未安排补测 | 未安排补测 |
+| `b72fea3` | [2 个场景](absolute-measurements/chat.md#b72fea3) | [2 个场景](absolute-measurements/gpt-codex.md#b72fea3) | [2 个场景](absolute-measurements/8k-no-rag.md#b72fea3) | [2 个场景](absolute-measurements/8k-rag.md#b72fea3) | 未安排补测 | 未安排补测 |
+| `feb804d` | [3 个场景](absolute-measurements/chat.md#feb804d) | [3 个场景](absolute-measurements/gpt-codex.md#feb804d) | 空补丁 | 空补丁 | [3 个场景](absolute-measurements/32k-no-rag.md#feb804d) | [3 个场景](absolute-measurements/32k-rag.md#feb804d) |
 
-同题还测了 `executeSingle` 和 `pingPong`。正文的逐题百分比先在区组内配对，再对区组和场景取几何平均，因此与这里单个场景的均值之比可以不同。驻留内存和高水位是进程级采样值，堆分配是每次基准操作的分配字节数。
+每个数值均为同批次五个有效 JMH 区组的算术平均。吞吐量沿用 ops/s 或 ops/us，平均耗时和 CPU 时间用 ns/op，堆分配用 B/op，进程内存用 MiB。正文的逐题百分比按区组配对后对区组和场景比值取几何平均。
+
+8K 的“空补丁”表示该组尝试了该题，但没有候选版可供测量。32K 只补测两组 8K 都产生空补丁的四题。
 
 ## 六组候选相对原版
 
